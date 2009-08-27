@@ -1,0 +1,213 @@
+# $Id: modules-dblog.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+#
+# German translation of Drupal (modules-dblog)
+# Copyright (c) 2004-2008 by the German translation team
+# Generated from files:
+#  dblog.admin.inc,v 1.6 2008/01/08 10:35:41 goba
+#  dblog.module,v 1.21.2.2 2008/04/09 21:11:46 goba
+#  dblog.install,v 1.6 2007/11/04 14:33:06 goba
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: modules-dblog\n"
+"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"PO-Revision-Date: 2008-08-16 20:40+0200\n"
+"Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
+"Language-Team: German Drupal translation team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: modules/dblog/dblog.admin.inc:18
+msgid "Discard log entries above the following row limit"
+msgstr "Protokolleinträge über folgender Zeilenbegrenzung verwerfen"
+
+#: modules/dblog/dblog.admin.inc:21
+msgid ""
+"The maximum number of rows to keep in the database log. Older entries will "
+"be automatically discarded. (Requires a correctly configured <a href=\"@cron"
+"\">cron maintenance task</a>.)"
+msgstr ""
+"Die maximale Anzahl an Protokolleinträgen, die in der Datenbank gespeichert "
+"werden sollen. Ältere Protokolleinträge werden automatisch verworfen. "
+"(Erfordert eine richtig konfigurierte <a href=\"@cron\">Cron-"
+"Wartungsaufgabe</a>.)"
+
+#: modules/dblog/dblog.admin.inc:81;109
+msgid "No log messages available."
+msgstr "Keine Protokollnachrichten verfügbar."
+
+#: modules/dblog/dblog.admin.inc:97
+msgid "Count"
+msgstr "Anzahl"
+
+#: modules/dblog/dblog.admin.inc:140
+msgid "Location"
+msgstr "Ort"
+
+#: modules/dblog/dblog.admin.inc:152;220
+msgid "Severity"
+msgstr "Schweregrad"
+
+#: modules/dblog/dblog.admin.inc:260
+msgid "Filter log messages"
+msgstr "Protokollnachrichten filtern"
+
+#: modules/dblog/dblog.admin.inc:297
+msgid "You must select something to filter by."
+msgstr "Ein Filterkriterium muss ausgewählt werden."
+
+#: modules/dblog/dblog.module:21
+msgid ""
+"The dblog module monitors your system, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. This is useful for "
+"site administrators who want a quick overview of activities on their site. "
+"The logs also record the sequence of events, so it can be useful for "
+"debugging site errors."
+msgstr ""
+"Das Modul \"dblog\" protokolliert Systemereignisse in chronologischer "
+"Reihenfolge. Die Protokolleinträge können anschließend durch berechtige "
+"Personen zur Systemüberwachung ausgewertet werden. Auf diese Weise erhalten "
+"die Administratoren der Site einen schnellen Überblick über den aktuellen "
+"Zustand und laufende Aktivitäten. Dieses technische Protokoll leistet zudem "
+"gute Dienste beim Debuggen von Fehlern."
+
+#: modules/dblog/dblog.module:22
+msgid ""
+"The dblog log is simply a list of recorded events containing usage data, "
+"performance data, errors, warnings and operational information. "
+"Administrators should check the dblog report on a regular basis to ensure "
+"their site is working properly."
+msgstr ""
+"Das dblog-Protokoll listet die aufgetretenen Ereignisse in chronologischer "
+"Reihenfolge auf. Ein Eintrag enthält z.B. Details zur Auslastung und "
+"Performanz der Site, Angaben zu Fehlern und Warnungen oder weitere operative "
+"Informationen. Administratoren sind gehalten, dieses Protokoll in "
+"regelmäßigen Abständen zu überprüfen und so die Stabilität und Korrektheit "
+"der Site zu gewährleisten."
+
+#: modules/dblog/dblog.module:23
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@dblog"
+"\">Dblog module</a>."
+msgstr ""
+"Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
+"der Handbuch-Seite zum <a href=\"@dblog\">Datenbankprotokoll-Modul</a>."
+
+#: modules/dblog/dblog.module:26
+msgid ""
+"The dblog module monitors your website, capturing system events in a log to "
+"be reviewed by an authorized individual at a later time. The dblog log is "
+"simply a list of recorded events containing usage data, performance data, "
+"errors, warnings and operational information. It is vital to check the dblog "
+"report on a regular basis as it is often the only way to tell what is going "
+"on."
+msgstr ""
+"Das dblog-Modul überwacht die Website durch Erfassung der Systemereignisse "
+"in einem Protokoll, um einer autorisierten Person zu einem späteren "
+"Zeitpunkt eine Überprüfung zu ermöglichen. Dieses Protokoll ist einfach eine "
+"Liste aufgezeichneter Ereignisse, welche Nutzungsdaten, Leistungsdaten, "
+"Fehler, Warnungen und operative Informationen enthält. Es ist wichtig, den "
+"dblog-Bericht in regelmäßigen Abständen zu überprüfen, da er häufig die "
+"einzige Möglichkeit ist, um zu erfahren, was geschieht."
+
+#: modules/dblog/dblog.module:47
+msgid ""
+"Settings for logging to the Drupal database logs. This is the most common "
+"method for small to medium sites on shared hosting. The logs are viewable "
+"from the admin pages."
+msgstr ""
+"Einstellungen für das Protokollieren in die Drupal Datenbanklogs. Für kleine "
+"bis mittlere Websites im Shared Hosting Bereich (d.h. mehrere Sites teilen "
+"sich einen Server) ist dies die gängige Methode. Die Logs sind über die "
+"Administrationsseiten einsehbar."
+
+#: modules/dblog/dblog.module:55
+msgid "Recent log entries"
+msgstr "Neue Log-Einträge"
+
+#: modules/dblog/dblog.module:56
+msgid "View events that have recently been logged."
+msgstr "Zeigt die Ereignisse an, die zuletzt protokolliert wurden."
+
+#: modules/dblog/dblog.module:63
+msgid "Top 'page not found' errors"
+msgstr "Häufigste ‚Nicht gefunden‘-Fehler"
+
+#: modules/dblog/dblog.module:64
+msgid "View 'page not found' errors (404s)."
+msgstr ""
+"Eine Auflistung der Seiten, die am häufigsten ‚Nicht gefunden‘ wurden (404-"
+"Fehler)."
+
+#: modules/dblog/dblog.module:71
+msgid "Top 'access denied' errors"
+msgstr "Häufigste ‚Zugriff verboten‘-Fehler"
+
+#: modules/dblog/dblog.module:72
+msgid "View 'access denied' errors (403s)."
+msgstr ""
+"Eine Auflistung der Seiten, auf die der Zugriff am häufigsten verboten wurde "
+"(403-Fehler)."
+
+#: modules/dblog/dblog.module:0
+msgid "dblog"
+msgstr "dblog"
+
+#: modules/dblog/dblog.install:25
+msgid "Table that contains logs of all system events."
+msgstr "Tabelle, in der alle Systemereignisse protokolliert werden."
+
+#: modules/dblog/dblog.install:30
+msgid "Primary Key: Unique watchdog event ID."
+msgstr "Primärschlüssel: Eindeutige Watchdog-Event-ID."
+
+#: modules/dblog/dblog.install:36
+msgid "The {users}.uid of the user who triggered the event."
+msgstr "Die {users}.uid des Benutzers, der das Ereignis ausgelöst hat."
+
+#: modules/dblog/dblog.install:43
+msgid "Type of log message, for example \"user\" or \"page not found.\""
+msgstr ""
+"Der Typ der Protokollnachricht, zum Beispiel „Benutzer“ oder „Seite wurde "
+"nicht gefunden“."
+
+#: modules/dblog/dblog.install:49
+msgid "Text of log message to be passed into the t() function."
+msgstr ""
+"Text der Protokollnachricht, die an die t()-Funktion weitergegeben wird."
+
+#: modules/dblog/dblog.install:55
+msgid ""
+"Serialized array of variables that match the message string and that is "
+"passed into the t() function."
+msgstr ""
+"Serialisiertes Array von Variablen, die dem Nachrichtentext entsprechen und "
+"das an die t()-Funktion weitergegeben wird."
+
+#: modules/dblog/dblog.install:63
+msgid "The severity level of the event; ranges from 0 (Emergency) to 7 (Debug)"
+msgstr "Der Schweregrad des Ereignisses; von 0 (Notfall) bis 7 (Debug)"
+
+#: modules/dblog/dblog.install:70
+msgid "Link to view the result of the event."
+msgstr "Verknüpfung zur Ergebnisanzeige des Ereignisses."
+
+#: modules/dblog/dblog.install:75
+msgid "URL of the origin of the event."
+msgstr "URL der Quelle des Ereignisses."
+
+#: modules/dblog/dblog.install:82
+msgid "URL of referring page."
+msgstr "URL der verweisenden Seite."
+
+#: modules/dblog/dblog.install:89
+msgid "Hostname of the user who triggered the event."
+msgstr "Hostname des Benutzers, der das Ereignis ausgelöst hat."
+
+#: modules/dblog/dblog.install:95
+msgid "Unix timestamp of when event occurred."
+msgstr "Unix-Zeitstempel zum Eintreten des Ereignisses."
