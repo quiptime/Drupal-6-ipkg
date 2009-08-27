@@ -1,11 +1,11 @@
-Drupal 6 Ipkg
+Drupal 6 ipkg
 
-  "Drupal 6 Ipkg" ist ein Drupal 6 Installer mit dem nach verschiedenen Installationsprofilen
-  unterschiedliche Drupal 6 Varianten installiert werden können.
+  "Drupal 6 ipkg" ist ein Drupal 6 Installer mit dem nach verschiedenen Installationsprofilen
+  unterschiedliche Drupal 6 Varianten in Deutsch oder Englisch installiert werden können.
 
-  "Drupal 6 Ipkg" enthält eine komplette Drupal 6 Version mit mehreren Installationsprofilen.
+  "Drupal 6 ipkg" enthält eine komplette Drupal 6 Version mit mehreren Installationsprofilen.
 
-  Mit anderen Worten: "Drupal 6 Ipkg" erweitert den Installationsprozess von Drupal.
+  Mit anderen Worten: "Drupal 6 ipkg" erweitert den Installationsprozess von Drupal.
 
 KONFIGURATIONEN
 
@@ -20,6 +20,9 @@ DOWNLOAD
   Im Drupal root befinden sich die 2 Dateien .gitignore und README.txt. Die README.txt lesen sie gerade
   und .gitignore dient der Verwaltung dieses Repository. Beide Dateien können gelöscht werden.
 
+  In der Nebennavigation kann in "all branches" eine Version von "Drupal 6 ipkg" gewählt werden. Die
+  Version dev entspricht dem aktuellen Entwicklungsstand.
+
 BESONDERHEIT
 
   Die Profil-Module und die optionalen Module und Themes werden während der Installation von drupal.org
@@ -33,7 +36,16 @@ BESONDERHEIT
   Erfolgt dies nicht
   können diese Ordner und Dateien nicht, beispielsweise per FTP, verarbeitet werden.
 
-  Tipp
+  Installationsverzeichnisse:
+
+  sites/all/modules/contrib
+  sites/all/themes
+
+  Einfacher Test zum Überprüfen:
+
+  Vergleichen Sie die Datei "install.php" mit den Installationsverzeichnissen.
+
+  TIPP
 
     Shared Webhoster bieten in der Regel eine Möglichkeit bzw. ein Tool um Ordner und Dateien dem
     Benutzer des Webaccount zuzuordnen.
