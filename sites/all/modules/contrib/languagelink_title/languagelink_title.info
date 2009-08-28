@@ -1,0 +1,14 @@
+; $Id: languagelink_title.info,v 1.1 2009/06/05 16:15:52 tirsales Exp $
+name = Language Links Title
+description = Adds titles to language links.
+dependencies[] = locale
+package = Multilanguage
+core = 6.x
+
+
+; Information added by drupal.org packaging script on 2009-06-05
+version = "6.x-1.0"
+core = "6.x"
+project = "languagelink_title"
+datestamp = "1244219475"
+

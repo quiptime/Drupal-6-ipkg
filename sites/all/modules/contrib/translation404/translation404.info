@@ -1,0 +1,12 @@
+; $Id:
+name = Translation404
+description = Handle non existing links in the locale language switcher block.
+dependencies[] = translation
+package = Multilanguage
+core = 6.x
+; Information added by drupal.org packaging script on 2009-04-05
+version = "6.x-1.2"
+core = "6.x"
+project = "translation404"
+datestamp = "1238960464"
+

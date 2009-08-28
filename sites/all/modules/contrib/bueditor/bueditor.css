@@ -1,0 +1,94 @@
+/*$Id: bueditor.css,v 1.10 2008/02/27 18:07:54 ufku Exp $*/
+
+.editor-container {
+  margin: 1px 0px;
+}
+.editor-text-button {
+  height: 22px;
+  font-size: 11px;
+  padding: 0px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  text-align: center;
+}
+.editor-image-button {}
+.editor-text-button, .editor-image-button {
+  margin: 1px;
+  border: 1px solid #ccc;
+  vertical-align: bottom;
+}
+.editor-text-button:hover, .editor-image-button:hover {
+  border-color: #ffcc66;
+}
+.editor-container .stay-clicked {
+  border-color: #f00;
+}
+
+/*.editor-popup tr.(head|body|odd|even) td.(title|close|content)*/
+.editor-popup {
+  z-index: 10;
+  position: absolute;
+  border: 1px solid #000;
+  font: 12px verdana;
+  width: auto;
+  text-align: left;
+}
+.editor-popup tr.head {
+  font-weight: bold;
+  border-top: none;
+  cursor: move;
+}
+.editor-popup tr.body {
+  border-bottom: none;
+}
+.editor-popup td.title {
+  font-size: 1.1em;
+  padding-right: 10px;
+}
+.editor-popup td.close {
+  text-align: right;
+  padding-right: 4px;
+}
+.editor-popup td.close a {
+  cursor: pointer;
+  font-size: 1.3em;
+}
+.editor-popup td.close a:hover {
+  text-decoration: none;
+}
+.editor-popup td.cnt {
+  padding: 0.3em 1.5em 0.3em 0.6em;
+}
+.editor-popup tbody {
+  border: none;
+}
+
+#editor-help {
+  min-width: 200px;
+  max-width: 400px;
+}
+
+/*Added with 6.x.*/
+.editor-container span.separator {
+  line-height: 24px;
+  font-size: 11px;
+  vertical-align: middle;
+  padding: 0px 1px;
+}
+.editor-container span.separator img {
+  vertical-align: middle;
+  margin: 2px 0px;
+}
+.editor-container div {
+  display: inline;
+}
+/*quickpop*/
+table#bue-quickpop {}
+#bue-quickpop a {
+  color: #444;
+}
+#bue-quickpop tr {
+  border: none;
+}

@@ -1,0 +1,35 @@
+<?php
+// $Id: dul.install,v 1.1.2.5 2009/05/03 16:28:56 kiam Exp $
+
+/**
+ * @file
+ * Installation file for Disable user language.
+ */
+
+/*****************************************************************************
+ * Drupal hooks.
+ ****************************************************************************/
+
+/**
+ * Implementation of hook_install().
+ */
+function dul_install() {
+  db_query("UPDATE {system} SET weight = 8 WHERE name = 'dul' AND type = 'module'");
+}
+
+/**
+ * Implementation of hook_update_N().
+ */
+function dul_update_6100() {
+  $ret[] = update_sql("UPDATE {system} SET weight = 8 WHERE name = 'dul' AND type = 'module'");
+  
+  return $ret;
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function dul_uninstall() {
+  db_query("DELETE FROM {variable} WHERE name LIKE 'dul\_%'");
+}
+

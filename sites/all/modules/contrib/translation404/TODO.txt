@@ -1,0 +1,19 @@
+(uses markdown styling)
+Known Bugs
+----------
+* If node is in lang neutral - t404 shouldn't show t404 page.
+
+Known Issues
+---------
+* Build CSS for the t404 page according to the right direction (rtl ltr).
+* implementing hook perm.
+* Make translation404.install to delete all module added vars and to write a message to the user in module enable/install. Tell about the support of i18n taxonomy and advanced help.
+
+More Features
+-------------
+* Translate interface to Hebrew.
+* Translate interface to Spanish.
+* Style t404 page.
+* Disable/Enable current language link on lang switcher.
+* Add permissions for specific module forms (node & taxonomy).
+* build advanced help with google code wiki info.

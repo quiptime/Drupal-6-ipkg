@@ -1,0 +1,225 @@
+<?php
+// $Id: translation404.module,v 1.4 2009/04/05 19:25:54 gavri Exp $ 
+/** 
+*@file 
+*translation404 module. 
+*/
+/*
+  TODO provide settings page for:
+  1. enable/disable _translation404_default_node_handeling.
+  1a. if 1 is enabled show choose if to enable this module for only node types taht are translatable or for all node types (maybe a checkbox would be nice for all content types).
+  2. chosing a differnt path for custom translation page not found (like 404 and 403 in drupal core).
+  3. add a coustom class to lang switcher when linking to tarnsaltion page not found
+  4. make the option to remove all togetger the lang switcher links that direct to tarnsaltion page not found
+  5. write permission handler for adminstrating the settings page
+  6. hook to advanced help
+  7. create a screencast
+*/
+/*
+  TODO disable hook_menu $items['translation_not_found']  if a differnt path was chosen
+*/
+/*
+  TODO write documenatation
+*/
+
+
+
+/** 
+ * Implementation of hook_perm(). 
+ */ 
+function translation404_perm() { 
+  return array('Administer Translation404'); 
+} 
+
+define('TRANSLATION_NOT_FOUND', "translation_not_found");
+/**
+ * Implementation of hook_init().
+ */
+function translation404_init() {
+  drupal_add_css(drupal_get_path('module', 'translation404') .'/translation404.css');
+}
+
+/**
+ * implementation of hook_menu()
+ */
+function translation404_menu() {
+  $items = array();
+  $items['translation_not_found'] = array(
+    'title' => 'Translation Not Found', 
+    'page callback' =>  '_translation_not_found_page',
+    'access callback' => TRUE, 
+    'type' => MENU_CALLBACK, 
+  );
+  $items['admin/settings/translation-page-not-found'] = array( 
+  'title' => 'Translation page not found settings', 
+  'description' => t('Set when and how Transnslation page not found appers.'), 
+  'page callback' => 'drupal_get_form', 
+  'page arguments' => array('translation404_admin_settings'),
+  'access callback' => 'user_access', 
+  'access arguments' => array('Administer Translation404'), 
+  'type' => MENU_NORMAL_ITEM, 
+  'file' => 'translation404.admin.inc', 
+  ); 
+  
+  return $items;
+}
+/**
+ * implementation of hook_theme()
+ */
+function translation404_theme($existing) {
+  return array(
+    'translation_not_found_page' => array(
+      'arguments' => array(),
+      'template' => 'translation404-page',
+    ),
+  );
+}
+/**
+ * implementation of theme_preprocess_translation_not_found_page()
+ */
+function  translation404_preprocess_translation_not_found_page(&$vars) {
+  $languages = language_list();
+  $vars['languages'] = $languages;
+  foreach ($languages as $language) {
+    $links = array(
+      'homepage' => array('title' => t('Go to home-page', array(), $language->language), 'href' => '<front>', 'language' => $language),
+      'prev' => array('title' => t('Go to previous page', array(), $language->language), 'href' => $_SERVER['HTTP_REFERER']),
+    );
+    //allow other modules to alter/add links to page
+    $more_links = translation404_invoke_translation_404('added_page_links', $links, $_SESSION['translation404_stored']);
+    $more_links_lang = array();
+    foreach ($more_links as $key => $more_link) {
+       $more_links_lang[$key] = $more_link;
+       //translate link title to the native language
+       $more_links_lang[$key]['title'] = t($more_link['title'], array(), $language->language);
+      if (!isset($more_link['language'])) {
+         $more_links_lang[$key]['language'] = $language;
+      }
+     
+    }
+    $links = array_merge($links, $more_links_lang);
+    //direction class for css
+    $direction = ($language->direction) ? 'rtl' : 'ltr';
+    $languages_info[$language->language]['direction_class'] = 'translation404-direction-'. $direction;
+    //The id for the wrapping div 
+    $languages_info[$language->language]['id'] = 'desc-'. $language->language;
+    //The language name in it's native language
+    $languages_info[$language->language]['native'] = $language->native;
+    //The description of the page - translated to it's native languge
+    $languages_info[$language->language]['page_desc'] = t('Currently this page does not have translation', array(), $language->language);
+    //
+    $languages_info[$language->language]['actions_title'] = t('Actions', array(), $language->language);
+    //This var pass the array of links so other preprocess function could theme the links differently
+    $languages_info[$language->language]['links'] = $links;
+    //The themed links
+    $languages_info[$language->language]['themed_links'] = theme('links', $links); 
+  }
+  $vars['languages_info'] = $languages_info;
+}
+/**
+ * implementation of hook_translation_link_alter()
+ * This is the main logic of this module
+ * to see how to implement the hook_translation404_translation
+ * see node_translation404 at translation404/modules/node.translation404.inc
+ * @see node_translation404()
+ */
+function translation404_translation_link_alter(&$links, $path) {
+  global $language;
+  /*
+  $new_links = module_invoke_all('translation404', $links, $path);
+  $links = array_merge($links, $new_links);
+  */
+  //
+  $info = translation404_invoke_translation_404('populate_links', $links, $path);
+  if ($info['stored']) {
+    $_SESSION['translation404_stored'] = $info['stored'];
+  }
+  $new_links = $info['links'];
+  $links = array_merge($links, $new_links);
+  foreach ($links as $langcode => $link) {
+      if ($langcode != $language->language) {
+        if ($links[$langcode]['href'] == TRANSLATION_NOT_FOUND) {
+          $links[$langcode]['href'] = "translation_not_found";
+          //dsm($links[$langcode]['href']);
+        }
+      }
+      else {
+        //this is for letting other modules that implement this to not care about the current lang checking
+        $links[$langcode]['href'] = $_GET['q'];
+      }
+    }
+}
+
+function _translation_not_found_page() {
+  //inspired from drupal_not_found
+  drupal_set_header('HTTP/1.1 404 Not Found');
+  $path = drupal_get_normal_path(variable_get('translation404_default_path', ''));
+  if ($path && $path != $_GET['q']) {
+    // Set the active item in case there are tabs to display, or other
+    // dependencies on the path.
+    menu_set_active_item($path);
+    $return = menu_execute_active_handler($path);
+  }
+ else {
+    //drupal_set_title(t('Page not found'));
+    $return = theme('translation_not_found_page');
+    
+  }
+  return $return;
+}
+
+
+/**
+ * taken from  node_invoke_nodeapi
+ *
+ */
+function translation404_invoke_translation_404($op, $a3 = NULL, $a4 = NULL) {
+  include_once(drupal_get_path('module', 'translation404') .'/modules/node.translation404.inc');
+  if (module_exists('i18ntaxonomy')) {
+    include_once(drupal_get_path('module', 'translation404') .'/modules/i18ntaxonomy.translation404.inc');
+  }
+  $return = array();
+  $implement_modules = variable_get('translation404_enable', _translation404_enable_default());
+  foreach (module_implements('translation404api') as $name) {
+    //only apply modules that are enabled threw settings
+    if ($implement_modules[$name] == $name) {  
+      $function = $name .'_translation404api';
+      $result = $function($op, $a3, $a4);
+      if (isset($result) && is_array($result)) {
+        $return = array_merge($return, $result);
+      }
+      else if (isset($result)) {
+        $return[] = $result;
+      }
+    }
+  }
+  return $return;
+}
+//
+function _translation404_enable_implemented_modules() {
+  include_once(drupal_get_path('module', 'translation404') .'/modules/node.translation404.inc');
+  if (module_exists('i18ntaxonomy')) {
+    include_once(drupal_get_path('module', 'translation404') .'/modules/i18ntaxonomy.translation404.inc');
+  }
+  foreach (module_implements('translation404api') as $name) {
+    $options[$name] = t('Enable @module_name for translation_404', array('@module_name' => $name));
+  }
+  $form['translation404_enable'] = array( 
+    '#title' => t('Enalble translation page not found for this modules'), 
+    '#type' => 'checkboxes', 
+    '#description' => (t('desc here.')), 
+    '#options' => $options,
+    '#default_value' =>  variable_get('translation404_enable', _translation404_enable_default()),
+  );
+  //add spesific setting by implemented modules
+  $settings_forms = translation404_invoke_translation_404('settings_form');
+  $form = array_merge($form, $settings_forms);
+  return $form;
+}
+function _translation404_enable_default() {
+  foreach (module_implements('translation404api') as $name) {
+    //by default enable all modules
+    $default_value[$name] = $name;
+  }
+  return $default_value;
+}

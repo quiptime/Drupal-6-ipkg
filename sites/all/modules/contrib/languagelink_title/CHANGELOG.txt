@@ -1,0 +1,4 @@
+$Id: CHANGELOG.txt,v 1.2 2009/06/05 16:23:33 tirsales Exp $
+
+by tirsales: Added README.txt and CHANGELOG.txt
+by tirsales: Initial module creation

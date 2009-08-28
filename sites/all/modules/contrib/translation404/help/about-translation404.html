@@ -1,0 +1,75 @@
+<p><em>About Translation-404 Module</em></p>
+
+<h1 id="project_overview">Project Overview</h1>
+
+<p><em>translation404</em> Is a Drupal 6 module. That address a usability problem when clicking on the core locale language switcher block of a content in a specific language that haven&#8217;t been translated yet.</p>
+
+<p>By default if a user clicks to choose a different language Drupal will redirect to the same content in the former language. I believe that if a content is set to a specific language (not language neutral is shouldn&#8217;t show the page but instead it should show a 404 page telling that this page is not translatable). 
+<em>translation404</em>  also provides some actions (links) to go from this 404 page - (e.g.. the former page the homepage or to actuality translate the page), and it does so on all enabled languages.</p>
+
+<h1 id="main_features">Main Features</h1>
+
+<ul>
+<li>Flexible Administration settings.</li>
+<li>theme customization.</li>
+<li>API for added functionality.</li>
+<li>Core node built in Integration.</li>
+<li>Taxonomy translation Integration (if <em>i18n module</em> is installed and the <em>i18ntaxonomy</em> module is enabled).</li>
+<li>Bi directional language integration.</li>
+<li>Hebrew Interface Translation.</li>
+</ul>
+
+<h1 id="flexible_administration_settings">Flexible Administration settings</h1>
+
+<p>After enabling the module you van customize some settings and the module settings page.
+First goto <em>admin/settings/translation-page-not-found</em>.</p>
+
+<ul>
+<li><p>On the first textfield you can set a different URL or the resulting page (similar to the way Drupal core is letting you to customize the path of regular 404 and 403 pages).
+<em>*Note:* By doing so you&#8217;ll override the theming and the added functionality the module provides (see next section).</em>
+*The second form element lets you decide on what modules you want to implement this module. By default this module is implemnted on the <em>core node module</em> and on <em>i18ntaxonomy module</em> (if it&#8217;s installed and enabled). You can decide to turn one or both of them off.</p>
+
+<p>This feature will also show other modules that implement <em>hook_Translation404api</em>_.</p></li>
+<li>The next elements are modul spesific setting - each module can implement its own settings - by default the node module provides setting to let the administrator decide on which content types to act.</li>
+</ul>
+
+<h1 id="theme_customization">theme customization</h1>
+
+<p>If you decided to leave the <em>Default Translation (not found) page:</em> blank you can take the advantage of theming the built in functionality of the translation 404  page (on path: <em>translation</em>not<em>found</em>) checkout the module theme implementation for more info and the <em>translation404-page.tpl.php</em> template file</p>
+
+<h1 id="api_for_added_functionality">API for added functionality.</h1>
+
+<p>The module&#8217;s API is achieved by a single hook - <em>hook_translation404api</em> this hook functionality is inspired by the core <em>hook_noedapi</em>. The module act according the $op variable that is passed to it. each module can implement one or more of the operations available this includes:</p>
+
+<ul>
+<li>&#8216;populate_links&#8217;</li>
+<li>&#8216;settings_form&#8217;</li>
+<li>&#8216;added_page_links&#8217;</li>
+</ul>
+
+<h2 id="op_8216populate_links8217">$op = &#8216;populate_links&#8217;</h2>
+
+<p>This &#8216;op&#8217; is responsible of producing the translation link alternation and specifies when and how to direct the link of other languages to the translation not found page. A developer don&#8217;t have to check specifically for the current language - the module will do that for him.
+This $op returns an array of the altered links and and and optional argument that is passed to the translation page and can be retrieved by the <em>&#8216;added</em>page<em>links&#8217;</em> operation. </p>
+
+<h2 id="op_8216settings_form8217">$op = &#8216;settings_form&#8217;</h2>
+
+<p>This &#8216;op&#8217; can pass specific settings <em>form_api</em> array to the module&#8217;s settings page.  each varibles taht are passed are treated as form setting variables and each module that implement them should be responsible of clearing those variables when uninstalling taht module (by implementing <em>hook_uninstall</em>).  </p>
+
+<h2 id="op_8216addedpagelinks8217">$op = &#8216;added<em>page</em>links&#8217;</h2>
+
+<p>This &#8216;op&#8217; can add links to the translation not found page (assuming the admin didn&#8217;t override the default page path in the module admin settings page)</p>
+
+<p><em>for a detailed full implementation have a look on the _modules/node.translation404.inc_ file</em></p>
+
+<h1 id="core_node_built_in_integration">Core node built in Integration.</h1>
+
+<p>The translation404 module Is not just and API it also provides the core node implementation by default.
+When the module is enabled it alters the locale language switcher links in case the current node type is translatable and not set to neutral language.
+if the node doesn&#8217;t have translation to  other enabled language it will redirect to the translation not found page. and will add to that page actions 
+a link to translate the node. (if permissions aloes -  user_access(&#8216;translate content&#8217;) is true).</p>
+
+<h1 id="taxonomy_translation_integration_">Taxonomy translation Integration </h1>
+
+<p>if the i18ntaxonnomy is enabled this module will address for vocabularies that are of the type of <em>Per language terms</em>.
+This module will also add link to the tarsnaltion not found to translate the given term (if permissions aloes -  user_access(&#8216;translate content&#8217;) is true).</p>

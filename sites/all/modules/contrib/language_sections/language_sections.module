@@ -1,0 +1,131 @@
+<?php
+// $Id:
+// Language Sections module for Drupal.
+// Contact: andy inman: drupal_dev(at)netgenius(dot)co(dot)uk
+// License: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+// Currently this .module file is compatible with both Drupal 5.x and 6.x
+
+// Implementation of hook_filter_tips()
+function language_sections_filter_tips($delta, $format, $long = false) {
+  $short_help = "Mark language-dependent sections with <strong>== lc ==</strong> where <em>lc</em> (or <em>lc-xx</em>) is a valid language code.  Use <em>qq</em> for <em>all languages.</em>";
+  $long_help = $short_help;
+  
+  return t($long? $long_help : $short_help);
+}
+
+// Get language code for current language (handles Drupal 5/6 compatibility).
+function _language_sections_get_language() {
+  $versions = explode('.', VERSION, 2);
+  switch($versions[0]) {
+    case 6:
+      global $language;
+      return $language->language;
+
+    default:
+      global $locale;
+      return $locale;
+  }
+}
+
+// Implementation of hook_filter()
+function language_sections_filter($op, $delta = 0, $format = -1, $text = '') {
+  // Define these to save space and help avoid typing errors below:
+  $mod_id = 'language_sections'; $mod_name = 'Language Sections';
+  // Define the prefix used for config values:
+  $prefix = $mod_id.'_'.$format.'_';
+  // Define the default pattern used to find matches:
+  $def_pattern = '/(=+ *([a-z]{2}|[a-z]{2}-[a-z]{2}) *=+\s?)(.*?)/';
+  
+  switch ($op) {
+    case 'process':
+      // Get settings, and reset the default pattern if needed:
+      $use_alt = variable_get($prefix.'alt', FALSE);
+      $pattern = $use_alt? variable_get($prefix.'pattern', $def_pattern) : $def_pattern;
+      $n1 = 2; $n2 = 2; $n3 = 4;  // indexes to use with array from preg_split().
+      $matches = preg_split($pattern, $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+
+      /************* debug *****************
+      // Display the contents of the array of substrings
+      $cr = "<br>\r\n";
+      $out = "pattern: " . $pattern . $cr;
+      $out .= "array: ";
+      for($i = 0; $i < count($matches); $i++) {
+        if ($matches[$i]) $out .= $i . ': {' . $matches[$i] . '}'. $cr; 
+      }
+      $out .= $cr."(end)".$cr;
+      return $out;
+      *************************************/
+
+      // Build the output string, keeping only the parts we want...
+      // Todo: A better preg pattern which avoids this step?
+      $current_language = _language_sections_get_language();
+      $out = $matches[0];
+      for($i = $n1; $i < count($matches); $i += $n3) {
+        if ($matches[$i] == $current_language || $matches[$i] == 'qq')  $out .= $matches[$i+$n2];
+      }
+      return $out;
+
+    case 'no cache':
+      return (variable_get($prefix.'cache', FALSE) == FALSE);
+
+    case 'list':
+      return array(0 => t($mod_name));
+            
+    case 'description':
+      return t('Allows you to define content for several languages in a single text area.');
+
+    case 'settings':
+      return _language_sections_settings($mod_id, $mod_name, $prefix, $def_pattern);
+                                                                                                                                                                      
+    default:
+      return $text;
+  }
+}
+
+function _language_sections_settings($mod_id, $mod_name, $prefix, $def_pattern) {
+  //require_once(dirname(__FILE__) . '/help.html');
+  $form[$mod_id] = array(
+    '#type' => 'fieldset',
+    '#title' => t($mod_name),
+    '#collapsible' => TRUE,
+  );
+
+  /*
+  $form[$mod_id]['help'] = array(
+    '#type' => 'markup',
+    '#value' => '<p>Help goes here.</p>',
+  );
+  */
+
+  $field = $prefix.'cache';
+  $form[$mod_id][$field] = array(
+    '#type' => 'checkbox',
+    '#title' => t("Allow caching"),
+    '#default_value' => variable_get($field, FALSE),
+    '#description' => t("Allow the filtered text to be cached by the Drupal core, which may improve site performance. NOTE: Depending on your site configuration, this may cause text for the wrong language to be displayed. Even if this is set, other modules might still prevent the text from being cached."),
+  );
+
+  $field = $prefix.'alt';
+  $use_alt = variable_get($field, FALSE);
+  $form[$mod_id][$field] = array(
+    '#type' => 'checkbox',
+    '#title' => t("Use alternative pattern"),
+    '#default_value' => $use_alt,
+    '#description' => t("If set, $mod_name can be defined using the pattern given below. Otherwise, the default pattern will be used."),
+  );
+  
+  $field = $prefix.'pattern';
+  $form[$mod_id][$field] = array(
+    '#type' => 'textfield',
+    '#title' => t("Alternative pattern"),
+    '#size' => 64,
+    '#maxlength' => 128,
+    '#default_value' => $use_alt? variable_get($field, $def_pattern) : $def_pattern,
+    '#description' => t("If enabled above, this pattern will be used for finding the $mod_name in the text. Initially, this is set to the $mod_name module's internal default. NOTE: You should not change the number of parenthesised groups in the expression."),
+  );
+
+  return $form;
+}
+
+// --- Drupal docs advise NOT closing PHP tags ---

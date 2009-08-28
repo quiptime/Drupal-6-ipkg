@@ -1,0 +1,11 @@
+<?php
+// $Id: languagelink_title.module,v 1.1 2009/06/05 16:15:52 tirsales Exp $
+
+/**
+ * Implementation of hook_translation_link_alter
+ */
+function languagelink_title_translation_link_alter(&$links, $path) {
+  foreach ( $links as $lang => $link ) {
+    $links[$lang]['attributes']['title'] = $links[$lang]['language']->native;
+  }
+}

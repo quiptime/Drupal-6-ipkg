@@ -1,0 +1,19 @@
+<?php
+// $Id: languagelink_title.install,v 1.1 2009/06/05 16:15:52 tirsales Exp $
+
+/**
+ * @file
+ * Install, update, and uninstall functions for Language Links Title.
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function languagelink_title_install() {
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function languagelink_title_uninstall() {
+}

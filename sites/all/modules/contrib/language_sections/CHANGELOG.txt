@@ -1,0 +1,31 @@
+$Id:
+
+Tue 17 Jun 2008 13:17:56 CEST
+
+Added Drupal 6 compatibility. Currently the same .module file handles both Drupal 5 and 6 internally, only the .info files are different.
+Minor tidy-up of text messages.
+
+Sun 15 Jun 2008 17:23:57 CEST 
+Tweaked for more correct handling of white-space.
+So, can now handle substitution on a single line, e.g:
+This is =en= English =es= Spanish =qq= text.
+
+Fri 13 Jun 2008 21:06:16 CEST
+"no cache" option logic reversed - changed to "cache", i.e. defaults to
+"no cache" due to caching problems reported in http://drupal.org/node/269280
+
+Wed 09 Apr 2008 00:27:07 CEST 
+Added configuration options to set "no cache" and "alternative pattern".
+ 
+Mon 07 Apr 2008 01:30:43 CEST 
+.info file - Moved to package "Multilanguage"
+To release as 1.2 final
+
+Thu 03 Apr 2008 11:31:30 CEST 
+To release as 1.2-BETA1
+
+Thu 03 Apr 2008 08:49:37 CEST 
+Minor fix: loop < count($matches) was <=
+Code layout changes for Drupal coding standards.
+
+

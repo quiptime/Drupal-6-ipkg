@@ -1,0 +1,105 @@
+/* $Id: blue.css,v 1.2 2009/04/03 22:18:06 jrglasgow Exp $ */
+h1, h2, h3, h4, h5, h6 {
+  font-family:"Myriad Pro","Helvetica","Arial",sans-serif;
+  color:#334a5b !important;
+}
+
+.links {
+  font-size:90%;
+}
+
+div.blog h1.title {
+  display: none;
+}
+
+div.box h2 {
+  font-size: 125%;
+  font-weight: normal;
+  border-top: 1px dotted #cccccc;
+  margin-top: 2em;
+}
+
+hr {
+  color: #fff; 
+  background-color: #fff; 
+  border: 1px dotted #cccccc; 
+  border-style: none none dotted; 
+}
+
+
+div.archive li {
+  list-style: none;
+}
+
+span.read-more {
+  text-align:right;
+  float:right;
+}
+
+body {
+  color: #333333;
+  background-color: #AEB1A2;
+  background-image: url('../images/bg_pattern_brown.jpg');
+  background-repeat: repeat;
+}
+
+tr.odd {
+  background: #F5F5E9;
+}
+
+tr.even {
+  background: #EEF9F4;
+}
+
+#section2 {
+   background: #1f1f1f;
+   color:#c7c7c7;
+   padding:0 8px;
+}
+
+#primary a.active,
+#secondary a.active {
+  color: #CDCD8F;
+}
+
+a:link,
+a:visited,
+a:hover,
+.title, .title a,
+.submitted,
+.links,
+.node .taxonomy,
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age,
+#forum td .name,
+div.admin-panel .description {
+  color: #6c8292;
+}
+
+#section2 .title,
+#section2 .title a {
+   color: #fff;
+}
+
+#section2 a:link,
+#section2 a:visited,
+#section2 a.hover {
+   color: #fff;
+}
+
+#header {
+  background: #6c8292 url(../images/blue/header.gif) 0 0 repeat-x;
+}
+
+#mission,
+div.admin-panel h3 {
+  background-color: #3F3F3F;
+}
+
+#secondary-links a {
+color:#6c8292;
+}
+
+#secondary-links li {
+border-left:1px solid #6c8292;
+padding:0 0.5em 0 0.7em;
+}

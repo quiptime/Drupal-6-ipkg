@@ -1,0 +1,75 @@
+_About Translation-404 Module_
+
+Project Overview
+================
+
+_translation404_ Is a Drupal 6 module. That address a usability problem when clicking on the core locale language switcher block of a content in a specific language that haven't been translated yet.
+
+By default if a user clicks to choose a different language Drupal will redirect to the same content in the former language. I believe that if a content is set to a specific language (not language neutral is shouldn't show the page but instead it should show a 404 page telling that this page is not translatable). 
+_translation404_  also provides some actions (links) to go from this 404 page - (e.g.. the former page the homepage or to actuality translate the page), and it does so on all enabled languages.
+
+Main Features
+=============
+  * Flexible Administration settings.
+  * theme customization.
+  * API for added functionality.
+  * Core node built in Integration.
+  * Taxonomy translation Integration (if _i18n module_ is installed and the _i18ntaxonomy_ module is enabled).
+  * Bi directional language integration.
+  * Hebrew Interface Translation.
+
+
+Flexible Administration settings
+================================
+
+After enabling the module you van customize some settings and the module settings page.
+First goto _admin/settings/translation-page-not-found_.
+
+  * On the first textfield you can set a different URL or the resulting page (similar to the way Drupal core is letting you to customize the path of regular 404 and 403 pages).
+_*Note:* By doing so you'll override the theming and the added functionality the module provides (see next section)._
+  *The second form element lets you decide on what modules you want to implement this module. By default this module is implemented on the _core node module_ and on _i18ntaxonomy module_ (if it's installed and enabled). You can decide to turn one or both of them off.
+  
+  This feature will also show other modules that implement _hook\_Translation404api__.
+  * The next elements are module specific setting - each module can implement its own settings - by default the node module provides setting to let the administrator decide on which content types to act.
+
+theme customization
+====================
+
+If you decided to leave the _Default Translation (not found) page:_ blank you can take the advantage of theming the built in functionality of the translation 404  page (on path: _translation_not_found_) checkout the module theme implementation for more info and the _translation404-page.tpl.php_ template file
+
+API for added functionality.
+============================
+The module's API is achieved by a single hook - _hook\_translation404api_ this hook functionality is inspired by the core _hook\_noedapi_. The module act according the $op variable that is passed to it. each module can implement one or more of the operations available this includes:
+  
+  * 'populate_links'
+  * 'settings_form'
+  * 'added\_page\_links'
+
+$op = 'populate_links'
+----------------------
+This 'op' is responsible of producing the translation link alternation and specifies when and how to direct the link of other languages to the translation not found page. A developer don't have to check specifically for the current language - the module will do that for him.
+This $op returns an array of the altered links and and and optional argument that is passed to the translation page and can be retrieved by the _'added_page_links'_ operation. 
+
+$op = 'settings_form'
+---------------------
+This 'op' can pass specific settings _form\_api_ array to the module's settings page.  each variables that are passed are treated as form setting variables and each module that implement them should be responsible of clearing those variables when uninstalling that module (by implementing _hook\_uninstall_).  
+
+$op = 'added_page_links'
+------------------------
+This 'op' can add links to the translation not found page (assuming the admin didn't override the default page path in the module admin settings page)
+
+*for a detailed full implementation have a look on the _modules/node.translation404.inc_ file*
+   
+Core node built in Integration.
+===============================
+The translation404 module Is not just and API it also provides the core node implementation by default.
+When the module is enabled it alters the locale language switcher links in case the current node type is translatable and not set to neutral language.
+if the node doesn't have translation to  other enabled language it will redirect to the translation not found page. and will add to that page actions 
+a link to translate the node. (if permissions aloes -  user_access('translate content') is true).
+
+Taxonomy translation Integration 
+================================
+if the i18ntaxonnomy is enabled this module will address for vocabularies that are of the type of _Per language terms_.
+This module will also add link to the translation not found to translate the given term (if permissions aloes -  user_access('translate content') is true).
+
+

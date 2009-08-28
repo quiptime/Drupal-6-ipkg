@@ -1,0 +1,13 @@
+/* begin Menu */
+.nav .r
+{
+	clip: rect(auto auto auto 874px);
+}
+/* end Menu */
+
+/* begin MenuItem */
+.artmenu a .r
+{
+	clip: rect(auto auto auto 401px);
+}
+/* end MenuItem */

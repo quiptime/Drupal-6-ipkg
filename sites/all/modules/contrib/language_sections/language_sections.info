@@ -1,0 +1,21 @@
+; $Id:
+name = Language sections
+description = An input filter which allows you to define content for several languages in a single text area.
+package = "Multilingual"
+
+; The .module currently supports both Drupal 5 and 6, but this .info file needs to be changed:
+
+; --- Drupal 5.x ---
+; dependencies = filter locale
+
+; --- Drupal 6.x ---
+dependencies[] = locale
+core = 6.x
+
+
+; Information added by drupal.org packaging script on 2008-06-19
+version = "6.x-1.4"
+core = "6.x"
+project = "language_sections"
+datestamp = "1213881922"
+

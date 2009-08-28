@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: translation404\n"
+"POT-Creation-Date: 2009-03-06 13:19+0200\n"
+"PO-Revision-Date: 2009-03-06 13:29+0200\n"
+"Last-Translator: Gavri <gavri@linnovate.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: translation404.admin.inc:24
+msgid "Default Translation (not found) page"
+msgstr ""
+
+#: translation404.admin.inc:27
+msgid "This page is displayed when no other content matches the requested document. If unsure, specify nothing."
+msgstr ""
+
+#: translation404.module:43
+msgid "Set when and how Transnslation page not found appers."
+msgstr ""
+
+#: translation404.module:72
+msgid "Go to home-page"
+msgstr ""
+
+#: translation404.module:73
+msgid "Go to previous page"
+msgstr ""
+
+#: translation404.module:93
+msgid "Currently this page does not have translation"
+msgstr " זמנית לדף המבוקש אין תרגום"
+
+#: translation404.module:95
+msgid "Actions"
+msgstr ""
+
+#: translation404.module:187
+msgid "Enable @module_name for transalion_404"
+msgstr ""
+
+#: translation404.module:191
+msgid "Enalble translation page not found for this modules"
+msgstr ""
+
+#: translation404.module:193
+msgid "desc here."
+msgstr ""
+
+#: translation404.module:36
+msgid "Translation Not Found"
+msgstr ""
+
+#: translation404.module:42
+msgid "Translation page not found settings"
+msgstr ""
+
+#: translation404.module:0
+msgid "translation404"
+msgstr ""
+
+#: translation404.info:0
+msgid "Translation404"
+msgstr ""
+
+#: translation404.info:0
+msgid "Handle non existing links in the locale language switcher block."
+msgstr ""
+
+#: translation404.info:0
+msgid "Multilanguage"
+msgstr ""
+
+#: modules/node.translation404.inc:51
+msgid "Only on translatable node types"
+msgstr ""
+
+#: modules/node.translation404.inc:52
+msgid "On all node types"
+msgstr ""
+
+#: modules/node.translation404.inc:56
+msgid "Choose on whith node types to act"
+msgstr ""
+
+#: modules/node.translation404.inc:59
+msgid "explain here. (Only metters if Enable node control checkbox is checked)"
+msgstr ""
+
+#: modules/node.translation404.inc:68
+msgid "Translate this node"
+msgstr ""
+

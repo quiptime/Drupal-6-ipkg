@@ -1,6 +1,8 @@
 <?php
 // $Id: seo.profile, v 1.0 2009/08/26 15:44:21 quiptime Exp $
 
+include_once('./profiles/profiles_includes/profile_functions.inc');
+
 /**
  * Return an array of the modules to be enabled when this profile is installed.
  * Furthermore, additional modules downloaded and installed.
@@ -9,6 +11,8 @@
  *   An array of modules to enable.
  */
 function seo_profile_modules() {
+  $profile = 'seo';
+
   // Enable core modules.
   $core_modules = array(
     // Required core modules.
@@ -43,7 +47,7 @@ function seo_profile_modules() {
   );
 
   // Additional module packages to download.
-  $contrib_packages = _seo_contrib_modules();
+  $contrib_packages = _seo_contrib_modules($profile);
 
   include_once('./profiles/profiles_includes/get_files.inc');
 
@@ -53,7 +57,7 @@ function seo_profile_modules() {
   $ignore['beta'] = FALSE;
   $ignore['dev'] = TRUE;
 
-  $inst_mods = profile_download_files('seo', 'modules', array_keys($contrib_packages), $ignore, 6);
+  $inst_mods = profile_download_files($profile, 'modules', array_keys($contrib_packages), $ignore, 6);
 
   // Return only module arrays to enable.
   return array_merge($core_modules, $contributed_modules);
@@ -68,10 +72,11 @@ function seo_profile_modules() {
  *   language-specific profiles.
  */
 function seo_profile_details() {
+  $profile = 'seo';
 
   // Collapsible fieldsets with modules and themes information to display on the profile overview page.
-  $contrib_modules = _seo_contrib_modules();
-  $own_modules = _seo_own_modules();
+  $contrib_modules = _seo_contrib_modules($profile);
+  $own_modules = _profile_own_modules($profile);
 
   $other_modules = array_merge($contrib_modules, $own_modules);
   //natcasesort($other_modules);
@@ -93,7 +98,7 @@ function seo_profile_details() {
   $modules_info = theme('fieldset', $modules_fieldset);
 
   // Optional modules
-  $optional_modules = _seo_optional_modules();
+  $optional_modules = _seo_optional_modules($profile);
 
   $opt_modules_list = '<ul>';
   foreach ($optional_modules as $module => $module_name) {
@@ -111,7 +116,7 @@ function seo_profile_details() {
   $opt_modules_info = theme('fieldset', $opt_modules_fieldset);
 
   // Optional themes.
-  $optional_themes = _seo_optional_themes();
+  $optional_themes = _profile_optional_themes($profile);
   $themes_list = '<ul>';
   foreach ($optional_themes as $theme => $theme_name) {
     $themes_list .= '<li>'. $theme_name .'</li>';
@@ -356,6 +361,8 @@ function _install_seo_theme_batch_finished($success, $results) {
  * Form API array definition for site configuration.
  */
 function seo_optional_modules_form(&$form_state, $url) {
+  $profile = 'seo';
+
   $form['optional_modules'] = array(
     '#type' => 'fieldset',
     '#title' => st('Optional modules'),
@@ -365,7 +372,7 @@ function seo_optional_modules_form(&$form_state, $url) {
   $form['optional_modules']['ipkg_modules'] = array(
     '#type' => 'checkboxes',
     '#title' => st('Optional modules'),
-    '#options' => _seo_optional_modules(),
+    '#options' => _seo_optional_modules($profile),
   );
   $form['continue_modules'] = array(
     '#type' => 'submit',
@@ -408,6 +415,8 @@ function seo_optional_modules_form_submit($form, &$form_state) {
  * Form API array definition for site configuration.
  */
 function seo_optional_themes_form(&$form_state, $url) {
+  global $profile;
+
   $form['optional_themes'] = array(
     '#type' => 'fieldset',
     '#title' => st('Optional themes'),
@@ -417,7 +426,7 @@ function seo_optional_themes_form(&$form_state, $url) {
   $form['optional_themes']['ipkg_themes'] = array(
     '#type' => 'checkboxes',
     '#title' => st('Optional themes'),
-    '#options' => _seo_optional_themes(),
+    '#options' => _profile_optional_themes($profile),
   );
   $form['continue_themes'] = array(
     '#type' => 'submit',
@@ -462,35 +471,10 @@ function seo_optional_themes_form_submit($form, &$form_state) {
  * @return
  *   An array contain the additional contributed modules.
  */
-function _seo_contrib_modules() {
-  return array(
-    // "Advanced help" is required by "Chaos tool suite"
-    'advanced_help' => l('Advanced help', 'http://drupal.org/project/advanced_help', _seo_get_link_attr()),
-    'cck' => l('Content Construction Kit (CCK)', 'http://drupal.org/project/cck', _seo_get_link_attr()),
-    'ctools' => l('Chaos tool suite', 'http://drupal.org/project/ctools', _seo_get_link_attr()),
-    'filefield' => l('FileField', 'http://drupal.org/project/filefield', _seo_get_link_attr()),
+function _seo_contrib_modules($profile) {
+  $contrib_modules = _profile_contrib_modules($profile);
 
-    'alinks' => l('Alinks', 'http://drupal.org/project/alinks', _seo_get_link_attr()),
-    'google_analytics' => l('Google Analytics', 'http://drupal.org/project/google_analytics', _seo_get_link_attr()),
-    'imageapi' => l('ImageAPI', 'http://drupal.org/project/imageapi', _seo_get_link_attr()),
-    'imagecache' => l('ImageCache', 'http://drupal.org/project/imagecache', _seo_get_link_attr()),
-    'imagefield' => l('ImageField', 'http://drupal.org/project/imagefield', _seo_get_link_attr()),
-    'link' => l('Link', 'http://drupal.org/project/link', _seo_get_link_attr()),
-    'linkchecker' => l('Link checker', 'http://drupal.org/project/linkchecker', _seo_get_link_attr()),
-    'nodewords' => l('Meta Tags', 'http://drupal.org/project/nodewords', _seo_get_link_attr()),
-    'nodewords_bypath' => l('Meta Tags by Path', 'http://drupal.org/project/nodewords_bypath', _seo_get_link_attr()),
-    'nodewords_nodetype' => l('Meta Tags Node Type', 'http://drupal.org/project/nodewords_nodetype', _seo_get_link_attr()),
-    'seo_checklist' => l('SEO hecklist', 'http://drupal.org/project/seo_checklist', _seo_get_link_attr()),
-    'similar' => l('Similar', 'http://drupal.org/project/similar', _seo_get_link_attr()),
-
-    'token' => l('Token', 'http://drupal.org/project/token', _seo_get_link_attr()),
-    'panels' => l('Panels', 'http://drupal.org/project/panels', _seo_get_link_attr()),
-    'views' => l('Views', 'http://drupal.org/project/views', _seo_get_link_attr()),
-    // Skinr is required from theme acquia_prosper.
-    'skinr' => l('Skinr', 'http://drupal.org/project/skinr', _seo_get_link_attr()),
-    // Transliteration is required from ImageCache and ImageCache UI.
-    'transliteration' => l('Transliteration', 'http://drupal.org/project/transliteration', _seo_get_link_attr()),
-  );
+  return $contrib_modules;
 }
 
 /**
@@ -499,70 +483,10 @@ function _seo_contrib_modules() {
  * @return
  *   An array contain the optional contributed modules.
  */
-function _seo_optional_modules() {
-  return array(
-    'content_profile' => l('Content Profile', 'http://drupal.org/project/content_profile', _seo_get_link_attr()),
-    'logintoboggan' => l('LoginToboggan', 'http://drupal.org/project/logintoboggan', _seo_get_link_attr()),
+function _seo_optional_modules($profile) {
+  $optional_modules = _profile_optional_modules($profile);
 
-    'simplenews' => l('Simplenews', 'http://drupal.org/project/simplenews', _seo_get_link_attr()),
-    'simplenews_register' => l('Simplenews on register', 'http://drupal.org/project/simplenews_register', _seo_get_link_attr()),
-
-    'bueditor' => l('BUEditor', 'http://drupal.org/project/bueditor', _seo_get_link_attr()),
-    'imce' => l('IMCE', 'http://drupal.org/project/imce', _seo_get_link_attr()) .' '.'Recommended for BUEditor - insert images.',
-    'imce_mkdir' => l('IMCE Mkdir', 'http://drupal.org/project/imce_mkdir', _seo_get_link_attr()),
-
-    'pathauto' => l('Pathauto', 'http://drupal.org/project/pathauto', _seo_get_link_attr()),
-    'views_bonus' => l('Views Bonus Pack', 'http://drupal.org/project/views_bonus', _seo_get_link_attr()),
-    'fivestar' => l('Fivestar', 'http://drupal.org/project/fivestar', _seo_get_link_attr()),
-    'votingapi' => l('Voting API', 'http://drupal.org/project/votingapi', _seo_get_link_attr()) .' '.'Needed by "Fivestar"!',
-    'flatcomments' => l('Flatcomments', 'http://drupal.org/project/flatcomments', _seo_get_link_attr()),
-
-    'node_expire' => l('Node Expire', 'http://drupal.org/project/node_expire', _seo_get_link_attr()),
-    'rules' => l('Rules', 'http://drupal.org/project/rules', _seo_get_link_attr()) .' '.'Needed by "Node Expire"!',
-
-    'acl' => l('ACL', 'http://drupal.org/project/acl', _seo_get_link_attr()) .' '.'Needed by "Forum Access" and optional by "Content Access"!',
-    'content_access' => l('Content Access', 'http://drupal.org/project/content_access', _seo_get_link_attr()),
-    'forum_access' => l('Forum Access', 'http://drupal.org/project/forum_access', _seo_get_link_attr()),
-    'taxonomy_access' => l('Taxonomy Access Control', 'http://drupal.org/project/taxonomy_access', _seo_get_link_attr()),
-
-    'coder' => l('Coder', 'http://drupal.org/project/coder', _seo_get_link_attr()),
-    'devel' => l('Devel', 'http://drupal.org/project/develhttp://drupal.org/project/devel', _seo_get_link_attr()),
-    'masquerade' => l('Masquerade', 'http://drupal.org/project/masquerade', _seo_get_link_attr()),
-  );
-}
-
-/**
- * Define own, not contributed modules, will be install.
- *
- * @return
- *   An array contain the own (not contributed) modules.
- */
-function _seo_own_modules() {
-  return array(
-    'explorer8_modus' => l('Explorer8 modus', 'http://www.quiptime.com/downloads', _seo_get_link_attr()) .' '.'(Quiptime Group module)',
-  );
-}
-
-/**
- * Define the additional themes to download.
- * @return
- *   An array with the additional themes.
- */
-function _seo_optional_themes() {
-  return array(
-    'a3_atlantis' => l('A3 Atlantis', 'http://drupal.org/project/a3_atlantis', _seo_get_link_attr()),
-    'acquia_marina' => l('Acquia Marina', 'http://drupal.org/project/acquia_marina', _seo_get_link_attr()),
-    'acquia_prosper' => l('Acquia Prosper', 'http://drupal.org/project/acquia_prosper', _seo_get_link_attr()),
-    'acquia_slate' => l('Acquia Slate', 'http://drupal.org/project/acquia_slate', _seo_get_link_attr()),
-    'fourseasons' => l('Four Seasons', 'http://drupal.org/project/fourseasons', _seo_get_link_attr()),
-    'fusion' => l('Fusion', 'http://drupal.org/project/fusion', _seo_get_link_attr()) .' '.'Needed by Acquia Prosper!',
-    'litejazz' => l('LiteJazz', 'http://demo.roopletheme.com/litejazz', _seo_get_link_attr()),
-    'newsflash' => l('NewsFlash', 'http://demo.roopletheme.com/newsflash/', _seo_get_link_attr()),
-    'radiant' => l('Radiant', 'http://drupal.org/project/radiant', _seo_get_link_attr()),
-    'rootcandy' => l('RootCandy', 'http://drupal.org/project/rootcandy', _seo_get_link_attr()),
-    'simply_modern' => l('Simply Modern', 'http://drupal.org/project/simply_modern', _seo_get_link_attr()),
-    'zeropoint' => l('Zeropoint', 'http://drupal.org/project/zeropoint', _seo_get_link_attr()),
-  );
+  return $optional_modules;
 }
 
 /**
@@ -587,7 +511,7 @@ function _seoprofile_modify_settings() {
   variable_set('views_no_hover_links', '1');
 
   // Set a default footer message.
-  variable_set('site_footer', '<div id="ipkg-info">2009 '. l('Quiptime Group', 'http://www.quiptime.com', array('attributes' => array('target' => '_blank'))) .' Drupal installer</div>');
+  _profile_set_footer();
 }
 
 /**
@@ -662,43 +586,11 @@ function seo_form_alter(&$form, $form_state, $form_id) {
     // Set default for administrator account name.
     $form['admin_account']['account']['name']['#default_value'] = 'admin';
     // Important Installer information.
-    $information = '<h3>'. st('Task') .'</h3>';
-    $information .= '<p>'. st('Once Drupal is installed, you have to realize an important task!') .'</p>';
-    $information .= '<p><strong>'. st('All with this installer installed directories and files, modules and themes, that will have to correct permissions.') .'</strong></p>';
-    $information .= '<p>'. st('With permissions is meant: Who is the owner and group?') .'</p>';
-    $information .= '<p>'. st('Simple test to check: Compare the file "install.php" with these directories and their files in it.') .'</p>';
-    $information .= '<p>'. st('Installation directories:') .'</p>';
-    $information .= '<ul><li>'.'sites/all/modules/contrib'.'</li>';
-    $information .= '<li>'.'sites/all/themes'.'</li></ul>';
-    $information .= '<h3>'. st('Tipp') .'</h3>';
-    $information .= '<p>'. st('Shared web host providers usually have a tool to realize this task in a web account.') .'</p>';
-    $information .= '<p>'.'Linux ssh/shell:'.'</p>';
-    $information .= '<p>'.'chown -R correct_owner:correct_group sites/all/modules/contrib'.'<br />';
-    $information .= 'chown -R correct_owner:correct_group sites/all/themes'.'</p>';    $form['post_install'] = array(
-      '#type' => 'fieldset',
-      '#title' => st('IMPORTANT information'),
-      '#collapsible' => FALSE,
-      '#collapsed' => FALSE,
-    );
-    $form['post_install']['information'] = array(
-      '#type' => 'markup',
-      '#value' => $information,
-    );
+    $form = _profile_form_alter_important_info($form);
   }
-}
-
-/**
- * Help funtion.
- *
- * @return
- *   An array with link attributes.
- */
-function _seo_get_link_attr() {
-  return array('attributes' => array('target' => '_blank'));
 }
 
 /**
  * Profile required JS.
  */
-drupal_add_js('misc/jquery.js');
-drupal_add_js('profiles/profiles_includes/ipkg_manager.js');
+_profile_required_js();

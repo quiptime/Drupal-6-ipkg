@@ -1,0 +1,5 @@
+$Id: INSTALL.txt,v 1.1 2009/06/05 16:23:33 tirsales Exp $
+
+1. Place this module directory in your modules folder (this will
+   usually be "sites/all/modules/").
+2. Go to "administer" -> "modules" and enable the module.
