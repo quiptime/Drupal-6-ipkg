@@ -662,20 +662,19 @@ function seo_form_alter(&$form, $form_state, $form_id) {
     // Set default for administrator account name.
     $form['admin_account']['account']['name']['#default_value'] = 'admin';
     // Important Installer information.
-    $information = '<h3>'.'Task'.'</h3>';
-    $information .= '<p>'.'Once Drupal is installed, you have to realize an important task!'.'</p>';
-    $information .= '<p><strong>'.'All with this installer installed directories and files, modules and themes, that will have to correct permissions.'.'</strong></p>';
-    $information .= '<p>'.'With permissions is meant: Who is the owner and group?'.'</p>';
-    $information .= '<p>'.'Simple test to check: Compare the file "install.php" with these directories and their files in it.'.'</p>';
-    $information .= '<p>'.'Installation directories:'.'</p>';
+    $information = '<h3>'. st('Task') .'</h3>';
+    $information .= '<p>'. st('Once Drupal is installed, you have to realize an important task!') .'</p>';
+    $information .= '<p><strong>'. st('All with this installer installed directories and files, modules and themes, that will have to correct permissions.') .'</strong></p>';
+    $information .= '<p>'. st('With permissions is meant: Who is the owner and group?') .'</p>';
+    $information .= '<p>'. st('Simple test to check: Compare the file "install.php" with these directories and their files in it.') .'</p>';
+    $information .= '<p>'. st('Installation directories:') .'</p>';
     $information .= '<ul><li>'.'sites/all/modules/contrib'.'</li>';
     $information .= '<li>'.'sites/all/themes'.'</li></ul>';
-    $information .= '<h3>'.'Tipp'.'</h3>';
-    $information .= '<p>'.'Shared web host providers usually have a tool to realize this task in a web account.'.'</p>';
+    $information .= '<h3>'. st('Tipp') .'</h3>';
+    $information .= '<p>'. st('Shared web host providers usually have a tool to realize this task in a web account.') .'</p>';
     $information .= '<p>'.'Linux ssh/shell:'.'</p>';
     $information .= '<p>'.'chown -R correct_owner:correct_group sites/all/modules/contrib'.'<br />';
-    $information .= 'chown -R correct_owner:correct_group sites/all/themes'.'</p>';
-    $form['post_install'] = array(
+    $information .= 'chown -R correct_owner:correct_group sites/all/themes'.'</p>';    $form['post_install'] = array(
       '#type' => 'fieldset',
       '#title' => st('IMPORTANT information'),
       '#collapsible' => FALSE,
