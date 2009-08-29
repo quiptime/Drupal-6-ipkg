@@ -515,6 +515,8 @@ function _standard_i18nprofile_modify_settings() {
  * Set the content types for this profile.
  */
 function _standard_i18nprofile_set_content_types() {
+  global $language;
+
   // Insert default user-defined node types into the database. For a complete
   // list of available node type attributes, refer to the node type API
   // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
@@ -554,6 +556,9 @@ function _standard_i18nprofile_set_content_types() {
 
   // Disable "Promoted to front page" for article.
   variable_set('node_options_article', array('status'));
+
+  // Add a node describing how to get started with Drupal.
+  _profile_add_describing_node('standard_i18n', $language);
 }
 
 /**
