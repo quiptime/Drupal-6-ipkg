@@ -169,7 +169,7 @@ function standard_profile_task_list() {
     'default_logo' => 0,
   //  'logo_path' => 'profiles/foobar.png',
   );
-  $conf['site_name'] = 'Quiptime Group Drupal installer';
+  $conf['site_name'] = 'Drupal 6 ipkg';
   $conf['site_footer'] = 'Quiptime Group Drupal installer - profile Standard';
 
   $tasks = array(

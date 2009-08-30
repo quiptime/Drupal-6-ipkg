@@ -142,7 +142,7 @@ function standard_i18n_profile_details() {
   $profile_info = theme('fieldset', $profile_fieldset);
 
   // Profile description.
-  $description = 'Select this profile to enable some Drupal functionality, advanced multilanguage features, the default and optional themes.' . '<br />';
+  $description = st('Select this profile to enable some Drupal functionality, advanced multilanguage features, the default and optional themes.') . '<br />';
   $description .= $profile_info;
 
   return array(
@@ -166,7 +166,7 @@ function standard_i18n_profile_task_list() {
     'default_logo' => 0,
   //  'logo_path' => 'profiles/foobar.png',
   );
-  $conf['site_name'] = 'Quiptime Group Drupal installer';
+  $conf['site_name'] = 'Drupal 6 ipkg';
   $conf['site_footer'] = 'Quiptime Group Drupal installer - profile Standard i18n';
 
   $tasks = array(

@@ -144,7 +144,7 @@ function seo_profile_details() {
 
 
   // Profile description.
-  $description = 'Select this profile to enable some Drupal functionality, SEO modules, default and optional themes.' . '<br />';
+  $description = st('Select this profile to enable some Drupal functionality, SEO modules, default and optional themes.') . '<br />';
   $description .= $profile_info;
 
   return array(
@@ -168,7 +168,7 @@ function seo_profile_task_list() {
     'default_logo' => 0,
   //  'logo_path' => 'profiles/foobar.png',
   );
-  $conf['site_name'] = 'Quiptime Group Drupal installer';
+  $conf['site_name'] = 'Drupal 6 ipkg';
   $conf['site_footer'] = 'Quiptime Group Drupal installer - profile SEO';
 
   $tasks = array(

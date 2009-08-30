@@ -1528,8 +1528,8 @@ msgid "Additional: It will be installed. Optional: You can later choose to insta
 msgstr "Zusätzlich: Wird installiert. Optional: Sie können später wählen um zu installieren."
 
 #: profiles/standard/standard.profile:
-msgid "Select this profile to enable some Drupal functionality, additional modules, the default and optional themes."
-msgstr "Wählen Sie dieses Profil um verschiedene Drupalfunktionen, zusätzliche Module, das Standard- und optionale Themen zu aktivieren."
+msgid "Select this profile to enable some Drupal functionality, advanced multilanguage features, the default and optional themes."
+msgstr "Wählen Sie dieses Profil um verschiedene Drupalfunktionen, erweiterte Mehrsprachen-Funktionalitäten, das Standard- und optionale Themen zu aktivieren."
 
 #: profiles/standard/standard.profile:
 msgid "Standard"
