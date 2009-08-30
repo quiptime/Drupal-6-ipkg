@@ -97,8 +97,10 @@ function _profile_optional_modules($profile) {
     'forum_access' => l('Forum Access', 'http://drupal.org/project/forum_access', _profile_get_link_attr()),
     'taxonomy_access' => l('Taxonomy Access Control', 'http://drupal.org/project/taxonomy_access', _profile_get_link_attr()),
 
+    'db_maintenance' => l('DB Maintenance', 'http://drupal.org/project/db_maintenance', _profile_get_link_attr()),
     'coder' => l('Coder', 'http://drupal.org/project/coder', _profile_get_link_attr()),
     'devel' => l('Devel', 'http://drupal.org/project/develhttp://drupal.org/project/devel', _profile_get_link_attr()),
+    'Teleport' => l('Teleport', 'http://drupal.org/project/teleport', _profile_get_link_attr()),
     'masquerade' => l('Masquerade', 'http://drupal.org/project/masquerade', _profile_get_link_attr()),
   );
 
