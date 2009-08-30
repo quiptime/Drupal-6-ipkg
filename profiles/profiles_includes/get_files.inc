@@ -47,15 +47,15 @@ function profile_download_files($profile, $op = 'modules', $files_list = array()
 
   // Organize error messages output.
   $error_message = array();
-  $string_2 = 'Please define the rights (755 or 777) for this directory.';
+  $string_2 = st('Please define the write permissions (775 or 777) for this directory.');
   if (!is_writeable($m_dir)) {
-    $error_message[] = preg_replace("/^\.\//", '', $m_dir) .' '.'is not writeable';
+    $error_message[] = preg_replace("/^\.\//", '', $m_dir) .' '. st('is not writeable');
   }
   if (!is_writeable($o_dir)) {
-    $error_message[] = preg_replace("/^\.\//", '', $o_dir) .' '.'is not writeable';
+    $error_message[] = preg_replace("/^\.\//", '', $o_dir) .' '. st('is not writeable');
   }
   if (!is_writeable($t_dir)) {
-    $error_message[] = preg_replace("/^\.\//", '', $t_dir) .' '.'is not writeable';
+    $error_message[] = preg_replace("/^\.\//", '', $t_dir) .' '. st('is not writeable');
   }
   if (count($error_message) > 0) {
     foreach ($error_message as $message) {

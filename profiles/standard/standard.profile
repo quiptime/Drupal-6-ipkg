@@ -107,7 +107,7 @@ function standard_profile_details() {
   $opt_modules_list .= '</ul>';
   // Build collapsible fieldset.
   $opt_modules_fieldset = array(
-    '#title' => st('Optional modules can be installed.'),
+    '#title' => st('Optional modules can be installed'),
     '#description' => st('These modules can be downloaded from drupal.org and installed. Your selection is possible at a later installation step.'),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,

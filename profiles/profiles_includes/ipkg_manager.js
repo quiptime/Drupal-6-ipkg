@@ -3,23 +3,61 @@
 Drupal.ipkger = function () {
  $('#edit-locale').attr("checked", "checked");
 
- var addModulesInfo = Drupal.t('Downloading profile modules ... Please wait.');
- var optModulesInfo = Drupal.t('Downloading optional modules ... Please wait.');
- var optThemesInfo = Drupal.t('Downloading optional themes ... Please wait.');
+ var locale = 'en';
+ var addModulesInfo = new Array();
+ var optModulesInfo = new Array();
+ var optThemesInfo = new Array();
 
- $('#install-select-locale-form #edit-submit').after('<div id="download-throbber" style="display: none;"><img style="padding-right: 10px;" src="../../profiles/profiles_includes/loader.gif" alt="Loader" align="absmiddle"> '+addModulesInfo+'</div>');
- $('#edit-continue-modules').after('<div id="download-throbber" style="display: none;"><img style="padding-right: 10px;" src="../../profiles/profiles_includes/loader.gif" alt="Loader" align="absmiddle"> '+optModulesInfo+'</div>');
- $('#edit-continue-themes').after('<div id="download-throbber" style="display: none;"><img style="padding-right: 10px;" src="../../profiles/profiles_includes/loader.gif" alt="Loader" align="absmiddle"> '+optThemesInfo+'</div>');
+ addModulesInfo['en'] = 'Downloading profile modules ... Please wait.';
+ optModulesInfo['en'] = 'Downloading optional modules ... Please wait.';
+ optThemesInfo['en'] = 'Downloading optional themes ... Please wait.';
+ addModulesInfo['de'] = 'Lade Profilmodule herunter ... Bitte warten.';
+ optModulesInfo['de'] = 'Lade optionale Module herunter ... Bitte warten.';
+ optThemesInfo['de'] = 'Lade optionale Themen herunter ... Bitte warten.';
+
+ $('#install-select-locale-form #edit-submit').after('<div id="download-throbber" style="display: none;"><img id="loader" style="padding-right: 14px;" src="../../profiles/profiles_includes/loader.gif" alt="Loader" align="absmiddle"></div>');
+ $('#edit-continue-modules').after('<div id="download-throbber" style="display: none;"><img id="loader" style="padding-right: 14px;" src="../../profiles/profiles_includes/loader.gif" alt="Loader" align="absmiddle"></div>');
+ $('#edit-continue-themes').after('<div id="download-throbber" style="display: none;"><img id="loader" style="padding-right: 14px;" src="../../profiles/profiles_includes/loader.gif" alt="Loader" align="absmiddle"></div>');
 
  $('#install-select-locale-form #edit-submit').click( function() {
+  $('#loader').after(addModulesInfo[checkradio()]);
   $('#download-throbber').show();
  } );
+
  $('#edit-continue-modules').click( function() {
-   $('#download-throbber').show();
+  var info = '';
+  info = optModulesInfo[getlocale("locale")];
+  $('#loader').after(info);
+  $('#download-throbber').show();
  } );
+
  $('#edit-continue-themes').click( function() {
-   $('#download-throbber').show();
+  var info = '';
+  info = optThemesInfo[getlocale("locale")];
+  $('#loader').after(info);
+  $('#download-throbber').show();
  } );
+
+ function checkradio() {
+  if ($('#edit-locale-1').attr('checked') == true) {
+   locale = 'de';
+  }
+  return locale;
+ }
+
+ function getlocale(param) {
+  param = param.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+param+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if (results == null) {
+    return 'en';
+  }
+  else {
+    return results[1];
+  }
+ }
+
 }
 
 if (Drupal.jsEnabled) {

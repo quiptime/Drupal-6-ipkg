@@ -80,19 +80,19 @@ function _profile_optional_modules($profile) {
     'simplenews_register' => l('Simplenews on register', 'http://drupal.org/project/simplenews_register', _profile_get_link_attr()),
 
     'bueditor' => l('BUEditor', 'http://drupal.org/project/bueditor', _profile_get_link_attr()),
-    'imce' => l('IMCE', 'http://drupal.org/project/imce', _profile_get_link_attr()) .' '.'Recommended for BUEditor - insert images.',
+    'imce' => l('IMCE', 'http://drupal.org/project/imce', _profile_get_link_attr()) .' '. st('Recommended for') .' BUEditor - '. st('insert images'). '.',
     'imce_mkdir' => l('IMCE Mkdir', 'http://drupal.org/project/imce_mkdir', _profile_get_link_attr()),
 
     'pathauto' => l('Pathauto', 'http://drupal.org/project/pathauto', _profile_get_link_attr()),
     'views_bonus' => l('Views Bonus Pack', 'http://drupal.org/project/views_bonus', _profile_get_link_attr()),
     'fivestar' => l('Fivestar', 'http://drupal.org/project/fivestar', _profile_get_link_attr()),
-    'votingapi' => l('Voting API', 'http://drupal.org/project/votingapi', _profile_get_link_attr()) .' '.'Needed by "Fivestar"!',
+    'votingapi' => l('Voting API', 'http://drupal.org/project/votingapi', _profile_get_link_attr()) .' '. st('Needed by') .' "Fivestar"!',
     'flatcomments' => l('Flatcomments', 'http://drupal.org/project/flatcomments', _profile_get_link_attr()),
 
     'node_expire' => l('Node Expire', 'http://drupal.org/project/node_expire', _profile_get_link_attr()),
-    'rules' => l('Rules', 'http://drupal.org/project/rules', _profile_get_link_attr()) .' '.'Needed by "Node Expire"!',
+    'rules' => l('Rules', 'http://drupal.org/project/rules', _profile_get_link_attr()) .' '. st('Needed by') .' "Node Expire"!',
 
-    'acl' => l('ACL', 'http://drupal.org/project/acl', _profile_get_link_attr()) .' '.'Needed by "Forum Access" and optional by "Content Access"!',
+    'acl' => l('ACL', 'http://drupal.org/project/acl', _profile_get_link_attr()) .' '. st('Needed by') .' "Forum Access" '. st('and optional by') .' "Content Access"!',
     'content_access' => l('Content Access', 'http://drupal.org/project/content_access', _profile_get_link_attr()),
     'forum_access' => l('Forum Access', 'http://drupal.org/project/forum_access', _profile_get_link_attr()),
     'taxonomy_access' => l('Taxonomy Access Control', 'http://drupal.org/project/taxonomy_access', _profile_get_link_attr()),
@@ -142,7 +142,7 @@ function _profile_optional_themes($profile) {
     'acquia_prosper' => l('Acquia Prosper', 'http://drupal.org/project/acquia_prosper', _profile_get_link_attr()),
     'acquia_slate' => l('Acquia Slate', 'http://drupal.org/project/acquia_slate', _profile_get_link_attr()),
     'fourseasons' => l('Four Seasons', 'http://drupal.org/project/fourseasons', _profile_get_link_attr()),
-    'fusion' => l('Fusion', 'http://drupal.org/project/fusion', _profile_get_link_attr()) .' '.'Needed by "Acquia Prosper"!',
+    'fusion' => l('Fusion', 'http://drupal.org/project/fusion', _profile_get_link_attr()) .' '. st('Needed by') .' "Acquia Prosper"!',
     'litejazz' => l('LiteJazz', 'http://demo.roopletheme.com/litejazz', _profile_get_link_attr()),
     'newsflash' => l('NewsFlash', 'http://demo.roopletheme.com/newsflash/', _profile_get_link_attr()),
     'radiant' => l('Radiant', 'http://drupal.org/project/radiant', _profile_get_link_attr()),
@@ -285,3 +285,4 @@ function _profile_required_js() {
   drupal_add_js('profiles/profiles_includes/ipkg_manager.js');
   return;
 }
+

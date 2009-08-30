@@ -1490,3 +1490,143 @@ msgstr ""
 "em> erstellt werden. Nach den Voreinstellungen wird ein <em>Artikel</em> "
 "automatisch auf der Startseite angerissen und bietet die Möglichkeit "
 "kommentiert zu werden."
+
+#
+# Additional lines from profile standard.
+#
+
+#: profiles/standard/standard.profile:92
+msgid "Additional modules will be installed"
+msgstr "Zusätzliche Module die installiert werden"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "These modules will be downloaded from drupal.org and installed with this profile."
+msgstr "Diese Module werden von drupal.org heruntergeladen und mit diesem Profile installiert."
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "These modules can be downloaded from drupal.org and installed. Your selection is possible at a later installation step."
+msgstr "Diese Module können von drupal.org heruntergeladen und installiert werden. Ihre Auswahl ist in einem späteren Installationsschritt möglich."
+
+#: profiles/standard/standard.profile:110
+msgid "Optional modules can be installed"
+msgstr "Optionale Module die installiert werden können"
+
+#: profiles/standard/standard.profile:127
+msgid "Optional themes can be installed"
+msgstr "Optionale Themen die installiert werden können"
+
+#: profiles/standard/standard.profile:
+msgid "These themes can be downloaded from drupal.org and installed. Your selection is possible at a later installation step."
+msgstr "Diese Themen können von drupal.org heruntergeladen und installiert werden. Ihre Auswahl ist in einem späteren Installationsschritt möglich."
+
+#: profiles/standard/standard.profile:
+msgid "Information"
+msgstr "Information"
+
+#: profiles/standard/standard.profile:
+msgid "Additional: It will be installed. Optional: You can later choose to install."
+msgstr "Zusätzlich: Wird installiert. Optional: Sie können später wählen um zu installieren."
+
+#: profiles/standard/standard.profile:
+msgid "Select this profile to enable some Drupal functionality, additional modules, the default and optional themes."
+msgstr "Wählen Sie dieses Profil um verschiedene Drupalfunktionen, zusätzliche Module, das Standard- und optionale Themen zu aktivieren."
+
+#: profiles/standard/standard.profile:
+msgid "Standard"
+msgstr "Standard"
+
+#: profiles/standard/standard.profile:
+msgid "Install optional modules"
+msgstr "Installieren optionaler Module"
+
+#: profiles/standard/standard.profile:
+msgid "Installing optional modules from drupal.org"
+msgstr "Installieren optionaler Module von drupal.org"
+
+#: profiles/standard/standard.profile:
+msgid "The installation has encountered an error."
+msgstr "Bei der Installation ist ein Fehler eingetreten."
+
+#: profiles/standard/standard.profile:
+msgid "Install optional themes"
+msgstr "Installieren optionaler Themen"
+
+#: profiles/standard/standard.profile:
+msgid "Installing optional themes from drupal.org"
+msgstr "Installieren optionaler Themen von drupal.org"
+
+#: profiles/standard/standard.profile:
+msgid "You can install optional modules. Please select one or multiple modules to install it."
+msgstr "Sie können optionale Module installieren. Bitte wählen Sie ein oder mehrere Module um sie zu installieren."
+
+#: profiles/standard/standard.profile:
+msgid "You can install optional themes. Please select one or multiple themes to install it."
+msgstr "Sie können optionale Themen installieren. Bitte wählen Sie ein oder mehrere Themen um sie zu installieren."
+
+#: profiles/standard/standard.profile:176
+msgid "Optional modules"
+msgstr "Optionale Module"
+
+#: profiles/standard/standard.profile:177
+msgid "Optional themes"
+msgstr "Optionale Themen"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "Recommended for"
+msgstr "Empfohlen für"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "insert images"
+msgstr "Bilder einfügen"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "Needed by"
+msgstr "Benötigt von"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "and optional by"
+msgstr "und optional von"
+
+#: profiles/profiles_includes/profile_functions.inc:182
+msgid "IMPORTANT information"
+msgstr "WICHTIGE Information"
+
+#: profiles/profiles_includes/profile_functions.inc:166
+msgid "Task"
+msgstr "Aufgabe"
+
+#: profiles/profiles_includes/profile_functions.inc:166
+msgid "Once Drupal is installed, you have to realize an important task!"
+msgstr "Nachdem Drupal installiert ist haben Sie eine wichtige Aufgabe zu realisieren!"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "All with this installer installed directories and files, modules and themes, that will have to correct permissions."
+msgstr "Alle mit diesem Installer installierten Verzeichnisse und Dateien, Module und Themen, müssen korrekte Berechtigungen haben."
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "With permissions is meant: Who is the owner and group?"
+msgstr "Was ist mit Berechtigungen gemeint: Wer ist der Besitzer und die Gruppe?"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "Simple test to check: Compare the file "install.php" with these directories and their files in it."
+msgstr "Einfacher Test zum Prüfen: Vergleichen Sie die Datei \"install.php\" mit diesen Verzeichnissen und ihren enthaltenen Dateien."
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "Installation directories:"
+msgstr "Installationsverzeichnisse:"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "Tipp"
+msgstr "Tipp"
+
+#: profiles/profiles_includes/profile_functions.inc:
+msgid "Shared web host providers usually have a tool to realize this task in a web account."
+msgstr "Shared Webhost Provider bieten in der Regel eine Möglichkeit um diese Aufgabe für einen Webaccount zu realisieren."
+
+#: profiles/profiles_includes/get_files.inc:
+msgid "Please define the write permissions (775 or 777) for this directory."
+msgstr "Bitte definieren Sie die Schreibberechtigungen (775 oder 777) für dieses Verzeichnis."
+
+#: profiles/profiles_includes/get_files.inc:
+msgid "is not writeable"
+msgstr "ist nicht beschreibbar"
