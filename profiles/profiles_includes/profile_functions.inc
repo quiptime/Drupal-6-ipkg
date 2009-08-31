@@ -81,8 +81,10 @@ function _profile_optional_modules($profile) {
 
     'bueditor' => l('BUEditor', 'http://drupal.org/project/bueditor', _profile_get_link_attr()),
     'imce' => l('IMCE', 'http://drupal.org/project/imce', _profile_get_link_attr()) .' '. st('Recommended for') .' BUEditor - '. st('insert images'). '.',
-    'imce_mkdir' => l('IMCE Mkdir', 'http://drupal.org/project/imce_mkdir', _profile_get_link_attr()),
+    'imce_mkdir' => l('IMCE Mkdir', 'http://drupal.org/project/imce_mkdir', _profile_get_link_attr()) .' '. st('Recommended for') .' IMCE',
 
+    'calendar' => l('Calendar', 'http://drupal.org/project/calendar', _profile_get_link_attr()),
+    'date' => l('Date', 'http://drupal.org/project/date', _profile_get_link_attr()),
     'pathauto' => l('Pathauto', 'http://drupal.org/project/pathauto', _profile_get_link_attr()),
     'views_bonus' => l('Views Bonus Pack', 'http://drupal.org/project/views_bonus', _profile_get_link_attr()),
     'finder' => l('Finder', 'http://drupal.org/project/finder', _profile_get_link_attr()),

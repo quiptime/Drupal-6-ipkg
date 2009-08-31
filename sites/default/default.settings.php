@@ -146,7 +146,7 @@ ini_set('session.use_cookies',      1);
 ini_set('session.use_only_cookies', 1);
 ini_set('session.use_trans_sid',    0);
 ini_set('url_rewriter.tags',        '');
-ini_set('memory_limit',             '92M');
+ini_set('memory_limit',             '96M');
 
 /**
  * Drupal automatically generates a unique session cookie name for each site

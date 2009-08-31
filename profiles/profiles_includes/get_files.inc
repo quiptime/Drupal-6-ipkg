@@ -91,6 +91,7 @@ function profile_download_files($profile, $op = 'modules', $files_list = array()
   // Get file list from current directory.
   $files = ftp_nlist($connection, '.');
 
+  // This is important.
   natsort($files);
 
   // For each file needed.
@@ -120,10 +121,10 @@ function profile_download_files($profile, $op = 'modules', $files_list = array()
       }
     }
 
-    // Use the most recent version that satisfies our criteria.
+    // Use the most recent release that satisfies our criteria.
     $dfile = array_pop($final_list);
 
-    // Check exist module/theme x-version.
+    // Check exist module/theme x-release.
     // Eg. foobar-6.x-2.1.tar.gz and foobar-6.x-2.x.tar.gz
     if (preg_match("/x\.tar\.gz/", $dfile) && count($final_list) > 1) {
       $dfile = array_pop($final_list);
