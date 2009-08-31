@@ -85,6 +85,7 @@ function _profile_optional_modules($profile) {
 
     'pathauto' => l('Pathauto', 'http://drupal.org/project/pathauto', _profile_get_link_attr()),
     'views_bonus' => l('Views Bonus Pack', 'http://drupal.org/project/views_bonus', _profile_get_link_attr()),
+    'finder' => l('Finder', 'http://drupal.org/project/finder', _profile_get_link_attr()),
     'fivestar' => l('Fivestar', 'http://drupal.org/project/fivestar', _profile_get_link_attr()),
     'votingapi' => l('Voting API', 'http://drupal.org/project/votingapi', _profile_get_link_attr()) .' '. st('Needed by') .' "Fivestar"!',
     'flatcomments' => l('Flatcomments', 'http://drupal.org/project/flatcomments', _profile_get_link_attr()),

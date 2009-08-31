@@ -98,15 +98,23 @@ function profile_download_files($profile, $op = 'modules', $files_list = array()
   foreach ($files_get as $mod) {
     $nmod = $mod .'-'. $drupal_version;
     // Continue checking only the files that include the name of the module or theme we are after.
+    $dev_count = 0;
     foreach ($files as $key => $file) {
-      // Avoid dev versions, in that order.
+      // Avoid dev releases, in that order.
       // NOTE: Set $ignore['dev'] in all *.profile files!
       if ($ignore['dev'] == TRUE) {
+        // Some modules and themes have only a dev release.
+        // Check if a module or theme has only a dev release.
         if (preg_match("/^$nmod/", $file) && !preg_match("/^$nmod.+-dev/", $file)) {
+          $dev_count++;
+          $final_list[$key] = $files[$key];
+        }
+        // A module or theme has only a dev release.
+        if (preg_match("/^$nmod/", $file) && preg_match("/^$nmod.+-dev/", $file) && $dev_count == 0) {
           $final_list[$key] = $files[$key];
         }
       }
-      // This will install dev version if available.
+      // This will install dev release if available and is true for all modules and themes.
       elseif (preg_match("/^$nmod/", $file)) {
         $final_list[$key] = $files[$key];
       }
@@ -148,6 +156,7 @@ function profile_download_files($profile, $op = 'modules', $files_list = array()
         drupal_set_message('Could not download optional theme '. $mod, 'error');
       }
     }
+
   }
   ftp_close($connection);
 
@@ -161,7 +170,6 @@ function profile_download_files($profile, $op = 'modules', $files_list = array()
     $ospos = stripos(php_uname('s'), 'Windows');
 
     foreach ($profile_modfiles as $modfile) {
-
       if ($ospos !== FALSE ) {
         // Windows command next line NOT working!
         $cmd = shell_exec('c:\WINNT\system32\cmd.exe /c tar -zxf ' . $modfile . ' -C ' . $dir);
