@@ -38,7 +38,7 @@ function standard_profile_modules() {
     'imageapi',
     'imageapi_gd',
     'token',
-    'skinr',
+    //'skinr',
     'transliteration',
     //'devel',
 

@@ -21,8 +21,6 @@ function _profile_contrib_modules($profile) {
     'panels' => l('Panels', 'http://drupal.org/project/panels', _profile_get_link_attr()),
     'token' => l('Token', 'http://drupal.org/project/token', _profile_get_link_attr()),
     'views' => l('Views', 'http://drupal.org/project/views', _profile_get_link_attr()),
-    // Skinr is required from theme Acquia Prosper.
-    'skinr' => l('Skinr', 'http://drupal.org/project/skinr', _profile_get_link_attr()),
     // Transliteration is required from ImageCache and ImageCache UI.
     'transliteration' => l('Transliteration', 'http://drupal.org/project/transliteration', _profile_get_link_attr()),
   );
@@ -145,6 +143,9 @@ function _profile_optional_themes($profile) {
     'a3_atlantis' => l('A3 Atlantis', 'http://drupal.org/project/a3_atlantis', _profile_get_link_attr()),
     'acquia_marina' => l('Acquia Marina', 'http://drupal.org/project/acquia_marina', _profile_get_link_attr()),
     'acquia_prosper' => l('Acquia Prosper', 'http://drupal.org/project/acquia_prosper', _profile_get_link_attr()),
+    // Skinr module is required from theme Acquia Prosper.
+    'skinr' => l('Skinr', 'http://drupal.org/project/skinr', _profile_get_link_attr()).' '. st('Needed by') .' "Acquia Prosper"!',
+
     'acquia_slate' => l('Acquia Slate', 'http://drupal.org/project/acquia_slate', _profile_get_link_attr()),
     'fourseasons' => l('Four Seasons', 'http://drupal.org/project/fourseasons', _profile_get_link_attr()),
     'fusion' => l('Fusion', 'http://drupal.org/project/fusion', _profile_get_link_attr()) .' '. st('Needed by') .' "Acquia Prosper"!',

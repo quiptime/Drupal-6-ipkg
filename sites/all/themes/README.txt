@@ -1,1 +1,0 @@
-This directory should be used to place downloaded additional themes.

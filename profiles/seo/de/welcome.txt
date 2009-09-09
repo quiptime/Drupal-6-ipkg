@@ -39,7 +39,7 @@ Einige optionale Konfigurationsaufgaben werden unten aufgeführt. Weitere Inform
 
 <strong>Wählen Sie ein anderes Design</strong>
 
-Beginnen Sie damit indem Sie vom Standart-Theme die <a href="[[admin/build/themes/settings/garland]]">Farben ändern</a>. Um das Design Ihrer Website grundlegend zu aendern besuchen Sie den <a href="[[admin/build/themes]]">Theme-Bereich</a> und wählen eines der verfügbaren Themen als Standard.
+Beginnen Sie damit indem Sie vom Standart-Theme die <a href="[[admin/build/themes/settings/garland]]">Farben ändern</a>. Um das Design Ihrer Website grundlegend zu ändern besuchen Sie den <a href="[[admin/build/themes]]">Theme-Bereich</a> und wählen eines der verfügbaren Themen als Standard.
 
 Viele zusätzliche Drupal 6.x kompatible Themen sind auf drupal.org im Bereich <a href="http://drupal.org/project/Themes" target="_blank">Drupal-Themen</a> zum Herunterladen verfügbar.
 
