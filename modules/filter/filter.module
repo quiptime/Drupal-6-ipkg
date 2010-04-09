@@ -1,5 +1,5 @@
 <?php
-// $Id: filter.module,v 1.204.2.8 2008/12/10 22:30:14 goba Exp $
+// $Id: filter.module,v 1.204.2.10 2010/03/01 10:54:29 goba Exp $
 
 /**
  * @file
@@ -912,10 +912,10 @@ function _filter_autop($text) {
       $chunk = preg_replace('!(</'. $block .'>)!', "$1\n\n", $chunk); // Space things out a little
       $chunk = preg_replace("/\n\n+/", "\n\n", $chunk); // take care of duplicates
       $chunk = preg_replace('/\n?(.+?)(?:\n\s*\n|\z)/s', "<p>$1</p>\n", $chunk); // make paragraphs, including one at the end
-      $chunk = preg_replace('|<p>\s*</p>\n|', '', $chunk); // under certain strange conditions it could create a P of entirely whitespace
       $chunk = preg_replace("|<p>(<li.+?)</p>|", "$1", $chunk); // problem with nested lists
       $chunk = preg_replace('|<p><blockquote([^>]*)>|i', "<blockquote$1><p>", $chunk);
       $chunk = str_replace('</blockquote></p>', '</p></blockquote>', $chunk);
+      $chunk = preg_replace('|<p>\s*</p>\n?|', '', $chunk); // under certain strange conditions it could create a P of entirely whitespace
       $chunk = preg_replace('!<p>\s*(</?'. $block .'[^>]*>)!', "$1", $chunk);
       $chunk = preg_replace('!(</?'. $block .'[^>]*>)\s*</p>!', "$1", $chunk);
       $chunk = preg_replace('|(?<!<br />)\s*\n|', "<br />\n", $chunk); // make line breaks
@@ -977,12 +977,12 @@ function filter_xss($string, $allowed_tags = array('a', 'em', 'strong', 'cite', 
   // Defuse all HTML entities
   $string = str_replace('&', '&amp;', $string);
   // Change back only well-formed entities in our whitelist
-  // Named entities
-  $string = preg_replace('/&amp;([A-Za-z][A-Za-z0-9]*;)/', '&\1', $string);
   // Decimal numeric entities
   $string = preg_replace('/&amp;#([0-9]+;)/', '&#\1', $string);
   // Hexadecimal numeric entities
   $string = preg_replace('/&amp;#[Xx]0*((?:[0-9A-Fa-f]{2})+;)/', '&#x\1', $string);
+  // Named entities
+  $string = preg_replace('/&amp;([A-Za-z][A-Za-z0-9]*;)/', '&\1', $string);
 
   return preg_replace_callback('%
     (

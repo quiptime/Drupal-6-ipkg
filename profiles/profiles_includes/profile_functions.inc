@@ -1,6 +1,8 @@
 <?php
 // $Id: profile_functions.inc, v 1.0 2009/08/28 16:21:13 quiptime Exp $
 
+// HALLO TEST
+
 /**
  * Define contributed modules, will be install.
  *
