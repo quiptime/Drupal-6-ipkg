@@ -2,3 +2,7 @@ nbprojec*
 sites/default/settings.php
 sites/default/file*
 !sites/default/files/.htaccess
+sites/all/modules/contrib/*
+!sites/all/modules/contrib/README.txt
+sites/all/themes/*
+!sites/all/themes/README.txt
