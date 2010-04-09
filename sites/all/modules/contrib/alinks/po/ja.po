@@ -1,0 +1,150 @@
+# $Id: ja.po,v 1.3 2007/05/04 17:47:36 imagine Exp $
+# -----------------------------------------------------------------------------
+# Japanese translation of Drupal (alinks.module)
+#
+# Copyright (c) 2006-2007  Drupal Japan  ( http://drupal.jp/ )  /
+#                          Drupal Nippon ( http://drupon.org/ ) /
+#                          Takafumi      ( jp.drupal@imagine **reverse order**)
+#
+# Generated from file:
+#  alinks.module,v 1.8 2007/05/04 12:33:48 tic2000
+#  alinks.info,v 1.2 2007/04/21 06:25:51 tic2000
+#
+# -----------------------------------------------------------------------------
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2007-05-05 01:51+0900\n"
+"Last-Translator: Takafumi <jp.drupal@imagine **reverse order**>\n"
+"Language-Team: Drupal Japan / Drupal Nippon\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: alinks.module:12;19 alinks.info:0
+msgid "Alinks"
+msgstr "Alinks"
+
+#: alinks.module:13
+msgid "Set the prefferences for Alinks module."
+msgstr "Alinksモジュールの設定を行います。"
+
+#: alinks.module:20
+msgid "Define the alinks you want."
+msgstr "Alinksを定義します。"
+
+#: alinks.module:36
+msgid "Alinks Settings"
+msgstr "Alinksの設定"
+
+#: alinks.module:41;48
+msgid "Alinks node types"
+msgstr "Alinksノードタイプ"
+
+#: alinks.module:42
+msgid "Choose the node types alinks will act upon"
+msgstr "Alinksを作用させるコンテンツタイプを選んでください。"
+
+#: alinks.module:49
+msgid "Select node types"
+msgstr "コンテンツタイプを選択"
+
+#: alinks.module:57
+msgid "Alinks limit"
+msgstr "Alinksの制限"
+
+#: alinks.module:58
+msgid "Set the maxium instances an alink can replace. Use -1 if you want all instances to be replaced."
+msgstr "リンクに変換する最大インスタンス（文字列）数を入力してください。 すべてのインスタンスを変換したい場合は <b>-1</b> を入力してください。"
+
+#: alinks.module:182;222
+msgid "Add alink"
+msgstr "Alinkの追加"
+
+#: alinks.module:183
+msgid "Use this form to add alinks"
+msgstr "以下のフォームでAlinksを追加してください。"
+
+#: alinks.module:189
+msgid "Start Boundary"
+msgstr "先頭の境界"
+
+#: alinks.module:190
+msgid "Enable if the string doesn't begin with an alphanumeric or underscore character."
+msgstr "先頭の境界をチェックするかどうかを指定してください。 ここにチェックを入れると、検索文字列の前が英数字かアンダースコア（下線）の場合にマッチするようになります。"
+
+#: alinks.module:194
+msgid "Word"
+msgstr "ワード"
+
+#: alinks.module:197
+msgid "The string you want transformed to a link. The string is case sensitive."
+msgstr "リンクに変換したい文字列を入力してください。 大文字と小文字は区別されます。"
+
+#: alinks.module:202
+msgid "End Boundary"
+msgstr "末尾の境界"
+
+#: alinks.module:203
+msgid "Enable if the string doesn't end with an alphanumeric or underscore character."
+msgstr "末尾の境界をチェックするかどうかを指定してください。 ここにチェックを入れると、検索文字列の後ろが英数字かアンダースコア（下線）の場合にマッチするようになります。"
+
+# ----------
+#: alinks.module:207;305
+#msgid "URL"
+#msgstr "URL"
+
+#: alinks.module:210
+msgid "The url the string will link too."
+msgstr "文字列がリンクされるURLを入力してください。"
+
+#: alinks.module:215
+msgid "URL Title"
+msgstr "URLタイトル"
+
+#: alinks.module:218
+msgid "Title for the url the string will link too. It will be used in the link creation and appear as tooltip when hovering the mouse over the link"
+msgstr "リンクのタイトルを入力してください。 これは、リンクの作成に使用され、マウスオーバーの際にツールチップとして表示されます。"
+
+#: alinks.module:243
+msgid "Edit alinks"
+msgstr "Alinkの編集"
+
+#: alinks.module:244
+msgid "Use this form to edit alinks. If you want to delete an entry just select the coresponding checkbox. To edit the entry edit the desired text."
+msgstr "以下のフォームでAlinksを編集してください。 項目を削除したい場合は「削除」ボックスにチェックを入れ、編集したい場合はフィールド内のテキストを編集してください。"
+
+#: alinks.module:288
+msgid "Update alinks"
+msgstr "Alinkの更新"
+
+#: alinks.module:305
+msgid "Start<br />Boundary"
+msgstr "先頭の<br />境界"
+
+# ----------
+#: alinks.module:305
+#msgid "String"
+#msgstr "文字列"
+
+#: alinks.module:305
+msgid "End<br />Boundary"
+msgstr "末尾の<br />境界"
+
+#: alinks.module:305
+msgid "URL title"
+msgstr "URLタイトル"
+
+# ----------
+#: alinks.module:305
+#msgid "Delete"
+#msgstr "削除"
+
+#: alinks.module:0 alinks.info:0
+msgid "alinks"
+msgstr "alinks"
+
+#: alinks.info:0
+msgid "Allows users to associates defined text to links."
+msgstr "定義済のテキストをリンクに関連付けられるようにします。"
+

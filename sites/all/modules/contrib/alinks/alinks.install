@@ -1,0 +1,135 @@
+<?php
+// $Id: alinks.install,v 1.11 2008/10/15 11:09:11 chinajason Exp $
+
+/**
+ * Implementation of hook_install().
+ */
+function alinks_install() {
+// Create tables.
+  drupal_install_schema('alinks');
+}
+
+function alinks_uninstall() {
+  drupal_uninstall_schema('alinks');
+  variable_del('alinks_node_types');
+  variable_del('alinks_limit');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function alinks_schema() {
+  $schema['alinks'] = array(
+    'fields' => array(//fields开始
+      'id' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'alink_start_boundary' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'tiny',
+      ),
+      'alink_text' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'alink_end_boundary' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'tiny',
+      ),
+      'alink_case_insensitive' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'tiny',
+      ),
+      'alink_url' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'url_title' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+     'alink_external' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'tiny',
+      ),
+      'alink_class' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => 'alinks-link',
+      ),
+      'alink_weight' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),//fields结束
+    'primary key' => array('id'),
+  );
+  return $schema;
+}
+
+
+function alinks_update_1() {
+  $ret = array();
+  switch ($GLOBALS['db_type']) {
+    case 'pgsql':
+      db_add_column($ret, 'alinks', 'alink_start_boundary', 'TINYINT(1)', array('DEFAULT' => 0));
+      db_add_column($ret, 'alinks', 'alink_end_boundary', 'TINYINT(1)', array('DEFAULT' => 0));
+      break;
+    case 'mysql':
+    case 'mysqli':
+      $ret[] = update_sql("ALTER TABLE {alinks} ADD COLUMN alink_start_boundary TINYINT(1) NOT NULL DEFAULT 0 AFTER id");
+      $ret[] = update_sql("ALTER TABLE {alinks} ADD COLUMN alink_end_boundary TINYINT(1) NOT NULL DEFAULT 0 AFTER alink_text");
+      break;
+  }
+  return $ret;
+}
+
+function alinks_update_2() {
+  $ret = array();
+  switch ($GLOBALS['db_type']) {
+    case 'pgsql':
+      db_add_column($ret, 'alinks', 'alink_case_insensitive', 'TINYINT(1)', array('DEFAULT' => 0));
+      break;
+    case 'mysql':
+    case 'mysqli':
+      $ret[] = update_sql("ALTER TABLE {alinks} ADD COLUMN alink_case_insensitive TINYINT(1) NOT NULL DEFAULT 0 AFTER alink_end_boundary");
+      break;
+  }
+  return $ret;
+}
+
+function alinks_update_3() {
+  $ret = array();
+  switch ($GLOBALS['db_type']) {
+    case 'pgsql':
+      db_add_column($ret, 'alinks', 'alink_external', 'TINYINT(1)', array('DEFAULT' => 0));
+      db_add_column($ret, 'alinks', 'alink_class', 'VARCHAR(255)', array('DEFAULT' => 'alinks-link'));
+      db_add_column($ret, 'alinks', 'alink_weight', 'INT(3)', array('DEFAULT' => 0));
+      break;
+    case 'mysql':
+    case 'mysqli':
+      $ret[] = update_sql("ALTER TABLE {alinks} ADD COLUMN alink_external TINYINT(1) NOT NULL DEFAULT 0 AFTER alink_end_boundary");
+      $ret[] = update_sql("ALTER TABLE {alinks} ADD COLUMN alink_class VARCHAR(255) NOT NULL DEFAULT 'alinks-link' AFTER alink_external");
+      $ret[] = update_sql("ALTER TABLE {alinks} ADD COLUMN alink_weight INT(3) NOT NULL DEFAULT 0 AFTER alink_class");
+      break;
+  }
+  return $ret;
+}

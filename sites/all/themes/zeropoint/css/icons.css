@@ -1,0 +1,65 @@
+.upload_attachments a {
+	background: url(../images/icons/attach.png) no-repeat;
+	padding-left: 20px;
+}
+.comment_comments a {
+	background: url(../images/icons/comments.png) no-repeat;
+	padding-left: 20px;
+}
+li.comment_delete a {
+	background: url(../images/icons/trash.png) no-repeat 0 2px;
+	padding-left: 15px;
+}
+li.comment_edit a {
+	background: url(../images/icons/edit.png) no-repeat 0 2px;
+	padding-left: 15px;
+}
+li.comment_reply a {
+	background: url(../images/icons/reply.png) no-repeat 0 2px;
+	padding-left: 15px;
+}
+
+.book_add_child a {
+	background: url(../images/icons/page-add.png) no-repeat left center;
+	padding-left: 20px;
+}
+.print_html a, .print a,
+.book_printer a {
+	background: url(../images/icons/printer.png) no-repeat left center;
+	padding-left: 20px;
+}
+.comment_add a {
+	background: url(../images/icons/comment.png) no-repeat left center;
+	padding-left: 20px;
+}
+.print_mail a,
+.book_mail a {
+	background: url(../images/icons/mail.png) no-repeat left center;
+	padding-left: 20px;
+}
+.terms li.first, .terms ul.taxonomy {
+	background: url(../images/icons/tag.png) no-repeat left top;
+	padding-left: 20px;
+	margin: 10px 0;
+}
+#sidebar-left a.active, #sidebar-right a.active {
+	background: url(../images/icons/check.png) no-repeat right;
+	padding-right: 20px;
+}
+#sidebar-left .block-image a.active , #sidebar-right .block-image a.active  {
+	background: none;
+	padding: 0;
+}
+.node_read_more a {
+	background: url(../images/icons/read_more.png) no-repeat left center;
+	padding-left: 15px;
+}
+.more-link a {
+	background: url(../images/icons/more.png) no-repeat left center;
+	padding-left: 15px;
+	font-size: 9px;
+}
+.blog_usernames_blog a {
+	background: url(../images/icons/user_green.png) no-repeat left center;
+	padding-left: 20px;
+}

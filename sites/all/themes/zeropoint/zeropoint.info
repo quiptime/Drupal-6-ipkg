@@ -1,0 +1,47 @@
+name = Zero Point
+description = Zero Point main theme. Developed by <a href="http://www.radut.net">Dr. Radut</a>
+
+core = 6.x
+engine = phptemplate
+screenshot = screenshot.png
+php = DRUPAL_MINIMUM_PHP
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[above] = Above
+regions[banner] = Banner
+regions[header] = Header
+regions[user1] = User 1
+regions[user2] = User 2
+regions[user3] = User 3
+regions[user4] = User 4
+regions[content_top] = Top content
+regions[content_middle] = Middle content
+regions[content_bottom] = Bottom content
+regions[user5] = User 5
+regions[user6] = User 6
+regions[user7] = User 7
+regions[user8] = User 8
+regions[below] = Below
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = style.css
+stylesheets[print][] = css/print.css
+stylesheets[all][] = _custom/custom-style.css
+; Information added by drupal.org packaging script on 2009-07-13
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "zeropoint"
+datestamp = "1247445205"
+

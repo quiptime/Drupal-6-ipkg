@@ -1,0 +1,94 @@
+/* SUCKERFISHMENU */
+
+#navlinks ul li.expanded a {
+	background: #777 url(../images/nav-down.png) 95% 50% no-repeat;
+}
+#navlinks li ul a:link, 
+#navlinks li ul a:visited {
+	color: #fff;
+	background: #aaa;
+	border-left: 1px solid #c4c4c4;
+	border-top: 1px solid #c4c4c4;
+	border-right: 1px solid #959595;
+	border-bottom: 1px solid #959595;
+}
+#navlinks ul.menu li ul.menu li.expanded a,
+#navlinks ul.menu li ul.menu li ul.menu li.expanded a,
+#navlinks ul.menu li ul.menu li ul.menu li ul.menu li.expanded a {
+	background: #aaa url(../images/nav-right.png) 100% 50% no-repeat;
+}
+#navlinks ul.menu li li.expanded ul.menu a, 
+#navlinks ul.menu li li.expanded ul.menu li.expanded ul.menu a,
+#navlinks ul.menu li li.expanded ul.menu li.expanded ul.menu li.expanded ul.menu a {
+	background: #aaa;
+}
+/*#navlinks li ul a.active,*/
+#navlinks li ul a:hover {
+	color: #fff !important;
+	background-color: #999 !important;
+}
+
+
+/* ANOTHER SON OF SUCKERFISH...
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+http://www.alistapart.com/articles/horizdropdowns
+*/
+
+#navlinks ul { /* top level ul */
+	display: inline;
+	margin: 0;
+	padding: 0;
+	z-index: 99;
+}
+#navlinks a, #navlinks a:active, #navlinks a:hover { /* main menu elements */
+	text-decoration: none;
+}
+#navlinks li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	height: 1%;
+}
+#navlinks li:hover, #navlinks li.hover {
+	position: static;
+}
+
+/* suckerfish second-level lists */
+#navlinks ul ul {
+	list-style: none;
+	margin: 24px 0 0 -100px;
+	padding: 1px 0 0 0;
+}
+#navlinks ul ul a {
+	display: block;
+}
+#navlinks ul li ul {
+	position: absolute;
+	width: 158px;
+	left: -999em;
+}
+#navlinks ul li li {
+	height: auto;
+	float: right;
+	width: 158px;
+}
+#navlinks ul li ul a {
+	padding: 0 10px;
+	width: 158px;
+	line-height: 24px;
+}
+#navlinks ul li ul a:active, #navlinks ul li ul a:hover {
+	text-decoration: none;
+}
+
+/* suckerfish margin for pullouts */
+#navlinks ul li ul ul {
+	margin: -27px 0 0 180px;
+}
+#navlinks ul li:hover ul ul, #navlinks ul li:hover ul ul ul, #navlinks ul li.sfhover ul ul, #navlinks ul li.sfhover ul ul ul {
+	left: -999em;
+}
+#navlinks ul li:hover ul, #navlinks ul li li:hover ul, #navlinks ul li li li:hover ul, 
+#navlinks ul li.sfhover ul, #navlinks ul li li.sfhover ul, #navlinks ul li li li.sfhover ul {
+	left: auto;
+}

@@ -1,0 +1,10 @@
+; $Id: similar.info,v 1.2 2007/11/29 21:35:03 deekayen Exp $
+name = Similar entries
+description = "Displays a block with the most similar nodes to the currently viewed one, based on the title and body fields, for sites using MySQL MyISAM tables."
+core = 6.x
+; Information added by drupal.org packaging script on 2009-05-08
+version = "6.x-1.1"
+core = "6.x"
+project = "similar"
+datestamp = "1241795186"
+

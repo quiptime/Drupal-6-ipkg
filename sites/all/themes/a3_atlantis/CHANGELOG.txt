@@ -1,0 +1,17 @@
+// $Id: CHANGELOG.txt,v 1.1.4.4 2008/08/23 20:58:56 johnforsythe Exp $
+
+A3 Atlantis 6.x-1.2, 2008-08-23
+-------------------------------
+- #297016 Selected content background color fix
+- #291687 Sticky table header background color fix
+- Better support for Drupal 6 regions and messages
+- Added support for comment signatures
+- Minor PHP and CSS fixes/cleanup
+
+A3 Atlantis 6.x-1.1, 2008-07-30
+-------------------------------
+- Added missing file
+
+A3 Atlantis 6.x-1.0, 2008-07-30
+-------------------------------
+- Initial Drupal 6 release

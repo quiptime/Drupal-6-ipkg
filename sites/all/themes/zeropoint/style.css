@@ -1,0 +1,353 @@
+/* style.css, v2.2 2009/1/22 
+ *
+ * ZERO POINT theme (grey), for Drupal 6
+ * Dr. Florian Radut, florian[at]radut.net
+ */
+
+#topex {
+	z-index: 1;
+}
+#top_bg {
+	background: transparent url(images/fill_top.png) 0 100% repeat-x;
+}
+#top_left {
+	background: transparent url(images/fill_top_left.png) 0 100% no-repeat;
+}
+#top_right {
+	background: transparent url(images/fill_top_right.png) 100% 100% no-repeat;
+	padding: 0 25px;
+}
+#body_bg {
+	border-bottom: 1px solid #ddd;
+}
+#body_left {
+	background: transparent url(images/all/fill_left.png) 0 0 repeat-y;
+}
+#body_right {
+	background: transparent url(images/all/fill_right.png) 100% 0 repeat-y;
+	padding: 0 25px;
+}
+
+body {
+	color: #535353;
+}
+
+a, a:link,
+.title, .title a,
+.node .terms,
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age,
+#forum td .name,
+div.admin-panel .description {
+	color: #777;
+}
+
+#section1 {
+	padding-top: 15px;
+}
+
+#sidebar-left {
+	margin: 20px 0 20px 20px;
+}
+#sidebar-right {
+	margin: 20px 20px 20px 0;
+}
+
+#sidebar-left .block, #sidebar-right .block {
+	background: transparent url(images/fill_block.png) 0 100% repeat-x;
+	border: 1px solid #ddd;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+#sidebar-left .block .title, #sidebar-right .block .title {
+	padding: 6px 6px 6px 28px;
+	margin: 0;
+}
+
+#sidebar-left .block .content, #sidebar-right .block .content {
+	padding: 6px;
+	margin: 0;
+}
+
+.front h2.title a {			/* front */
+	font-size: 160%;
+	line-height: normal;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.not-front h1.title {		/* node */
+	font-size: 180%;
+	padding: 10px 0;
+	font-weight: normal;
+}
+
+h1, h2, h3 {
+	color: #777;
+}
+
+#section1 td.section.divider,
+#section2 td.section.divider {
+	border-left: 1px dashed #ddd;
+}
+
+#breadcrumb {
+	padding-left: 20px;
+	clear: both;
+	font-size: 80%;
+}
+#breadcrumb, #breadcrumb a {
+	font-weight: normal;
+	color: #1e201b !important;
+}
+
+#breadcrumb .breadcrumb {
+	padding: 0;
+}
+
+#bar {
+	padding: 4px 0 3px;
+}
+
+#footer, #footer a {
+	color: #888 !important;
+}
+
+#logo {
+	float: left;
+	margin: 0 15px 5px 15px;
+	padding: 0 0 0 10px;
+}
+
+#site-slogan {
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+#mission {
+	color: #535353;
+	border: solid 1px #ddd;
+}
+
+#search .form-item label, .block-search .form-item label {
+	display: none;
+}
+
+#search {
+	float: right;
+}
+#search .form-text, #search .form-submit {
+	font-size: 12px;
+	height: 22px;
+	vertical-align: middle;
+	border: 1px solid #555;
+}
+#search .form-text {
+	width: 110px;
+	padding: 0 0.4em;
+}
+#toplinks {
+	margin-right: 10px;
+	line-height: 22px;
+	display: inline;
+	font-size: 13px;
+}
+#toplinks, #toplinks a {
+	color: #000 !important;
+	font-weight: normal;
+}
+
+.submitted, .links {
+	color: #3f3f3f;
+}
+.comment {
+	border: 1px solid #d3d3d3;
+}
+.comment .title {
+	padding: 10px 0 12px 19px;
+	background: transparent url(images/all/icon-comment.png) left center no-repeat;
+}
+.block .title {
+	text-transform: uppercase;
+}
+.block-image .content {
+	background: none !important;
+}
+#content-middle {
+	margin-right: 20px;
+	float: left;
+}
+#content-middle .block {
+	padding: 10px 0 0 0;
+}
+#aggregator .feed-source {
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+#forum td.forum, #forum td.posts {
+	background-color: #eee;
+}
+#forum td.topics, #forum td.last-reply {
+	background-color: #ddd;
+}
+#forum td.statistics, #forum td.settings, #forum td.pager {
+	height: 1.5em;
+	border: 1px solid #bbb;
+}
+#forum td.container {
+	background: #cdcdcd url(images/all/forum-container.jpg) right top no-repeat;
+}
+#forum td.container a {
+	padding: 10px 0 10px 40px;
+	background: transparent url(images/all/forum-link.png) left center no-repeat;
+}
+
+.messages {
+	padding: 0.3em;
+	margin-bottom: 1em;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+#profile .profile {
+	border: 1px solid #abc;
+}
+.form-item label {
+	font-size: 1em;
+	color: #222;
+}
+.item-list .title {
+	color: #222;
+}
+div.admin-panel .body {
+	background-color: #f4f4f4;
+}
+div.admin-panel h3 {
+	color: #abc;
+	padding: 5px 8px 5px;
+	margin: 0;
+}
+#belowme {
+	padding: 5px 44px;
+	text-align: center;
+}
+.by, .by a, .by a:hover {
+	color: #ddd !important;
+	text-decoration: none;
+}
+
+/* MENU & link STYLES */
+
+li.expanded {
+	list-style-image: url(images/all/menu-expanded.png);
+}
+li.collapsed {
+	list-style-image: url(images/all/menu-collapsed.png);
+}
+
+/*#navlinks, #navlist, #subnavlist, */
+#navlist2 {
+	text-align: center;
+}
+.navleft {
+	text-align: left;
+	padding-left: 20px;
+}
+.navcenter {
+	text-align: center;
+}
+.navright {
+	text-align: right;
+	padding-right: 20px;
+}
+.browser-opera #navlinks.navleft, .browser-opera #navlinks.navcenter, .browser-opera #navlinks.navright {
+	text-align: left;
+	padding-left: 20px;
+}
+#navlist.links li, #navlinks a {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+#navlist.links a, #navlinks ul li a {
+	/*border: 1px solid #c4c4c4;
+	border-bottom: none;
+	padding: 5px 24px;
+	*/
+	border: none;
+	padding: 6px 25px 5px;
+	color: #fff !important;
+	background-color: #777;
+	font-weight: normal !important;
+	text-transform: uppercase;
+	font-family: "times new roman", sans-serif, Arial, Verdana, Helvetica;
+	font-size: 12px;
+	line-height: 25px;
+}
+/*#navlist li a.active, #navlinks ul li a.active,*/
+#navlist li a:hover, #navlinks ul li a:hover {
+	color: #777 !important;
+	background-color: #dbdbdb !important;
+	text-decoration: none;
+}
+
+#subnavlist.links li {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+#subnavlist.links a {
+	border: 1px solid #ddd;
+	color: #444 !important;
+	background-color: #eee;
+	padding: 2px 5px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 22px;
+}
+#subnavlist li a:hover {
+	background-color: #dbdbdb !important;
+	text-decoration: none;
+}
+#navlist2 {
+	margin-top: 15px;
+}
+#navlist2 a {
+	color: #888 !important;
+	font-weight: normal;
+}
+#navlist2 li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+#navlist2 li a.active {
+	color: #000;
+}
+
+ul.links li {
+	border-left: 1px solid #d3d3d3;
+}
+.book-navigation .page-links {
+	border-top: 1px dashed #d3d3d3;
+	border-bottom: 1px dashed #d3d3d3;
+}
+.book-navigation {
+	padding-top: 20px;
+	clear: both;
+}
+#footer ul.links li {
+	border-left: 1px solid #909090;
+}
+
+#main .content li a {
+	text-decoration: none;
+}
+#main .content li a:hover, #main .content a {
+	text-decoration: underline;
+}
+.book-navigation a {
+	text-decoration: none !important;
+}
+.book-navigation a:hover {
+	text-decoration: underline !important;
+}

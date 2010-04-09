@@ -1,0 +1,47 @@
+/* 
+ * Erase the lines below to get rid of the image in the right sidebar and the brand image.
+ */
+
+#wrapper {
+	background: transparent url(../images/all/_sidebarimg.png) 99% 99% no-repeat;
+}
+
+#brand {
+	background: url(../images/all/_brand.png) 50% 30% no-repeat;
+	position: relative;
+	margin: 5px auto 0;
+	width: 250px;
+	height: 50px;
+}
+
+
+
+
+/* SPECIAL STATIC-MENU COLORS	*/
+
+/* 
+ * Uncomment this to have different tab colors for firs and last items.
+ */
+
+/*
+#navlist li.first a {
+	background: #D0932C;
+}
+#navlist li.last a {
+	background: #BF5D8C;
+}
+*/
+
+
+/* Uncomment the lines below to have different tab colors. 
+ * Change the values below accordingly: XXX=menu numer; YYY=background color.
+ */
+ 
+/*
+#navlist li.menu-XXX a {
+	background: #YYY;
+}
+*/
+
+
+

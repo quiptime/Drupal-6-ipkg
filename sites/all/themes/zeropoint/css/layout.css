@@ -1,0 +1,365 @@
+/* layout.css, v2.2 2009/2/15 
+ *
+ * ZERO POINT theme, for Drupal 6
+ * Dr. Florian Radut, florian[at]radut.net
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, Arial, Verdana, Helvetica;
+	font-size: 83%;
+	line-height: 125%;
+}
+
+/* SPECIAL FIXES */
+#middlecontainer img {max-width: 100%;} /* prevents oversize images from breaking layout in browsers that support max-width */
+
+/* UTILITY RULES */
+.brclear {
+	clear:both;
+	height:0;
+	margin:0;
+	font-size: 1px;
+	line-height: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	padding-bottom: 5px;
+	margin: 10px 0;
+}
+h1 {
+	font-size: 160%;
+	line-height: normal;
+}
+h2 {
+	font-size: 125%;
+}
+h3 { 
+	font-size: 110%;
+}
+h4 {
+	font-size: 100%;
+}
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.9em;
+}
+a {
+	text-decoration: none;
+	/*font-weight: bold;*/
+}
+a:hover {
+	text-decoration: underline;
+}
+fieldset {
+	border: 1px solid #ccc;
+}
+pre {
+	background-color: #eee;
+	padding: 0.75em 1.5em;
+	font-size: 12px;
+	border: 1px solid #ddd;
+}
+.links {
+	margin: 0;
+}
+.links a {
+	/*font-weight: bold;*/
+}
+.comment .links {
+	margin-bottom: 0;
+}
+table {
+	font-size: 1em;
+}
+tbody {
+	border: none;
+}
+tr.odd td, tr.even td {
+	padding: 0.3em;
+}
+table.sections {
+	width: 100%;
+	padding: 0;
+}
+#section1 td.section, #section2 td.section {
+	padding: 10px 20px 0 20px;
+}
+#header, #content {
+	width: 100%;
+}
+#header .block {
+	padding: 0;
+	margin: 0 15px 5px;
+	/*float: right;*/
+}
+#top-elements {
+	float: right;
+	text-align: right;
+	padding: 0 20px 0 0;
+	width: 470px;
+}
+#banner .block {
+	margin: 10px 0;
+	padding: 0;
+	float: right;
+}
+#logo img {
+	padding: 0;
+	margin: 0;
+}
+#site-name {
+	margin: 0 0 0 35px;
+	padding: 30px 0 0 0;
+}
+#site-name a, #site-name a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 185%;
+}
+#mission {
+	font-weight: normal;
+	padding: 1em 1em 0.75em 2em;
+	margin: 10px 0 20px;
+	font-size: 85%;
+}
+#mission a, #mission a:visited {
+	font-weight: normal;
+	text-decoration: underline;
+}
+#footer ul.links li.first, ul.links li.first {
+	border: none;
+}
+#footer .block ul, #footer ul.links li.first {
+	margin-left: 0;
+	padding-left: 0;
+}
+#middlecontainer {
+	padding: 1px 0 0 0;
+}
+#main {
+	padding: 10px 20px;
+	overflow: visible;
+}
+#main .block {
+	padding-top: 10px;
+}
+#footer {
+	text-align: center;
+	margin: 0;
+	padding: 5px 44px;
+	font-size: 75%;
+}
+#footer a {
+	font-weight: normal;
+}
+#footer .block {
+	padding: 0;
+	margin: 0;
+}
+#header .block h2, #footer .block h2 {
+	display: none;
+}
+.title, .title a {
+	font-weight: bold;
+	margin: 0 auto;
+}
+.submitted {
+	font-size: 0.8em;
+}
+.box {
+	padding: 0 0 1.5em 0;
+}
+.block {
+	padding-bottom: 0.75em;
+	margin-bottom: .5em;
+}
+.section .block, .section .box {
+	padding: 0;
+	margin-bottom: 15px;
+}
+.block .title {
+	margin-bottom: .25em;
+}
+.node {
+	margin: .5em 0 2em 0;
+}
+.node .content, .comment .content {
+	margin: .5em 0 .5em 0;
+}
+.node .terms {
+	font-size: 0.8em;
+	padding-left: 0.6em;
+}
+.node .terms a {
+	font-weight: normal;
+}
+.terms ul.taxonomy ul.vocab-list, .terms ul.taxonomy li.vocab-term {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.terms ul.taxonomy li.vocab {
+	list-style: none;
+	font-weight: bold;
+}
+#help {
+	font-size: 0.9em;
+	margin-bottom: 1em;
+}
+.error {
+	border-color: red;
+}
+.comment {
+	padding: .5em;
+	margin-bottom: 1em;
+}
+.comment .title a {
+	font-weight: normal;
+}
+.comment .new {
+	text-align: right;
+	font-weight: bold;
+	font-size: 0.8em;
+	float: right;
+	color: red;
+}
+.node .picture, .comment .picture {
+	float: right;
+	padding: 0.5em;
+}
+#aggregator .feed-source {
+	padding: 1em;
+	margin: 1em 0;
+}
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age {
+	font-style: italic;
+	font-size: 0.9em;
+}
+#aggregator .title {
+	margin-bottom: 0.5em;
+}
+#aggregator h3 {
+	margin-top: 1em;
+}
+#forum table {
+	width: 100%;
+}
+#forum td {
+	padding: 0.5em;
+}
+#forum td .links {
+	padding-top: 0.7em;
+	font-size: 0.9em;
+}
+.block-forum h3 {
+	margin-bottom: .5em;
+}
+#profile .profile {
+	clear: both;
+	padding: .5em;
+	margin: 1em 0em;
+}
+#profile .profile .name {
+	padding-bottom: 0.5em;
+}
+#user-login-form, div.toboggan-login-link-container, div.user-login-block, .block-logintoboggan {
+	text-align: center;
+}
+#user-login-form .item-list {
+	text-align: left;
+}
+#user-login-form ul li.openid-link ,
+#user-login-form ul li.user-link {
+	padding: 5px 0 0 20px;
+	margin-left: 0;
+	list-style-type: none;
+}
+
+.legal {
+	margin: 5px auto 0 auto;
+	padding: 0 90px 0 90px;
+}
+.xmll {
+	position: relative;
+	float: right;
+	margin-top: -16px;
+	padding-right: 15px;
+}
+.by {
+	float: right;
+	clear: both;
+	font-size: 75%;
+}
+body.in-maintenance #main {
+	padding: 55px 115px 120px;
+}
+
+
+/* "Skip to Main Content" link - is useful for both visually impaired people and those with mobility impairments who cannot use a mouse */
+#skip-nav {
+	display: none;
+}
+#skip-nav a, #skip-nav a:hover, #skip-nav a:visited {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+#skip-nav a:active, #skip-nav a:focus {
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+
+/* MODULE SPECIFIC STYLES */
+
+#block-user-0 h2, #block-logintoboggan-0 h2, .block-image h2, #block-i18n-0 h2, #block-translation-0 h2 {
+	display: none;
+}
+.block-i18n, .block-translation {
+	padding: 0 !important;
+	margin: 5px !important;
+}
+.block-i18n .item-list li, .block-translation .item-list li {
+	list-style-type: none;
+	margin: 0 0 0 22px;
+}
+.book-navigation .menu {
+	border-top: none;
+}
+.book-navigation .page-up {
+  width: 5%;
+}
+.panel-col-top .node .content {
+	background-image: none;
+}
+.block-image .content {
+	text-align: center;
+	padding: 0 !important;
+}
+ul.images li h3 {
+	display: none;
+}
+ul.galleries li, ul.images li {
+	background : none;
+	border : none;
+}
+body.mceContentBody {
+	background: #eee !important;
+	font-size: 14px;
+}
+body.mceContentBody a:link {
+	font-weight: normal;
+}
+.view .view-comments-recent .views-field-subject {
+	font-weight: bold;
+}
+.view .views-admin-links li {
+	background: transparent !important;
+}
+
