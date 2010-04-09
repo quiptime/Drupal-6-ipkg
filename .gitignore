@@ -1,0 +1,4 @@
+nbproject/*
+sites/default/settings.php
+sites/default/files/*
+!sites/default/files/.htaccess
