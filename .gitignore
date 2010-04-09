@@ -1,5 +1,5 @@
-nbproject/*
+nbprojec*
 sites/default/settings.php
-sites/default/files/*
+sites/default/file*
 !sites/default/files/.htaccess
 
