@@ -1,0 +1,4 @@
+#navlinks.navleft, #navlinks.navcenter, #navlinks.navright {
+	text-align: left;
+	padding-left: 20px;
+}
