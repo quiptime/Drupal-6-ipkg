@@ -1,4 +1,4 @@
-# $Id: modules-forum.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-forum.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-forum)
 # Copyright (c) 2004-2008 by the German translation team
@@ -13,9 +13,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-forum\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
-"PO-Revision-Date: 2008-08-16 20:40+0200\n"
-"Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
+"PO-Revision-Date: 2008-08-20 10:05+0100\n"
+"Last-Translator: kod <kod@0b101010.de>\n"
 "Language-Team: German Drupal translation team\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,7 +54,9 @@ msgstr "Forenname"
 
 #: modules/forum/forum.admin.inc:41
 msgid "Short but meaningful name for this collection of threaded discussions."
-msgstr "Kurzer aber aussagekräftiger Name für diese Menge von Diskussionen."
+msgstr ""
+"Kurzer, aber aussagekräftiger Name für diese Zusammenstellung von "
+"Diskussionen."
 
 #: modules/forum/forum.admin.inc:47
 msgid "Description and guidelines for discussions within this forum."
@@ -65,14 +67,14 @@ msgid ""
 "Forums are displayed in ascending order by weight (forums with equal weights "
 "are displayed alphabetically)."
 msgstr ""
-"Foren werden entsprechend der Gewichtung in aufsteigender Reihenfolge "
-"angezeigt. Foren mit gleicher Gewichtung werden alphabetisch sortiert."
+"Foren werden entsprechend des Reihenfolgewertes aufsteigend sortiert "
+"angezeigt. Foren mit gleichem Reihenfolgewert werden alphabetisch sortiert."
 
 #: modules/forum/forum.admin.inc:75
 msgid "forum container"
 msgstr "Forenordner"
 
-#: modules/forum/forum.admin.inc:79 modules/forum/forum.module:0
+#: modules/forum/forum.admin.inc:79
 msgid "forum"
 msgstr "Forum"
 
@@ -103,8 +105,8 @@ msgid ""
 "Containers are displayed in ascending order by weight (containers with equal "
 "weights are displayed alphabetically)."
 msgstr ""
-"Ordner werden in aufsteigender Folge gemäß dem zugeordneten Reihenfolge-Wert "
-"angezeigt, wobei bei gleichem Wert die Sortierung alphabetisch erfolgt."
+"Ordner werden in aufsteigender Folge gemäß dem zugeordneten Reihenfolgewert "
+"angezeigt, wobei bei gleichem Wert alphabetisch sortiert wird."
 
 #: modules/forum/forum.admin.inc:168
 msgid "Are you sure you want to delete the forum %name?"
@@ -116,17 +118,17 @@ msgid ""
 "delete posts in this forum, visit <a href=\"@content\">content "
 "administration</a> first. This action cannot be undone."
 msgstr ""
-"Das Löschen eines Forums oder Ordners wird auch alle vorhandenen Unterforen "
-"löschen. Beiträge in diesem Forum können über die <a href=\"@content"
-"\">Inhaltsverwaltung</a> gelöscht werden. Dieser Vorgang kann nicht "
-"rückgängig gemacht werden."
+"Das Löschen eines Forums oder Ordners entfernt auch alle untergeordneten "
+"Foren, sofern vorhanden. Dieser Vorgang kann nicht rückgängig gemacht "
+"werden. Einzelne Beiträge in diesem Forum können über die <a href=\"@content"
+"\">Inhaltsverwaltung</a> gelöscht werden."
 
 #: modules/forum/forum.admin.inc:176
 msgid ""
 "The forum %term and all sub-forums and associated posts have been deleted."
 msgstr ""
-"Das Forum %term und alle Unterforen sowie alle dazugehörigen Forenbeiträge "
-"wurden gelöscht."
+"Das Forum %term, alle untergeordneten Foren sowie alle dazugehörigen "
+"Forenbeiträge wurden gelöscht."
 
 #: modules/forum/forum.admin.inc:192
 msgid "Hot topic threshold"
@@ -162,15 +164,15 @@ msgstr "Standard-Reihenfolge"
 msgid "Default display order for topics."
 msgstr "Die Standard-Anzeigereihenfolge für Beiträge."
 
-#: modules/forum/forum.admin.inc:230
+#: modules/forum/forum.admin.inc:229
 msgid "edit container"
 msgstr "Ordner bearbeiten"
 
-#: modules/forum/forum.admin.inc:233
+#: modules/forum/forum.admin.inc:232
 msgid "edit forum"
 msgstr "Forum bearbeiten"
 
-#: modules/forum/forum.admin.inc:245
+#: modules/forum/forum.admin.inc:244
 msgid ""
 "There are no existing containers or forums. Containers and forums may be "
 "added using the <a href=\"@container\">add container</a> and <a href=\"@forum"
@@ -180,7 +182,7 @@ msgstr ""
 "<a href=\"@container\">Ordner hinzufügen</a>- und <a href=\"@forum\">Forum "
 "hinzufügen</a>-Seiten hinzugefügt werden."
 
-#: modules/forum/forum.admin.inc:286
+#: modules/forum/forum.admin.inc:285
 msgid ""
 "Containers are usually placed at the top (root) level, but may also be "
 "placed inside another container or forum."
@@ -188,18 +190,19 @@ msgstr ""
 "Ordner befinden sich üblicherweise auf der obersten Ebene, können aber auch "
 "innerhalb eines anderen Ordners oder Forums angelegt werden."
 
-#: modules/forum/forum.admin.inc:289
+#: modules/forum/forum.admin.inc:288
 msgid ""
 "Forums may be placed at the top (root) level, or inside another container or "
 "forum."
 msgstr ""
-"Foren können als oberste Ebene (Root), innerhalb eines bestehenden Ordners "
-"oder Forums platziert werden."
+"Foren können auf oberster Ebene (Root) oder innerhalb eines bestehenden "
+"Ordners oder Forums platziert werden."
 
 #: modules/forum/forum.admin.inc:177
 msgid "forum: deleted %term and all its sub-forums and associated posts."
 msgstr ""
-"Forum: %term und alle Unterforen sowie zugehörige Beiträge wurden gelöscht."
+"Forum: %term, alle untergeordneten Foren sowie die zugehörigen Beiträge "
+"wurden gelöscht."
 
 #: modules/forum/forum.module:15
 msgid ""
@@ -215,7 +218,7 @@ msgstr ""
 "werden, ähnlich einem Forensystem wie phpBB. Foren sind sehr nützlich, weil "
 "hierdurch Community-Mitglieder untereinander über Themen diskutieren können. "
 "Die Diskussionen werden gespeichert, so dass später auf sie Bezug genommen "
-"werden kann. Mit dem <a href=\"@create-topic\">Forumbeitrag</a>-Menüpunkt "
+"werden kann. Mit dem <a href=\"@create-topic\">Forenbeitrag</a>-Menüpunkt "
 "(zu finden unter <em>Inhalt erstellen</em> im Navigationsmenü) wird ein "
 "Diskussionsforum oder Thema begonnen."
 
@@ -231,7 +234,7 @@ msgid ""
 "comment on a specific forum topic."
 msgstr ""
 "Eine themenbezogene Diskussion entsteht, wenn Benutzer in einem Forum "
-"Beiträge (oder Kommtare zu Beiträgen) hinterlassen. Foren können mit Hilfe "
+"Beiträge (oder Kommentare zu Beiträgen) hinterlassen. Foren können mit Hilfe "
 "sogenannter Ordner organisiert werden. Ordner und Foren können wiederum "
 "selbst in Ordnern und Foren enthalten sein und dienen damit der "
 "Strukturierung der Diskussionsplattform. Eine gute Planung dieser Struktur "
@@ -247,8 +250,8 @@ msgid ""
 "a forum topic (and all of its comments) may be moved between forums by "
 "selecting a different forum while editing a forum topic."
 msgstr ""
-"Ein Forumthema (und all seine Kommentare) kann zwischen Foren verschoben "
-"werden, indem beim Bearbeiten dieses Forumthemas ein anderes Forum "
+"Ein Forenthema (und all seine Kommentare) kann zwischen Foren verschoben "
+"werden, indem beim Bearbeiten dieses Forenthemas ein anderes Forum "
 "ausgewählt wird."
 
 #: modules/forum/forum.module:19
@@ -256,7 +259,7 @@ msgid ""
 "when moving a forum topic between forums, the <em>Leave shadow copy</em> "
 "option creates a link in the original forum pointing to the new location."
 msgstr ""
-"Wenn ein Forumthema in ein anderes Forum verschoben wird, erstellt die "
+"Wenn ein Forenthema in ein anderes Forum verschoben wird, erstellt die "
 "Option <em>Hinterlasse Schattenkopie</em> einen Link vom ursprünglichen "
 "Forum zur neuen Adresse."
 
@@ -266,7 +269,7 @@ msgid ""
 "forum topic will lock (prevent new comments) on the thread."
 msgstr ""
 "Mit der Auswahl <em>Nur Lesen</em> unter <em>Kommentareinstellungen</em> "
-"kann beim Bearbeiten des Forumthemas dieses für neue Kommentare gesperrt "
+"kann beim Bearbeiten des Forenthemas dieses für neue Kommentare gesperrt "
 "werden."
 
 #: modules/forum/forum.module:21
@@ -300,15 +303,14 @@ msgid ""
 "click the <em>Save</em> button at the bottom of the page."
 msgstr ""
 "Diese Seite zeigt eine Liste vorhandener Foren und Ordner. Ordner (soweit "
-"eingerichtet) enthalten Foren und Foren enthalten Forumthemen (ein "
-"Forumthema ist der erste Eintrag eines Diskussionsverlaufs). Als weitere "
+"eingerichtet) enthalten Foren und Foren enthalten Forenthemen (ein "
+"Forenthema ist der erste Eintrag eines Diskussionsverlaufs). Als weitere "
 "Strukturierung können sowohl Ordner als auch Foren wieder andere Ordner und "
-"Foren enthalten. Um Foren und Ordner umzusortieren, greift man den Drag-und-"
-"Drop-Anfasser in der Spalte <em>Name</em> und zieht das Forum oder den "
-"Container an eine andere Stelle innerhalb der Liste (\"greifen\" bedeutet: "
-"über dem Anfasser-Icon die Maus klicken und festhalten). Zu beachten ist, "
-"dass die Änderungen erst gespeichert werden, wenn der <em>Speichern</em>-"
-"Knopf am Ende der Seite geklickt wird."
+"Foren enthalten. Die Reihenfolge der Foren und Ordner kann mit der Drag-and-"
+"Drop-Funktion geändert werden. Einfach mit der linken Maustaste auf das "
+"Kreuz klicken, festhalten und in der gewünschte Position loslassen. "
+"Änderungen werden nicht gespeichert bis die Veränderungen mit dem "
+"<em>Konfiguration speichern</em>-Button übernommen werden."
 
 #: modules/forum/forum.module:27
 msgid ""
@@ -318,8 +320,8 @@ msgid ""
 msgstr ""
 "Ordner können dabei helfen, Foren zu strukturieren, indem sie "
 "zusammengehörige oder ähnliche Foren zu einer Gruppe zusammenfassen. Zum "
-"Beispiel kann ein Ordner \"Nahrungsmittel\" zwei Foren wie \"Obst\" und "
-"\"Gemüse\" enthalten."
+"Beispiel kann ein Ordner „Nahrungsmittel“ zwei Foren wie „Obst“ und „Gemüse“ "
+"enthalten."
 
 #: modules/forum/forum.module:29
 msgid ""
@@ -327,9 +329,9 @@ msgid ""
 "post to a threaded discussion). For example, a forum named \"Fruit\" may "
 "contain forum topics titled \"Apples\" and \"Bananas\", respectively."
 msgstr ""
-"Ein Forum enthält zusammengehörige oder ähnliche Forumthemen. Ein Forumthema "
+"Ein Forum enthält zusammengehörige oder ähnliche Forenthemen. Ein Forenthema "
 "ist der erste Eintrag eines Diskussionsverlaufs. Zum Beispiel kann ein Forum "
-"mit dem Namen \"Obst\" Forumthemen wie \"Äpfel\" und \"Bananen\" enthalten."
+"mit dem Namen „Obst“ Forenthemen wie „Äpfel“ und „Bananen“ enthalten."
 
 #: modules/forum/forum.module:31
 msgid ""
@@ -338,18 +340,19 @@ msgid ""
 "the <em>Content types</em> on the <a href=\"@forum-vocabulary\">forum "
 "vocabulary page</a>."
 msgstr ""
-"Hiermit wird die Darstellung der Forumthemen eingestellt. Die verfügbaren "
+"Hiermit wird die Darstellung der Forenthemen eingestellt. Die verfügbaren "
 "Inhaltstypen eines Forums können durch eine Anpassung der <em>Inhaltstypen</"
 "em> auf der <a href=\"@forum-vocabulary\">Forum-Vokabular-Seite</a> "
 "eingestellt werden."
 
+# formal
 #: modules/forum/forum.module:236
 msgid ""
 "The item %forum is only a container for forums. Please select one of the "
 "forums below it."
 msgstr ""
-"%forum ist nur ein Ordner für weitere Foren. Bitten wählen sie ein Forum "
-"innerhalb von ihm."
+"%forum ist lediglich ein Ordner für weitere Foren. Bitte wählen Sie eines "
+"der darin enthaltenen Foren aus."
 
 #: modules/forum/forum.module:302
 msgid "Forum topic"
@@ -360,7 +363,7 @@ msgid ""
 "A <em>forum topic</em> is the initial post to a new discussion thread within "
 "a forum."
 msgstr ""
-"Ein <em>Forumthema</em> ist der erste Eintrag einer neuen Diskussion in "
+"Ein <em>Forenthema</em> ist der erste Eintrag einer neuen Diskussion in "
 "einem Forum."
 
 #: modules/forum/forum.module:367
@@ -368,8 +371,8 @@ msgid ""
 "This is the designated forum vocabulary. Some of the normal vocabulary "
 "options have been removed."
 msgstr ""
-"Dies ist das Forum Vokabular. Einige der üblichen Vokabularoptionen sind "
-"hier nicht verfügbar."
+"Dies ist das Vokabular des Forums. Einige der üblichen Vokabularoptionen "
+"sind hier nicht verfügbar."
 
 #: modules/forum/forum.module:409;425
 msgid "Active forum topics"
@@ -385,7 +388,7 @@ msgstr "Anzahl der Beiträge"
 
 #: modules/forum/forum.module:441
 msgid "Read the latest forum topics."
-msgstr "Neuste Beiträge im Forum lesen."
+msgstr "Neueste Beiträge im Forum lesen."
 
 #: modules/forum/forum.module:460
 msgid "Leave shadow copy"
@@ -396,39 +399,40 @@ msgid ""
 "If you move this topic, you can leave a link in the old forum to the new "
 "forum."
 msgstr ""
-"Wenn dieses Thema verschoben wird, bleibt ein Verweis auf den neuen Standort."
+"Wenn dieses Thema verschoben wird, bleibt ein Link auf den neuen Standort."
 
-#: modules/forum/forum.module:567
+#: modules/forum/forum.module:559
 msgid "Topic"
 msgstr "Thema"
 
-#: modules/forum/forum.module:569
+#: modules/forum/forum.module:561
 msgid "Created"
 msgstr "Erstellt"
 
-#: modules/forum/forum.module:570
+#: modules/forum/forum.module:562
 msgid "Last reply"
 msgstr "Letzte Antwort"
 
-#: modules/forum/forum.module:683
+#: modules/forum/forum.module:675
 msgid "Post new @node_type"
 msgstr "@node_type erstellen"
 
-#: modules/forum/forum.module:690
-msgid "You are not allowed to post new content in forum."
-msgstr "Keine Berechtigung, um im Forum neue Beiträge zu schreiben."
+# formal
+#: modules/forum/forum.module:682
+msgid "You are not allowed to post new content in the forum."
+msgstr "Sie dürfen im Forum keine neuen Beiträge schreiben."
 
-#: modules/forum/forum.module:694
-msgid "<a href=\"@login\">Login</a> to post new content in forum."
+#: modules/forum/forum.module:686
+msgid "<a href=\"@login\">Login</a> to post new content in the forum."
 msgstr ""
-"<a href=\"@login\">Anmelden</a>, um in dem Forum einen neuen Beitrag zu "
+"<a href=\"@login\">Anmelden</a>, um im Forum einen neuen Beitrag zu "
 "schreiben."
 
-#: modules/forum/forum.module:732
+#: modules/forum/forum.module:724
 msgid "No forums defined"
 msgstr "Es wurden noch keine Foren definiert."
 
-#: modules/forum/forum.module:818
+#: modules/forum/forum.module:810
 msgid "This topic has been moved"
 msgstr "Dieses Thema wurde verschoben."
 
@@ -462,7 +466,7 @@ msgstr "Foren"
 
 #: modules/forum/forum.module:94
 msgid "Control forums and their hierarchy and change forum settings."
-msgstr "Einstellungen für Foren und Foren-Hierarchie."
+msgstr "Einstellungen für Foren und Forenhierarchie."
 
 #: modules/forum/forum.module:106
 msgid "Add container"
@@ -479,15 +483,3 @@ msgstr "Ordner bearbeiten"
 #: modules/forum/forum.module:148
 msgid "Edit forum"
 msgstr "Forum bearbeiten"
-
-#: modules/forum/forum.install:68
-msgid "Stores the relationship of nodes to forum terms."
-msgstr "Speichert die Beziehung von Beiträgen zu Forum-Begriffen."
-
-#: modules/forum/forum.install:75
-msgid "The {node}.nid of the node."
-msgstr "Die {node}.nid des Beitrags."
-
-#: modules/forum/forum.install:89
-msgid "The {term_data}.tid of the forum term assigned to the node."
-msgstr "Die dem Beitrag zugewiesene {term_data}.tid des Forumbegriffes."

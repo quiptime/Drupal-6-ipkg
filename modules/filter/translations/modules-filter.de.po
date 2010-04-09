@@ -1,4 +1,4 @@
-# $Id: modules-filter.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-filter.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-filter)
 # Copyright (c) 2004-2008 by the German translation team
@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-filter\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -68,7 +68,7 @@ msgstr "Filter"
 msgid "Choose the filters that will be used in this filter format."
 msgstr "Filter wählen, die in diesem Eingabeformat benutzt werden sollen."
 
-#: modules/filter/filter.admin.inc:146 modules/filter/filter.module:587
+#: modules/filter/filter.admin.inc:146 modules/filter/filter.module:594
 msgid "More information about formatting options"
 msgstr "Weitere Informationen über Formatierungsoptionen"
 
@@ -85,7 +85,7 @@ msgstr ""
 "beim Erstellen von Beiträgen angezeigt wird. Diese werden automatisch aus "
 "den Filtereinstellungen generiert."
 
-#: modules/filter/filter.admin.inc:153 modules/filter/filter.module:516
+#: modules/filter/filter.admin.inc:153 modules/filter/filter.module:523
 msgid "Formatting guidelines"
 msgstr "Formatierungsrichtlinien"
 
@@ -185,7 +185,7 @@ msgstr ""
 "Ein Filter ändert nicht den tatsächlichen Inhalt eines Beitrags, sondern "
 "ändert ihn nur zur Anzeige. Ein Filter kann zum Beispiel unzulässige HTML-"
 "Tags entfernen, während ein anderer automatisch Internetadressen in "
-"klickbare Links umwandelt."
+"anklickbare Links umwandelt."
 
 #: modules/filter/filter.module:25
 msgid ""
@@ -218,7 +218,7 @@ msgstr ""
 "<em>Eingabeformate</em> ermöglichen es, von Benutzern beigesteuerte Texte "
 "aufzubereiten. Jedes Eingabeformat hat eigene Einstellungen dafür, welche "
 "Filter verwendet werden sollen. Zu den möglichen Filtern zählen das Löschen "
-"von böswilligem HTML oder das Verwandeln von URLs in klickbare Links. "
+"von böswilligem HTML oder das Verwandeln von URLs in anklickbare Links. "
 "Benutzer können zwischen den verfügbaren Eingabeformaten auswählen, wenn sie "
 "Inhalte verfassen."
 
@@ -236,6 +236,7 @@ msgstr ""
 "für jeden Benutzer verfügbar. Benutzer mit der Berechtigung „Filter "
 "verwalten“ können immer alle Eingabeformate verwenden."
 
+# formal
 #: modules/filter/filter.module:33
 msgid ""
 "Every <em>filter</em> performs one particular change on the user input, for "
@@ -251,6 +252,7 @@ msgstr ""
 "Sollten Ausgabekonflikte zwischen einigen Filtern auftreten, kann die  <a "
 "href=\"@rearrange\">Reihenfolge</a> der Filter geändert werden."
 
+# formal
 #: modules/filter/filter.module:35
 msgid ""
 "If you cannot find the settings for a certain filter, make sure you have "
@@ -270,7 +272,7 @@ msgstr ""
 "Wegen des flexiblen Filtersystems kann es zu Situationen kommen, in denen "
 "ein Filter verhindert, dass ein anderer seine Aufgabe erfüllt. "
 "Beispielsweise: ein Wort in einer URL wird in einen Listeneintrag "
-"umgewandelt, bevor die URL in einen anklickbaren Verweis umgewandelt wurde. "
+"umgewandelt, bevor die URL in einen anklickbaren Link umgewandelt wurde. "
 "Wenn so etwas vorkommt, muss die Ausführungsreihenfolge der Filter "
 "umsortiert werden."
 
@@ -286,11 +288,11 @@ msgstr ""
 "Filter werden von oben nach unten angewandt. Die Änderung der Reihenfolge "
 "kann in der Reihenfolge-Spalte vorgenommen werden: Filter mit einer "
 "<em>höheren</em> Zahl im „Reihenfolge“-Feld werden später ausgeführt als "
-"solche mit einer niedrigeren Zahl. Alternativ kann die Reihenfolge auch per "
-"Drag & Drop geändert werden (beim Kreuz mit der linken Maus klicken, "
-"festhalten und in die gewünschte Position verschieben). Änderung werden erst "
-"nach dem Betätigen der <em>Konfiguration Speichern</em> Schaltfläche am Ende "
-"der Seite gespeichert. Javascript muss im Browser aktiviert sein."
+"solche mit einer niedrigeren Zahl. Die Reihenfolge kann auch mit der Drag-"
+"and-Drop-Funktion geändert werden. Einfach mit der linken Maustaste auf das "
+"Kreuz klicken, festhalten und in der gewünschte Position loslassen. "
+"Änderungen werden nicht gespeichert bis die Veränderungen mit dem "
+"<em>Konfiguration speichern</em>-Button übernommen werden."
 
 #: modules/filter/filter.module:180;182
 msgid "Allowed HTML tags: @tags"
@@ -591,27 +593,27 @@ msgstr ""
 msgid "Web page addresses and e-mail addresses turn into links automatically."
 msgstr "Internet- und E-Mail-Adressen werden automatisch umgewandelt."
 
-#: modules/filter/filter.module:488
+#: modules/filter/filter.module:495
 msgid "Input format"
 msgstr "Eingabeformat"
 
-#: modules/filter/filter.module:608;659
+#: modules/filter/filter.module:615;666
 msgid "HTML filter"
 msgstr "HTML-Filter"
 
-#: modules/filter/filter.module:608
+#: modules/filter/filter.module:615
 msgid "Line break converter"
 msgstr "Zeilenumbruchkonverter"
 
-#: modules/filter/filter.module:608;719
+#: modules/filter/filter.module:615;726
 msgid "URL filter"
 msgstr "URL-Filter"
 
-#: modules/filter/filter.module:608
+#: modules/filter/filter.module:615
 msgid "HTML corrector"
 msgstr "HTML-Korrektor"
 
-#: modules/filter/filter.module:613
+#: modules/filter/filter.module:620
 msgid ""
 "Allows you to restrict whether users can post HTML and which tags to filter "
 "out. It will also remove harmful content such as JavaScript events, "
@@ -619,34 +621,34 @@ msgid ""
 msgstr ""
 "Es wird festgelegt, ob ein Benutzer in einem Beitrag HTML verwenden darf und "
 "welche HTML-Tags zulässig sind.  Zusätzlich werden als potenziell gefährlich "
-"eingestufte Javascript-Events, Javascript-URLs und CSS-Styles entfernt."
+"eingestufte JavaScript-Events, JavaScript-URLs und CSS-Styles entfernt."
 
-#: modules/filter/filter.module:615
+#: modules/filter/filter.module:622
 msgid "Converts line breaks into HTML (i.e. &lt;br&gt; and &lt;p&gt; tags)."
 msgstr ""
 "Wandelt Zeilenumbrüche in HTML um (z.B. &lt;br&gt; und &lt;p&gt;-Tags)."
 
-#: modules/filter/filter.module:617
+#: modules/filter/filter.module:624
 msgid "Turns web and e-mail addresses into clickable links."
 msgstr "Verwandelt Internet- und E-Mail-Adressen in Links."
 
-#: modules/filter/filter.module:619
+#: modules/filter/filter.module:626
 msgid "Corrects faulty and chopped off HTML in postings."
 msgstr "Korrigiert fehlerhaftes und zerhacktes HTML in Beiträgen."
 
-#: modules/filter/filter.module:664
+#: modules/filter/filter.module:671
 msgid "Filter HTML tags"
 msgstr "HTML-Tags filtern"
 
-#: modules/filter/filter.module:666
+#: modules/filter/filter.module:673
 msgid "Strip disallowed tags"
 msgstr "Verbotene Tags löschen"
 
-#: modules/filter/filter.module:666
+#: modules/filter/filter.module:673
 msgid "Escape all tags"
 msgstr "Alle Tags im Klartext anzeigen"
 
-#: modules/filter/filter.module:667
+#: modules/filter/filter.module:674
 msgid ""
 "How to deal with HTML tags in user-contributed content. If set to \"Strip "
 "disallowed tags\", dangerous tags are removed (see below). If set to "
@@ -657,7 +659,7 @@ msgstr ""
 "„Alle Tags im Klartext anzeigen“ werden alle HTML-Befehle maskiert und so "
 "angezeigt wie sie eingegeben wurden."
 
-#: modules/filter/filter.module:675
+#: modules/filter/filter.module:682
 msgid ""
 "If \"Strip disallowed tags\" is selected, optionally specify tags which "
 "should not be stripped. JavaScript event attributes are always stripped."
@@ -666,22 +668,22 @@ msgstr ""
 "angegeben werden, die nicht gelöscht werden sollen. JavaScript Event-"
 "Attribute werden immer gelöscht."
 
-#: modules/filter/filter.module:679
+#: modules/filter/filter.module:686
 msgid "Display HTML help"
 msgstr "HTML-Hilfe anzeigen"
 
-#: modules/filter/filter.module:681
+#: modules/filter/filter.module:688
 msgid ""
 "If enabled, Drupal will display some basic HTML help in the long filter tips."
 msgstr ""
 "Wenn aktiviert, wird Drupal einige Informationen über die Grundlagen von "
 "HTML in den ausführlichen Formatierungsrichtlinien anzeigen."
 
-#: modules/filter/filter.module:685
+#: modules/filter/filter.module:692
 msgid "Spam link deterrent"
 msgstr "Spamlink-Abschreckung einsetzen"
 
-#: modules/filter/filter.module:687
+#: modules/filter/filter.module:694
 msgid ""
 "If enabled, Drupal will add rel=\"nofollow\" to all links, as a measure to "
 "reduce the effectiveness of spam links. Note: this will also prevent valid "
@@ -694,11 +696,11 @@ msgstr ""
 "gehindert werden, weshalb es am sinnvollsten ist, dieses Filter für Gäste zu "
 "verwenden."
 
-#: modules/filter/filter.module:724
+#: modules/filter/filter.module:731
 msgid "Maximum link text length"
-msgstr "Maximale Verweistextlänge"
+msgstr "Maximale Länge des Link-Texts"
 
-#: modules/filter/filter.module:727
+#: modules/filter/filter.module:734
 msgid ""
 "URLs longer than this number of characters will be truncated to prevent long "
 "strings that break formatting. The link itself will be retained; just the "
@@ -735,75 +737,3 @@ msgstr "Tipps zur Erstellung von Inhalten"
 #: modules/filter/filter.module:131
 msgid "Rearrange"
 msgstr "Umsortieren"
-
-#: modules/filter/filter.module:0
-msgid "filter"
-msgstr "Filter"
-
-#: modules/filter/filter.install:9
-msgid ""
-"Table that maps filters (HTML corrector) to input formats (Filtered HTML)."
-msgstr ""
-"Die Tabelle verknüpft Filter (HTML-Korrektor) mit Eingabeformaten "
-"(gefiltertes HTML)."
-
-#: modules/filter/filter.install:14
-msgid "Primary Key: Auto-incrementing filter ID."
-msgstr "Primärschlüssel: Filter-ID-Autowert."
-
-#: modules/filter/filter.install:20
-msgid ""
-"Foreign key: The {filter_formats}.format to which this filter is assigned."
-msgstr ""
-"Fremdschlüssel: Das {filter_formats}.format, dem dieser Filter zugewiesen "
-"ist."
-
-#: modules/filter/filter.install:27
-msgid "The origin module of the filter."
-msgstr "Das Modul, vom dem der Filter stammt."
-
-#: modules/filter/filter.install:34
-msgid "ID to identify which filter within module is being referenced."
-msgstr ""
-"ID, um zu bestimmen, welcher Filter innerhalb des Moduls angesprochen werden "
-"soll."
-
-#: modules/filter/filter.install:41
-msgid "Weight of filter within format."
-msgstr "Reihenfolge des Filters innerhalb des Eingabeformats."
-
-#: modules/filter/filter.install:53
-msgid ""
-"Stores input formats: custom groupings of filters, such as Filtered HTML."
-msgstr ""
-"Speichert Eingabeformate: Benutzerdefinierte Filtergruppen, wie "
-"beispielsweise „Gefiltertes HTML“."
-
-#: modules/filter/filter.install:58
-msgid "Primary Key: Unique ID for format."
-msgstr "Primärschlüssel: Eindeutige ID für Eingabeformat."
-
-#: modules/filter/filter.install:65
-msgid "Name of the input format (Filtered HTML)."
-msgstr "Name des Eingabeformats (Gefiltertes HTML)."
-
-#: modules/filter/filter.install:72
-msgid "A comma-separated string of roles; references {role}.rid."
-msgstr ""
-"Eine durch Kommata getrennte Liste von Rollen. Verweist auf {role}.nid."
-
-#: modules/filter/filter.install:79
-msgid ""
-"Flag to indicate whether format is cachable. (1 = cachable, 0 = not cachable)"
-msgstr ""
-"Kennzeichen, das angibt, ob das Eingabeformat gecachet werden kann. (1 = Ja, "
-"0 = Nein)"
-
-#: modules/filter/filter.install:87
-msgid ""
-"Cache table for the Filter module to store already filtered pieces of text, "
-"identified by input format and md5 hash of the text."
-msgstr ""
-"Tabelle des Filtermoduls zur performanten Zwischenspeicherung von bereits "
-"gefilterten Texten. Zur eindeutigen Identifikation wird das Eingabeformat "
-"und der errechnete MD5-Hash genutzt."

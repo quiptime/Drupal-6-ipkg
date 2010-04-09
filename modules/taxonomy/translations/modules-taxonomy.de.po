@@ -1,4 +1,4 @@
-# $Id: modules-taxonomy.po,v 1.1.2.10 2008/08/16 18:48:06 timcn Exp $
+# $Id: modules-taxonomy.po,v 1.1.2.12 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-taxonomy)
 # Copyright (c) 2004-2008 by the German translation team
@@ -10,9 +10,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-taxonomy\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
-"PO-Revision-Date: 2008-08-16 20:40+0200\n"
-"Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
+"PO-Revision-Date: 2008-08-16 21:27+0100\n"
+"Last-Translator: kod <kod@0b101010.de>\n"
 "Language-Team: German Drupal translation team\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,13 +43,11 @@ msgstr "Vokabularname"
 
 #: modules/taxonomy/taxonomy.admin.inc:125
 msgid "The name for this vocabulary, e.g., <em>\"Tags\"</em>."
-msgstr "Der Name für dieses Vokabular, z.b. <em>\"Tags\"</em>."
+msgstr "Der Name für dieses Vokabular, z.b. <em>„Tags“</em>."
 
 #: modules/taxonomy/taxonomy.admin.inc:131
 msgid "Description of the vocabulary; can be used by modules."
-msgstr ""
-"Beschreibung des Vokabulars. Kann von Modulen genutzt (z.B. zur Anzeige) "
-"werden."
+msgstr "Beschreibung des Vokabulars. Kann von Modulen verwendet werden."
 
 #: modules/taxonomy/taxonomy.admin.inc:134
 msgid "Help text"
@@ -61,7 +59,7 @@ msgid ""
 "a comma separated list of words\"</em>."
 msgstr ""
 "Anweisungen, die dem Benutzer gezeigt werden, wenn er Begriffe auswählt, z."
-"b. <em>\"Geben Sie eine durch Kommata getrennte Liste von Wörtern ein\"</em>."
+"b. <em>„Geben Sie eine durch Kommata getrennte Liste von Wörtern ein“</em>."
 
 #: modules/taxonomy/taxonomy.admin.inc:148
 msgid "Select content types to categorize using this vocabulary."
@@ -69,15 +67,15 @@ msgstr "Inhaltstypen zur Kategorisierung mit diesem Vokabular auswählen."
 
 #: modules/taxonomy/taxonomy.admin.inc:156
 msgid "Tags"
-msgstr "Free Tagging (Freies Zuweisen von Kategorien)"
+msgstr "Tags"
 
 #: modules/taxonomy/taxonomy.admin.inc:158
 msgid ""
 "Terms are created by users when submitting posts by typing a comma separated "
 "list."
 msgstr ""
-"Beim Erstellen von Beiträgen werden diese Begriffe als Liste von durch "
-"Kommata getrennten Wörtern eingegeben."
+"Begriffe werden erzeugt wenn Benutzer beim Erstellen von Beiträgen die "
+"Wörter mit Kommas getrennt eingeben."
 
 #: modules/taxonomy/taxonomy.admin.inc:161
 msgid "Multiple select"
@@ -88,8 +86,8 @@ msgid ""
 "Allows posts to have more than one term from this vocabulary (always true "
 "for tags)."
 msgstr ""
-"Erlaubt es, mehr als nur einen Begriff dieses Vokabulars anzugeben (bei Free "
-"Tagging ist dies stets möglich)."
+"Erlaubt es, mehr als nur einen Begriff dieses Vokabulars anzugeben (bei "
+"Freien Taggen ist dies stets möglich)."
 
 #: modules/taxonomy/taxonomy.admin.inc:168
 msgid ""
@@ -196,18 +194,18 @@ msgid ""
 msgstr ""
 "Ist ein Begriff mehreren Vokabularen zugeordnet, muss das Vokabular %"
 "vocabulary alle diese Vokabulare bei jedem Zugriff durchsuchen. Zudem wird "
-"durch das Verwenden mehrerer zugeordneter Vokabulare Drag&Drop deaktiviert, "
-"da dieses vom Drag&Drop-Interface nicht unterstützt wird. In diesem Fall "
-"müssen die gewünschten Vokabulare manuell über das Begriffsformular erfasst "
-"werden."
+"durch das Verwenden mehrerer zugeordneter Vokabulare Drag-and-Drop "
+"deaktiviert, da dieses vom Drag-and-Drop-Interface nicht unterstützt wird. "
+"In diesem Fall müssen die gewünschten Vokabulare manuell über das "
+"Begriffsformular erfasst werden."
 
 #: modules/taxonomy/taxonomy.admin.inc:820
 msgid ""
 "You may re-enable the drag and drop interface at any time by reducing "
 "multiple parents to a single parent for the terms in this vocabulary."
 msgstr ""
-"Drag&Drop kann jederzeit wieder aktiviert werden, indem in einem Vokabular "
-"jedem Begriff statt mehreren Vokabularen genau ein Vokabular zugeordnet wird."
+"Drag-and-Drop kann jederzeit wieder aktiviert werden, indem jedem Begriff "
+"statt mehreren übergeordneter Begriffe genau einer zugeordnet wird."
 
 #: modules/taxonomy/taxonomy.admin.inc:821
 msgid "Set multiple parents"
@@ -267,19 +265,18 @@ msgid "Reset vocabulary %name to alphabetical order."
 msgstr "Das Vokabular %name auf alphabetische Reihenfolge zurücksetzen."
 
 #: modules/taxonomy/taxonomy.admin.inc:203;207;769;773;855;889;924
-#: modules/taxonomy/taxonomy.module:0
 msgid "taxonomy"
 msgstr "Taxonomie"
 
-#: modules/taxonomy/taxonomy.module:422
+#: modules/taxonomy/taxonomy.module:421
 msgid "- None selected -"
 msgstr "- Keine ausgewählt -"
 
-#: modules/taxonomy/taxonomy.module:425
+#: modules/taxonomy/taxonomy.module:424
 msgid "- None -"
 msgstr "- Keine -"
 
-#: modules/taxonomy/taxonomy.module:521
+#: modules/taxonomy/taxonomy.module:520
 msgid ""
 "A comma-separated list of terms describing this content. Example: funny, "
 "bungee jumping, \"Company, Inc.\"."
@@ -287,19 +284,19 @@ msgstr ""
 "Eine durch Kommata getrennte Liste von Begriffen, die diesen Inhalt "
 "beschreiben. Beispiel: lustig, Bungee-Jumping, „Firma GmbH“."
 
-#: modules/taxonomy/taxonomy.module:552
+#: modules/taxonomy/taxonomy.module:551
 msgid "Vocabularies"
 msgstr "Vokabulare"
 
-#: modules/taxonomy/taxonomy.module:639
+#: modules/taxonomy/taxonomy.module:638
 msgid "The %name vocabulary can not be modified in this way."
 msgstr "Das Vokabular %name kann auf diese Weise nicht geändert werden."
 
-#: modules/taxonomy/taxonomy.module:1138
+#: modules/taxonomy/taxonomy.module:1163
 msgid "There are currently no posts in this category."
 msgstr "In dieser Kategorie befinden sich zurzeit keine Beiträge."
 
-#: modules/taxonomy/taxonomy.module:1241
+#: modules/taxonomy/taxonomy.module:1266
 msgid ""
 "The taxonomy module allows you to categorize content using various systems "
 "of classification. Free-tagging vocabularies are created by users on the fly "
@@ -313,7 +310,7 @@ msgstr ""
 "Das Taxonomie-Modul ermöglicht es, Inhalten eine oder mehrere Kategorien "
 "zuzuweisen und so Inhalte auf unterschiedlichste Art und Weise zu "
 "gruppieren. Ein Vokabular kann entweder eine genau festgelegte Menge an "
-"Kategorien oder das sogenannte Free Tagging anbieten. Bei letzterem, das v."
+"Kategorien oder das sogenannte Freies Taggen anbieten. Bei letzterem, das v."
 "a. in Blogs und Social-Communities zur Anwendung kommt, werden Kategorien "
 "bei Bedarf gleichzeitig mit dem Erstellen eines Eintrages erzeugt. Im "
 "Gegensatz dazu werden bei kontrollierten Vokabularen die verfügbaren "
@@ -321,10 +318,10 @@ msgstr ""
 "Kategorien können dabei einfache, kurze Listen von Schlagworten darstellen "
 "als auch beliebig komplexe Hierarchien gegenseitig verknüpfter Begriffe "
 "abbilden. Diese Methoden können auf beliebige Inhaltstypen angewendet und "
-"kombiniert werden. Damit lassen sich Inhalte sehr fexibel klassifizieren und "
-"entsprechend darstellen."
+"kombiniert werden. Damit lassen sich Inhalte sehr flexibel klassifizieren "
+"und entsprechend darstellen."
 
-#: modules/taxonomy/taxonomy.module:1242
+#: modules/taxonomy/taxonomy.module:1267
 msgid ""
 "For example, when creating a recipe site, you might want to classify posts "
 "by both the type of meal and preparation time. A vocabulary for each allows "
@@ -339,16 +336,16 @@ msgstr ""
 "Verfügung, müsste für jede mögliche Kombination ein separater Begriff "
 "konstruiert werden."
 
-#: modules/taxonomy/taxonomy.module:1243
+#: modules/taxonomy/taxonomy.module:1268
 msgid "Type of Meal: <em>Appetizer, Main Course, Salad, Dessert</em>"
 msgstr "Art der Mahlzeit: <em>Vorspeise, Hauptgang, Salat oder Dessert</em>"
 
-#: modules/taxonomy/taxonomy.module:1244
+#: modules/taxonomy/taxonomy.module:1269
 msgid "Preparation Time: <em>0-30mins, 30-60mins, 1-2 hrs, 2hrs+</em>"
 msgstr ""
-"Zubereitungsdauer: <em>0-30 Min., 30-60 Min., 1-2 Std, mehr als 2 Std</em>"
+"Zubereitungsdauer: <em>0-30 Min., 30-60 Min., 1-2 Std., mehr als 2 Std.</em>"
 
-#: modules/taxonomy/taxonomy.module:1245
+#: modules/taxonomy/taxonomy.module:1270
 msgid ""
 "Each taxonomy term (often called a 'category' or 'tag' in other systems) "
 "automatically provides lists of posts and a corresponding RSS feed. These "
@@ -372,7 +369,7 @@ msgstr ""
 "Reihe von Modulen, die es ermöglichen, die Darstellung und Organisation der "
 "Begriffe durch die Kern-Module zu ändern bzw. zu erweitern."
 
-#: modules/taxonomy/taxonomy.module:1246
+#: modules/taxonomy/taxonomy.module:1271
 msgid ""
 "Terms can also be organized in parent/child relationships from the admin "
 "interface. An example would be a vocabulary grouping countries under their "
@@ -383,12 +380,12 @@ msgstr ""
 "Im Verwaltungsbereich lassen sich zwischen Begriffen auch hierarchische "
 "Beziehungen aufbauen. Man spricht hier von einer „Eltern-Kind-Beziehung\" "
 "zwischen dem über- bzw. untergeordneten Begriff. Ein Beispiel wäre ein "
-"Vokabular, welches Länder bzgl. ihrer geopolitschen Region einteilt. Das "
+"Vokabular, welches Länder bzgl. ihrer geopolitischen Region einteilt. Das "
 "Taxonomie-Modul erlaubt sogar den Aufbau noch komplexerer "
 "Beziehungsgeflechte, etwa die Zuordnung der Türkei sowohl zum „Mittleren "
 "Osten“ als auch zu „Europa“."
 
-#: modules/taxonomy/taxonomy.module:1247
+#: modules/taxonomy/taxonomy.module:1272
 msgid ""
 "The taxonomy module supports the use of both synonyms and related terms, but "
 "does not directly use this functionality. However, optional contributed or "
@@ -399,7 +396,7 @@ msgstr ""
 "sondern steht Modulen der Drupal-Community bzw. für selbst geschriebene "
 "Module zur Verfügung."
 
-#: modules/taxonomy/taxonomy.module:1248
+#: modules/taxonomy/taxonomy.module:1273
 msgid ""
 "For more information, see the online handbook entry for <a href=\"@taxonomy"
 "\">Taxonomy module</a>."
@@ -407,7 +404,8 @@ msgstr ""
 "Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
 "der Handbuch-Seite zum <a href=\"@taxonomy\">Taxonomie-Modul</a>."
 
-#: modules/taxonomy/taxonomy.module:1251
+# formal
+#: modules/taxonomy/taxonomy.module:1276
 msgid ""
 "The taxonomy module allows you to categorize your content using both tags "
 "and administrator defined terms. It is a flexible tool for classifying "
@@ -420,12 +418,12 @@ msgstr ""
 "Schlüsselwörtern und vom Administrator definierten Begriffen. Es ist ein "
 "flexibles Werkzeug mit vielen Möglichkeiten zur Klassifizierung von "
 "Inhalten. Zu Beginn muss ein Vokabular erstellt werden, das Begriffe und "
-"Schlüsselwörter aufnimmt. Sie können ein Vokabular für frei definierbare "
-"Schlüsselwörter erstellen oder ein Vokabular für vordefinierte Begriffe, mit "
-"denen man die unterschiedlichsten Eigenschaften der Inhalte bezeichnen kann, "
-"z.B. „Länder“ oder „Farben“."
+"Schlüsselwörter aufnimmt. Sie können ein Vokabular für das Freie Taggen "
+"erstellen oder ein Vokabular für vordefinierte Begriffe, mit denen man die "
+"unterschiedlichsten Eigenschaften der Inhalte bezeichnen kann, z.B. „Länder“ "
+"oder „Farben“."
 
-#: modules/taxonomy/taxonomy.module:1252
+#: modules/taxonomy/taxonomy.module:1277
 msgid ""
 "Use the list below to configure and review the vocabularies defined on your "
 "site, or to list and manage the terms (tags) they contain. A vocabulary may "
@@ -445,33 +443,33 @@ msgstr ""
 "dies der Fall ist, werden sie beim Bearbeiten oder Erstellen eines Beitrags "
 "dieses Typs angezeigt. Mehrere Vokabular die einem Inhaltstyp zugeordnet "
 "sind, werden in der untenstehenden Reihenfolge angezeigt. Die Reihenfolge "
-"kann durch ziehen des Drag-And-Drop-Kreuzes an die richtige Stelle verändert "
-"werden. Zum Verschieben muss auf das Icon geklickt, die Maustaste gedrückt "
-"und der Mauszeiger verschoben werden). Zu beachten ist, dass die Änderungen "
-"erst gespeichert werden, wenn der <em>Speichern</em>-Knopf am Ende der Seite "
-"geklickt wird."
+"kann mit der Drag-and-Drop-Funktion geändert werden. Einfach mit der linken "
+"Maustaste auf das Kreuz klicken, festhalten und in der gewünschte Position "
+"loslassen. Änderungen werden nicht gespeichert bis die Veränderungen mit dem "
+"<em>Konfiguration speichern</em>-Button übernommen werden."
 
-#: modules/taxonomy/taxonomy.module:1257
+#: modules/taxonomy/taxonomy.module:1282
 msgid ""
 "%capital_name is a free-tagging vocabulary. To change the name or "
 "description of a term, click the <em>edit</em> link next to the term."
 msgstr ""
-"%capital_name ist ein Free-Tagging-Vokabular. Über den <em>Bearbeiten</em>-"
-"Verweis neben einem Begriff lässt sich dessen Name oder Beschreibung ändern."
+"%capital_name ist ein Vokabular das Freies Taggen ermöglicht. Über den "
+"<em>Bearbeiten</em>-Link neben einem Begriff lässt sich dessen Name oder "
+"Beschreibung ändern."
 
-#: modules/taxonomy/taxonomy.module:1261
+#: modules/taxonomy/taxonomy.module:1286
 msgid ""
 "%capital_name is a flat vocabulary. You may organize the terms in the %name "
 "vocabulary by using the handles on the left side of the table. To change the "
 "name or description of a term, click the <em>edit</em> link next to the term."
 msgstr ""
 "%capital_name ist ein Vokabular ohne Hierarchie zwischen den zugeordneten "
-"Begriffen. Die Begriffe im Vokabular %name lassen sich mithilfe der "
-"Drag&Drop-Funktion auf der linken Seite der Tabelle ordnen. Über den "
+"Begriffen. Die Begriffe im Vokabular %name lassen sich mithilfe der Drag-and-"
+"Drop-Funktion auf der linken Seite der Tabelle ordnen. Über den "
 "<em>Bearbeiten</em>-Link neben einem Begriff lässt sich dessen Name als auch "
 "Beschreibung ändern."
 
-#: modules/taxonomy/taxonomy.module:1263
+#: modules/taxonomy/taxonomy.module:1288
 msgid ""
 "%capital_name is a single hierarchy vocabulary. You may organize the terms "
 "in the %name vocabulary by using the handles on the left side of the table. "
@@ -480,11 +478,11 @@ msgid ""
 msgstr ""
 "%capital_name ist ein Vokabular mit einer einfachen Hierarchie zwischen den "
 "zugeordneten Begriffen. Die Begriffe im Vokabular %name lassen sich mithilfe "
-"der Drag&Drop-Funktion auf der linken Seite der Tabelle ordnen. Über den "
+"der Drag-and-Drop-Funktion auf der linken Seite der Tabelle ordnen. Über den "
 "<em>Bearbeiten</em>-Link neben einem Begriff lässt sich dessen Name als auch "
 "Beschreibung ändern."
 
-#: modules/taxonomy/taxonomy.module:1265
+#: modules/taxonomy/taxonomy.module:1290
 msgid ""
 "%capital_name is a multiple hierarchy vocabulary. To change the name or "
 "description of a term, click the <em>edit</em> link next to the term. Drag "
@@ -493,13 +491,13 @@ msgid ""
 msgstr ""
 "%capital_name ist ein Vokabular mit einer komplexen Hierarchie zwischen den "
 "zugeordneten Begriffen. Über den <em>Bearbeiten</em>-Link neben einem "
-"Begriff lässt sich dessen Name als auch Beschreibung ändern. Die Drag&Drop-"
-"Funktionalität ist für Vokabulare dieser Art nicht verfügbar. Werden die "
-"Beziehungen der Begriffe allerdings so geändert, dass jeder Begriff "
-"höchstens von einem übergeordneten Begriff abhängt, wird die Drag&Drop-"
+"Begriff lässt sich dessen Name als auch Beschreibung ändern. Die Drag-and-"
+"Drop-Funktionalität ist für Vokabulare dieser Art nicht verfügbar. Werden "
+"die Beziehungen der Begriffe allerdings so geändert, dass jeder Begriff "
+"höchstens von einem übergeordneten Begriff abhängt, wird die Drag-and-Drop-"
 "Funktionalität automatisch wieder aktiviert."
 
-#: modules/taxonomy/taxonomy.module:1268
+#: modules/taxonomy/taxonomy.module:1293
 msgid ""
 "Define how your vocabulary will be presented to administrators and users, "
 "and which content types to categorize with it. Tags allows users to create "
@@ -510,22 +508,22 @@ msgstr ""
 "Hier wird festgelegt, für welche Inhaltstypen das Vokabular zur "
 "Kategorisierung verwendet werden kann und auf welche Art und Weise die "
 "Darstellung des Vokabulars für Administratoren und Benutzer erfolgen soll. "
-"Beim freien Tagging können Benutzer bei der Erstellung von Beiträgen die "
+"Beim Freien Taggen können Benutzer bei der Erstellung von Beiträgen die "
 "gewünschten – auch neue – Kategorien als eine durch Kommata getrennte Liste "
 "von Begriffen frei festlegen. Eine andere Möglichkeit ist die Wahl "
 "vorgegebener Begriffe aus einer Auswahlliste. Die angezeigten Begriffe "
 "werden dabei vorab von Benutzern festgelegt, die die Berechtigung die "
 "„Taxonomie zu verwalten“ haben."
 
-#: modules/taxonomy/taxonomy.module:1307
+#: modules/taxonomy/taxonomy.module:1332
 msgid "After saving a new term to the database"
 msgstr "Nachdem ein neuer Begriff in der Datenbank gespeichert wird"
 
-#: modules/taxonomy/taxonomy.module:1310
+#: modules/taxonomy/taxonomy.module:1335
 msgid "After saving an updated term to the database"
 msgstr "Nachdem ein aktualisierter Begriff in der Datenbank gespeichert wird"
 
-#: modules/taxonomy/taxonomy.module:1313
+#: modules/taxonomy/taxonomy.module:1338
 msgid "After deleting a term"
 msgstr "Nachdem ein Begriff gelöscht wurde"
 
@@ -533,202 +531,36 @@ msgstr "Nachdem ein Begriff gelöscht wurde"
 msgid "administer taxonomy"
 msgstr "Taxonomie verwalten"
 
-#: modules/taxonomy/taxonomy.module:114
+#: modules/taxonomy/taxonomy.module:113
 msgid "Manage tagging, categorization, and classification of your content."
 msgstr ""
 "Ermöglicht das Identifizieren, Kategorisieren und Klassifizieren von "
 "Inhalten."
 
-#: modules/taxonomy/taxonomy.module:128
+#: modules/taxonomy/taxonomy.module:127
 msgid "Add vocabulary"
 msgstr "Vokabular hinzufügen"
 
-#: modules/taxonomy/taxonomy.module:138
+#: modules/taxonomy/taxonomy.module:137
 msgid "Edit vocabulary"
 msgstr "Vokabular bearbeiten"
 
-#: modules/taxonomy/taxonomy.module:147
+#: modules/taxonomy/taxonomy.module:146
 msgid "Edit term"
 msgstr "Begriff bearbeiten"
 
-#: modules/taxonomy/taxonomy.module:155
+#: modules/taxonomy/taxonomy.module:154
 msgid "Taxonomy term"
 msgstr "Taxonomie-Begriff"
 
-#: modules/taxonomy/taxonomy.module:164
+#: modules/taxonomy/taxonomy.module:163
 msgid "Autocomplete taxonomy"
 msgstr "Taxonomie automatisch vervollständigen"
 
-#: modules/taxonomy/taxonomy.module:171
+#: modules/taxonomy/taxonomy.module:170
 msgid "List terms"
 msgstr "Begriffe auflisten"
 
-#: modules/taxonomy/taxonomy.module:186
+#: modules/taxonomy/taxonomy.module:185
 msgid "Add term"
 msgstr "Begriff hinzufügen"
-
-#: modules/taxonomy/taxonomy.install:9
-msgid "Stores term information."
-msgstr "Speichert Informationen über Begriffe."
-
-#: modules/taxonomy/taxonomy.install:15
-msgid "Primary Key: Unique term ID."
-msgstr "Primärschlüssel: Eindeutige Begriff-ID."
-
-#: modules/taxonomy/taxonomy.install:22
-msgid "The {vocabulary}.vid of the vocabulary to which the term is assigned."
-msgstr ""
-"Die {vocabulary}.vid des Vokabulars, welchem der Begriff zugeordnet ist."
-
-#: modules/taxonomy/taxonomy.install:29
-msgid "The term name."
-msgstr "Der Name des Begriffes."
-
-#: modules/taxonomy/taxonomy.install:35
-msgid "A description of the term."
-msgstr "Eine Beschreibung des Begriffs."
-
-#: modules/taxonomy/taxonomy.install:42
-msgid "The weight of this term in relation to other terms."
-msgstr "Die Reihenfolge dieses Begriffs in Relation zu anderen Begriffen."
-
-#: modules/taxonomy/taxonomy.install:53
-msgid "Stores the hierarchical relationship between terms."
-msgstr "Speichert die hierarchische Beziehung zwischen Begriffen."
-
-#: modules/taxonomy/taxonomy.install:60
-msgid "Primary Key: The {term_data}.tid of the term."
-msgstr "Primärschlüssel: Die {term_data}.tid von diesem Begriff."
-
-#: modules/taxonomy/taxonomy.install:67
-msgid ""
-"Primary Key: The {term_data}.tid of the term's parent. 0 indicates no parent."
-msgstr ""
-"Primärschlüssel: Die {term_data}.tid des übergeordneten Begriffes. 0 "
-"bedeutet keine übergeordneten Begriffe."
-
-#: modules/taxonomy/taxonomy.install:77
-msgid "Stores the relationship of terms to nodes."
-msgstr "Speichert die Beziehung zwischen Begriffen und Beiträgen."
-
-#: modules/taxonomy/taxonomy.install:84
-msgid "Primary Key: The {node}.nid of the node."
-msgstr "Primärschlüssel: Die {node}.nid von diesem Beitrag."
-
-#: modules/taxonomy/taxonomy.install:98
-msgid "Primary Key: The {term_data}.tid of a term assigned to the node."
-msgstr ""
-"Primärschlüssel: Die {term_data}.tid eines Begriffes der diesem Beitrag "
-"zugewiesen wurde."
-
-#: modules/taxonomy/taxonomy.install:109
-msgid "Stores non-hierarchical relationships between terms."
-msgstr "Speichert nicht-hierarchische Beziehungen zwischen Begriffen."
-
-#: modules/taxonomy/taxonomy.install:114
-msgid "Primary Key: Unique term relation ID."
-msgstr "Primärschlüssel: Eindeutige Beziehungs-ID des Begriffes."
-
-#: modules/taxonomy/taxonomy.install:121
-msgid "The {term_data}.tid of the first term in a relationship."
-msgstr "Die {term_data}.tid von dem ersten Begriff in einer Beziehung."
-
-#: modules/taxonomy/taxonomy.install:128
-msgid "The {term_data}.tid of the second term in a relationship."
-msgstr "Die {term_data}.tid von dem zweitem Begriff in einer Beziehung."
-
-#: modules/taxonomy/taxonomy.install:141
-msgid "Stores term synonyms."
-msgstr "Speichert Synonyme zu Begriffen."
-
-#: modules/taxonomy/taxonomy.install:146
-msgid "Primary Key: Unique term synonym ID."
-msgstr "Primärschlüssel: Eindeutige Begriff-Synonym-ID."
-
-#: modules/taxonomy/taxonomy.install:153
-msgid "The {term_data}.tid of the term."
-msgstr "Die {term_data}.tid von diesem Begriff."
-
-#: modules/taxonomy/taxonomy.install:160
-msgid "The name of the synonym."
-msgstr "Der Name des Synonyms."
-
-#: modules/taxonomy/taxonomy.install:171
-msgid "Stores vocabulary information."
-msgstr "Speichert Vokabularinformationen."
-
-#: modules/taxonomy/taxonomy.install:177
-msgid "Primary Key: Unique vocabulary ID."
-msgstr "Primärschlüssel: Eindeutige Vokabular-ID."
-
-#: modules/taxonomy/taxonomy.install:184
-msgid "Name of the vocabulary."
-msgstr "Der Name des Vokabulars."
-
-#: modules/taxonomy/taxonomy.install:190
-msgid "Description of the vocabulary."
-msgstr "Beschreibung dieses Vokabulars."
-
-#: modules/taxonomy/taxonomy.install:197
-msgid "Help text to display for the vocabulary."
-msgstr "Hilfetext für das Vokabular."
-
-#: modules/taxonomy/taxonomy.install:205
-msgid ""
-"Whether or not related terms are enabled within the vocabulary. (0 = "
-"disabled, 1 = enabled)"
-msgstr ""
-"Legt fest, ob nicht verwandte Begriffe innerhalb des Vokabulars aktiviert "
-"sind. (0 = deaktiviert, 1 = aktiviert)"
-
-#: modules/taxonomy/taxonomy.install:213
-msgid ""
-"The type of hierarchy allowed within the vocabulary. (0 = disabled, 1 = "
-"single, 2 = multiple)"
-msgstr ""
-"Die Art von Hierarchie, die das Vokabular anbietet. (0 = Deaktiviert, 1 = "
-"Einfach, 2 = Mehrfach)"
-
-#: modules/taxonomy/taxonomy.install:221
-msgid ""
-"Whether or not multiple terms from this vocabulary may be assigned to a "
-"node. (0 = disabled, 1 = enabled)"
-msgstr ""
-"Legt fest, ob mehrere Begriffe aus diesem Vokabular einem Beitrag zugewiesen "
-"werden können. (0 = deaktiviert, 1 = aktiviert)"
-
-#: modules/taxonomy/taxonomy.install:229
-msgid ""
-"Whether or not terms are required for nodes using this vocabulary. (0 = "
-"disabled, 1 = enabled)"
-msgstr ""
-"Legt fest, ob Begriffe für Beträge mit diesem Vokabular sind erforderlich. "
-"(0 = deaktiviert, 1 = aktiviert)"
-
-#: modules/taxonomy/taxonomy.install:237
-msgid ""
-"Whether or not free tagging is enabled for the vocabulary. (0 = disabled, 1 "
-"= enabled)"
-msgstr ""
-"Legt fest, ob das freie Taggen im Vokabular aktiviert ist. (0 = deaktiviert, "
-"1 = aktiviert)"
-
-#: modules/taxonomy/taxonomy.install:244
-msgid "The module which created the vocabulary."
-msgstr "Das Module, welches dieses Vokabular erstellt hat."
-
-#: modules/taxonomy/taxonomy.install:251
-msgid "The weight of the vocabulary in relation to other vocabularies."
-msgstr "Die Reihenfolge dieses Vokabulars bezogen auf andere Vokabulare."
-
-#: modules/taxonomy/taxonomy.install:261
-msgid "Stores which node types vocabularies may be used with."
-msgstr "Speichert mit welchen Node Typen das Vokabulare benutzt wird."
-
-#: modules/taxonomy/taxonomy.install:268
-msgid "Primary Key: the {vocabulary}.vid of the vocabulary."
-msgstr "Primärschlüssel: Die {vocabulary}.vid des Vokabulars."
-
-#: modules/taxonomy/taxonomy.install:275
-msgid "The {node}.type of the node type for which the vocabulary may be used."
-msgstr "Das Vokabular kann Inhaltstypen mit {node}.type aufnehmen."

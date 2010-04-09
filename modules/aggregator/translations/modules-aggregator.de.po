@@ -1,4 +1,4 @@
-# $Id: modules-aggregator.po,v 1.1.2.8 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-aggregator.po,v 1.1.2.10 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-aggregator)
 # Copyright (c) 2004-2008 by the German translation team
@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-aggregator\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -34,7 +34,6 @@ msgid "Updated:"
 msgstr "Aktualisiert:"
 
 #: modules/aggregator/aggregator-item.tpl.php:42
-#: modules/aggregator/aggregator.pages.inc:63
 #: modules/aggregator/aggregator.module:151
 msgid "Categories"
 msgstr "Kategorien"
@@ -105,6 +104,7 @@ msgid "New feed items are automatically filed in the checked categories."
 msgstr ""
 "Neue Feed-Einträge werden automatisch in den markierten Kategorien eingefügt."
 
+# formal
 #: modules/aggregator/aggregator.admin.inc:116
 msgid ""
 "The URL %url is invalid. Please enter a fully-qualified URL, such as http://"
@@ -113,12 +113,14 @@ msgstr ""
 "Die URL %url ist ungültig. Bitte geben Sie eine vollständige URL ein, wie "
 "zum Beispiel http://www.example.com/feed.xml."
 
+# formal
 #: modules/aggregator/aggregator.admin.inc:127
 msgid "A feed named %feed already exists. Please enter a unique title."
 msgstr ""
 "Ein Feed mit dem Namen %feed ist bereits vorhanden. Bitte geben Sie eine "
 "andere Bezeichnung ein."
 
+# formal
 #: modules/aggregator/aggregator.admin.inc:130
 msgid "A feed with this URL %url already exists. Please enter a unique URL."
 msgstr ""
@@ -198,6 +200,7 @@ msgstr ""
 "(Für eine kleine Anzahl von Kategorien sind Kontrollkästchen einfacher zu "
 "bedienen, für eine große Anzahl kann eine Mehrfachauswahl verwendet werden.)"
 
+# formal
 #: modules/aggregator/aggregator.admin.inc:295
 msgid "A category named %category already exists. Please enter a unique title."
 msgstr ""
@@ -218,7 +221,7 @@ msgstr "Die Kategorie %category wurde hinzugefügt."
 
 #: modules/aggregator/aggregator.admin.inc:161;174;325;338
 #: modules/aggregator/aggregator.pages.inc:16
-#: modules/aggregator/aggregator.module:607;641;648;718;0
+#: modules/aggregator/aggregator.module:607;641;648;717
 msgid "aggregator"
 msgstr "Aggregator"
 
@@ -239,60 +242,61 @@ msgid "Category %category added."
 msgstr "Kategorie %category hinzugefügt."
 
 #: modules/aggregator/aggregator.admin.inc:30;41
-#: modules/aggregator/aggregator.module:928
+#: modules/aggregator/aggregator.module:927
 msgid "1 item"
 msgid_plural "@count items"
 msgstr[0] "1 Eintrag"
 msgstr[1] "@count Einträge"
 
-#: modules/aggregator/aggregator.pages.inc:68
+#: modules/aggregator/aggregator.pages.inc:67
 msgid "aggregator - @title"
 msgstr "Aggregator – @title"
 
-#: modules/aggregator/aggregator.pages.inc:175
+#: modules/aggregator/aggregator.pages.inc:174
 msgid "Save categories"
 msgstr "Kategorien speichern"
 
-#: modules/aggregator/aggregator.pages.inc:185
+# formal
+#: modules/aggregator/aggregator.pages.inc:184
 msgid "You are not allowed to categorize this feed item."
 msgstr ""
 "Sie haben keine Berechtigung diesen Eintrag einer Kategorie zuzuordnen."
 
-#: modules/aggregator/aggregator.pages.inc:203
+#: modules/aggregator/aggregator.pages.inc:202
 msgid "The categories have been saved."
 msgstr "Die Kategorien wurden gespeichert."
 
-#: modules/aggregator/aggregator.pages.inc:228
+#: modules/aggregator/aggregator.pages.inc:227
 #: modules/aggregator/aggregator.module:185;214
 msgid "Categorize"
 msgstr "Kategorisieren"
 
-#: modules/aggregator/aggregator.pages.inc:262
+#: modules/aggregator/aggregator.pages.inc:261
 msgid "%ago ago"
 msgstr "vor %ago"
 
-#: modules/aggregator/aggregator.pages.inc:293
+#: modules/aggregator/aggregator.pages.inc:292
 #: modules/aggregator/aggregator.module:164
 msgid "OPML feed"
 msgstr "OPML-Feed"
 
-#: modules/aggregator/aggregator.pages.inc:377
+#: modules/aggregator/aggregator.pages.inc:376
 msgid "@site_name - aggregated feeds in category @title"
 msgstr "@site_name - gesammelte Feeds in Kategorie @title"
 
-#: modules/aggregator/aggregator.pages.inc:377
+#: modules/aggregator/aggregator.pages.inc:376
 msgid "@site_name - aggregated feeds"
 msgstr "@site_name - Gesammelte Feeds"
 
-#: modules/aggregator/aggregator.pages.inc:381
+#: modules/aggregator/aggregator.pages.inc:380
 msgid "@site_name aggregator"
 msgstr "@site_name Aggregator"
 
-#: modules/aggregator/aggregator.pages.inc:459
+#: modules/aggregator/aggregator.pages.inc:458
 msgid "%age old"
 msgstr "%age alt"
 
-#: modules/aggregator/aggregator.pages.inc:477
+#: modules/aggregator/aggregator.pages.inc:476
 msgid "!title feed"
 msgstr "Newsfeed !title"
 
@@ -311,7 +315,7 @@ msgstr ""
 "einem maschinenlesbaren Format bereit, damit andere Seiten einfach auf sie "
 "verweisen können. Dieser Inhalt liegt üblicherweise in der Form eines <a "
 "href=\"http://blogs.law.harvard.edu/tech/rss\">RSS</a>-Feed vor (ein XML-"
-"basiertes, standardisiertes Format). Unterstützte Formate des Aggregator "
+"basiertes, standardisiertes Format). Unterstützte Formate des Aggregator-"
 "Moduls sind <a href=\"@rss\">RSS</a>, <a href=\"@rdf\">RDF</a> und <a href="
 "\"@atom\">Atom</a>."
 
@@ -334,14 +338,14 @@ msgstr ""
 "gruppiert werden, meistens nach dem Themengebiet. Benutzer können die "
 "Feedeinträge in chronologischer Reihenfolge auf der <a href=\"@aggregator"
 "\">Hauptseite des News-Aggregators</a> oder nach <a href=\"@aggregator-"
-"sources\">ihrer Quelle</a> betrachten.Administratoren können Feeds <a href="
+"sources\">ihrer Quelle</a> betrachten. Administratoren können Feeds <a href="
 "\"@feededit\">hinzufügen, bearbeiten und löschen</a> und auswählen, wie oft "
 "die jeweiligen Feeds auf neue Einträge überprüft werden sollen. Die neuesten "
 "Einträge in einem Feed oder einer Kategorie können als Block über die <a "
 "href=\"@admin-block\">Block-Administration</a> angezeigt werden. Eine <a "
 "href=\"@aggregator-opml\">maschinenlesbare OPML-Datei</a> aller abonnierten "
 "Feeds steht zur Verfügung. Eine ordnungsgemäß konfigurierte <a href=\"@cron"
-"\">Cron Wartungsaufgabe</a> ist erforderlich, um Feeds automatisch zu "
+"\">Cron-Wartungsaufgabe</a> ist erforderlich, um Feeds automatisch zu "
 "aktualisieren."
 
 #: modules/aggregator/aggregator.module:17
@@ -361,7 +365,7 @@ msgid ""
 msgstr ""
 "Viele Seiten (vor allem Nachrichtenseiten und Weblogs) veröffentlichen ihre "
 "neuesten Schlagzeilen und Beiträge in Feeds mit Hilfe einer Anzahl von "
-"standardisierten XMLbasierten Formaten. Unterstüzte Formate des Aggregator "
+"standardisierten XML-basierten Formaten. Unterstützte Formate des Aggregator "
 "Moduls sind <a href=\"@rss\">RSS</a>, <a href=\"@rdf\">RDF</a> und <a href="
 "\"@atom\">Atom</a>."
 
@@ -442,7 +446,7 @@ msgstr ""
 "Der Feed von %site scheint fehlerhaft zu sein. Es ist folgender Fehler "
 "aufgetreten: %error."
 
-#: modules/aggregator/aggregator.module:719
+#: modules/aggregator/aggregator.module:718
 msgid ""
 "The feed from %site seems to be broken, because of error \"%error\" on line %"
 "line."
@@ -450,11 +454,11 @@ msgstr ""
 "Der Feed von %site scheint fehlerhaft zu sein. Es ist folgender Fehler "
 "aufgetreten: %error in Zeile %line."
 
-#: modules/aggregator/aggregator.module:896;896
+#: modules/aggregator/aggregator.module:895;895
 msgid "blog it"
 msgstr "Bloggen"
 
-#: modules/aggregator/aggregator.module:897
+#: modules/aggregator/aggregator.module:896
 msgid "Comment on this news item in your personal blog."
 msgstr "Diesen Eintrag im eigenen Weblog kommentieren."
 
@@ -468,7 +472,7 @@ msgstr ""
 "Der Feed von %site scheint fehlerhaft zu sein. Es ist folgender Fehler "
 "aufgetreten: %error."
 
-#: modules/aggregator/aggregator.module:718
+#: modules/aggregator/aggregator.module:717
 msgid ""
 "The feed from %site seems to be broken, due to an error \"%error\" on line %"
 "line."
@@ -515,148 +519,3 @@ msgstr "Feed bearbeiten"
 #: modules/aggregator/aggregator.module:239
 msgid "Edit category"
 msgstr "Kategorie bearbeiten"
-
-#: modules/aggregator/aggregator.install:30
-msgid "Stores categories for aggregator feeds and feed items."
-msgstr "Speichert Kategorien für die Aggregator Feeds und Feed Einträge."
-
-#: modules/aggregator/aggregator.install:35
-msgid "Primary Key: Unique aggregator category ID."
-msgstr "Primärschlüssel: Eindeutige ID der Aggregator-Kategorie."
-
-#: modules/aggregator/aggregator.install:42
-msgid "Title of the category."
-msgstr "Titel der Kategorie."
-
-#: modules/aggregator/aggregator.install:48
-msgid "Description of the category"
-msgstr "Beschreibung der Kategorie"
-
-#: modules/aggregator/aggregator.install:55
-msgid "The number of recent items to show within the category block."
-msgstr ""
-"Anzahl der neuen Einträge die innerhalb des Kategorieblocks angezeigt werden."
-
-#: modules/aggregator/aggregator.install:63
-msgid "Bridge table; maps feeds to categories."
-msgstr "Verknüpfungstabelle; verknüpft Newsfeeds mit Kategorien."
-
-#: modules/aggregator/aggregator.install:69
-msgid "The feed's {aggregator_feed}.fid."
-msgstr "Die {aggregator_feed}.fid des Feeds."
-
-#: modules/aggregator/aggregator.install:75
-msgid "The {aggregator_category}.cid to which the feed is being assigned."
-msgstr "Die {aggregator_category}.cid, dem der Newsfeed zugewiesen ist."
-
-#: modules/aggregator/aggregator.install:83
-msgid "Bridge table; maps feed items to categories."
-msgstr "Verknüpfungstabelle; verknüpft Newsfeeds-Einträge mit Kategorien."
-
-#: modules/aggregator/aggregator.install:89
-msgid "The feed item's {aggregator_item}.iid."
-msgstr "Die {aggregator_item}.iid des Newsfeed-Eintrags."
-
-#: modules/aggregator/aggregator.install:95
-msgid "The {aggregator_category}.cid to which the feed item is being assigned."
-msgstr ""
-"Die {aggregator_category}.cid, der der Newsfeed-Eintrag zugeordnet ist."
-
-#: modules/aggregator/aggregator.install:103
-msgid "Stores feeds to be parsed by the aggregator."
-msgstr "Speichert Feeds, die vom Aggregator verarbeitet werden."
-
-#: modules/aggregator/aggregator.install:108
-msgid "Primary Key: Unique feed ID."
-msgstr "Primärschlüssel: Eindeutige Newsfeed-ID."
-
-#: modules/aggregator/aggregator.install:115
-msgid "Title of the feed."
-msgstr "Titel des Newsfeeds."
-
-#: modules/aggregator/aggregator.install:122
-msgid "URL to the feed."
-msgstr "URL zu dem Newsfeed."
-
-#: modules/aggregator/aggregator.install:128
-msgid "How often to check for new feed items, in seconds."
-msgstr ""
-"Nach wie vielen Sekunden soll geprüft werden, ob neue Newsfeed-Eintrage "
-"vorhanden sind."
-
-#: modules/aggregator/aggregator.install:134
-msgid "Last time feed was checked for new items, as Unix timestamp."
-msgstr ""
-"Der letzte Zeitpunkt als Unix-Zeitstempel, zu dem auf neue Newsfeed-Einträge "
-"geprüft wurde."
-
-#: modules/aggregator/aggregator.install:141
-msgid ""
-"The parent website of the feed; comes from the <link> element in the feed."
-msgstr ""
-"Die übergeordnete Website des Newsfeeds. Stammt aus dem <link>-Element des "
-"Newsfeeds."
-
-#: modules/aggregator/aggregator.install:147
-msgid ""
-"The parent website's description; comes from the <description> element in "
-"the feed."
-msgstr ""
-"Die Beschreibung der übergeordneten Website. Stammt aus dem <description>-"
-"Element des Newsfeeds."
-
-#: modules/aggregator/aggregator.install:153
-msgid "An image representing the feed."
-msgstr "Ein Bild, das für den Feed steht."
-
-#: modules/aggregator/aggregator.install:160
-msgid "Entity tag HTTP response header, used for validating cache."
-msgstr ""
-"Der HTTP Response-Header, der für die Validierung des Caches verwendet wird."
-
-#: modules/aggregator/aggregator.install:166
-msgid "When the feed was last modified, as a Unix timestamp."
-msgstr ""
-"Der Zeitpunkt, zu dem der Feed zuletzt geändert wurde, als UNIX-Zeitstempel."
-
-#: modules/aggregator/aggregator.install:173
-msgid "Number of items to display in the feed's block."
-msgstr "Anzahl der Einträge die im Feed-Block angezeigt wird."
-
-#: modules/aggregator/aggregator.install:184
-msgid "Stores the individual items imported from feeds."
-msgstr "Speichert die einzelnen Einträge der importierten Newsfeeds."
-
-#: modules/aggregator/aggregator.install:189
-msgid "Primary Key: Unique ID for feed item."
-msgstr "Primärschlüssel: Eindeutige ID für den Newsfeed-Eintrag."
-
-#: modules/aggregator/aggregator.install:195
-msgid "The {aggregator_feed}.fid to which this item belongs."
-msgstr "Die {aggregator_feed}.fid, zu der dieser Eintrag gehört."
-
-#: modules/aggregator/aggregator.install:202
-msgid "Title of the feed item."
-msgstr "Der Titel des Newsfeed-Eintrages."
-
-#: modules/aggregator/aggregator.install:209
-msgid "Link to the feed item."
-msgstr "Der Verweis zu dem Newsfeed-Eintrag."
-
-#: modules/aggregator/aggregator.install:216
-msgid "Author of the feed item."
-msgstr "Der Autor des Newsfeed-Eintrages."
-
-#: modules/aggregator/aggregator.install:222
-msgid "Body of the feed item."
-msgstr "Der Textkörper des Newsfeed-Eintrages."
-
-#: modules/aggregator/aggregator.install:227
-msgid "Post date of feed item, as a Unix timestamp."
-msgstr ""
-"Der Zeitpunkt zu dem der Newsfeed-Eintrag gespeichert wurde, als ein UNIX-"
-"Zeitstempel."
-
-#: modules/aggregator/aggregator.install:233
-msgid "Unique identifier for the feed item."
-msgstr "Der eindeutige Bezeichner für diesen Newsfeed-Eintrag."

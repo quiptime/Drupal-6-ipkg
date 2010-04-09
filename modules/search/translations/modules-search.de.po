@@ -1,4 +1,4 @@
-# $Id: modules-search.po,v 1.1.2.10 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-search.po,v 1.1.2.12 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-search)
 # Copyright (c) 2004-2008 by the German translation team
@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-search\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -26,6 +26,7 @@ msgstr ""
 msgid "Are you sure you want to re-index the site?"
 msgstr "Soll die Seite wirklich neu indiziert werden?"
 
+# formal
 #: modules/search/search.admin.inc:14
 msgid ""
 " The search index is not cleared but systematically updated to reflect the "
@@ -33,7 +34,7 @@ msgid ""
 "indexed until all existing content has been re-indexed. This action cannot "
 "be undone."
 msgstr ""
-" Wenn Sie die unten stehenden Einstellungen verändern, muss der komplette "
+" Wenn Sie die untenstehenden Einstellungen verändern, muss der komplette "
 "Seitenindex neu aufgebaut werden. Der Suchindex wird zwar nicht gelöscht, "
 "muss aber systematisch aktualisiert werden um die neuen Einstellungen zu "
 "übernehmen. Suchen wird auch weiter funktionieren, aber neue Inhalte werden "
@@ -115,13 +116,14 @@ msgstr ""
 msgid "Simple CJK handling"
 msgstr "Vereinfachte Behandlung des Chinesischen, Japanischen und Koreanischen"
 
+# formal
 #: modules/search/search.admin.inc:63
 msgid ""
 "Whether to apply a simple Chinese/Japanese/Korean tokenizer based on "
 "overlapping sequences. Turn this off if you want to use an external "
 "preprocessor for this instead. Does not affect other languages."
 msgstr ""
-"Gibt an, ob ein einfacher Chinesisch/Japanisch/Koreanisch Tokenizer, "
+"Gibt an, ob ein einfacher Chinesisch/Japanisch/Koreanisch-Tokenizer, "
 "basierend auf überlappenden Sequenzen, angewendet werden soll. Wenn Sie "
 "einen externen Preprozessor dafür verwenden wollen, sollten Sie diese Option "
 "deaktivieren. Diese Einstellung betrifft andere Sprachen nicht."
@@ -144,11 +146,12 @@ msgstr "Suchergebnisse"
 msgid "Your search yielded no results"
 msgstr "Die Suche lieferte keine Ergebnisse."
 
+# formal
 #: modules/search/search.pages.inc:123
 msgid "Please enter some keywords."
 msgstr "Bitte geben Sie Wörter ein, nach denen gesucht werden soll."
 
-#: modules/search/search.pages.inc:29 modules/search/search.module:0
+#: modules/search/search.pages.inc:29
 msgid "search"
 msgstr "Suchen"
 
@@ -206,6 +209,7 @@ msgstr ""
 "korrekt konfigurierte <a href=\"@cron\">Cron-Wartungsaufgabe</a> verwendet. "
 "Die folgenden Einstellungen steuern die Art und Weise der Indizierung."
 
+# formal
 #: modules/search/search.module:106
 msgid ""
 "<ul>\n"
@@ -231,7 +235,7 @@ msgstr ""
 msgid "Search form"
 msgstr "Suchformular"
 
-#: modules/search/search.module:918
+#: modules/search/search.module:922
 msgid ""
 "You must include at least one positive keyword with @count characters or "
 "more."
@@ -239,7 +243,7 @@ msgstr ""
 "Es muss mindestens ein gültiges Stichwort in der Suchanfrage verwendet "
 "werden, das mindestens @count oder mehr Zeichen enthält."
 
-#: modules/search/search.module:922
+#: modules/search/search.module:926
 msgid ""
 "Search for either of the two terms with uppercase <strong>OR</strong>. For "
 "example, <strong>cats OR dogs</strong>."
@@ -248,15 +252,16 @@ msgstr ""
 "(wichtig: OR in Großbuchstaben) erfolgt die Suche nach einem der beiden "
 "Begriffe. Beispiel: <strong>Katzen OR Hunde</strong>."
 
-#: modules/search/search.module:1029
+#: modules/search/search.module:1033
 msgid "Enter your keywords"
 msgstr "Zu suchende Schlüsselwörter"
 
-#: modules/search/search.module:1063
+#: modules/search/search.module:1067
 msgid "Search this site"
 msgstr "Diese Website durchsuchen"
 
-#: modules/search/search.module:1067
+# formal
+#: modules/search/search.module:1071
 msgid "Enter the terms you wish to search for."
 msgstr "Geben Sie die Wörter ein, nach denen Sie suchen möchten."
 
@@ -291,100 +296,3 @@ msgstr "Häufigste Suchbegriffe"
 #: modules/search/search.module:194
 msgid "View most popular search phrases."
 msgstr "Die am häufigsten verwendeten Suchbegriffe anzeigen."
-
-#: modules/search/search.install:29
-msgid "Stores items that will be searched."
-msgstr "Speichert Objekte, die durchsucht werden."
-
-#: modules/search/search.install:36
-msgid "Search item ID, e.g. node ID for nodes."
-msgstr "ID des Suchobjekts, z.B. die Node-ID für Nodes."
-
-#: modules/search/search.install:42
-msgid "Type of item, e.g. node."
-msgstr "Typ des Objekts, z.B. Beitrag."
-
-#: modules/search/search.install:48
-msgid "List of space-separated words from the item."
-msgstr "Durch Leerzeichen getrennte Wortliste des Objekts."
-
-#: modules/search/search.install:55
-msgid "Set to force node reindexing."
-msgstr "Erzwingt die Reindizierung der Beiträge."
-
-#: modules/search/search.install:62
-msgid "Stores the search index, associating words, items and scores."
-msgstr ""
-"Speichert den Suchindex und bringt damit Begriffe, Elemente und Bewertungen "
-"in Bezug."
-
-#: modules/search/search.install:69
-msgid "The {search_total}.word that is associated with the search item."
-msgstr "{search_total}.word, welches dem Suchbegriff zugeordnet ist."
-
-#: modules/search/search.install:76
-msgid ""
-"The {search_dataset}.sid of the searchable item to which the word belongs."
-msgstr ""
-"Die {search_dataset}.sid des durchsuchbaren Objects zu dem das Wort gehört."
-
-#: modules/search/search.install:82
-msgid ""
-"The {search_dataset}.type of the searchable item to which the word belongs."
-msgstr ""
-"Der {search_dataset}.type des durchsuchbaren Beitrag zu der das Wort gehört."
-
-#: modules/search/search.install:87
-msgid "The numeric score of the word, higher being more important."
-msgstr ""
-"Der numerische Wert des Wortes (ein höherer Wert entspricht einer größeren "
-"Bedeutung)."
-
-#: modules/search/search.install:98
-msgid "Stores search totals for words."
-msgstr "Speichert die Anzahl der Suchen nach diesem Wort."
-
-#: modules/search/search.install:101
-msgid "Primary Key: Unique word in the search index."
-msgstr "Primärschlüssel: Eindeutiges Wort im Suchindex."
-
-#: modules/search/search.install:108
-msgid ""
-"The count of the word in the index using Zipf's law to equalize the "
-"probability distribution."
-msgstr ""
-"Die Häufigkeit, mit welcher ein Begriff im Index auftritt. Es kommt die "
-"Zipf’sche Wahrscheinlichkeitsverteilung zum Einsatz."
-
-#: modules/search/search.install:117
-msgid ""
-"Stores items (like nodes) that link to other nodes, used to improve search "
-"scores for nodes that are frequently linked to."
-msgstr ""
-"Speichert Elemente (z.B. Beiträge), die auf andere Beiträge verweisen. Dies "
-"dient der Verbesserung der Suchergebnisse für Beiträge, auf die häufig "
-"verwiesen wird."
-
-#: modules/search/search.install:124
-msgid ""
-"The {search_dataset}.sid of the searchable item containing the link to the "
-"node."
-msgstr ""
-"Der {search_dataset}.sid des suchbaren Objekts, das einen Link auf den "
-"Beitrag enthält."
-
-#: modules/search/search.install:131
-msgid ""
-"The {search_dataset}.type of the searchable item containing the link to the "
-"node."
-msgstr ""
-"Der {search_dataset}.type des suchbaren Objekts, das einen Link auf den "
-"Beitrag enthält."
-
-#: modules/search/search.install:138
-msgid "The {node}.nid that this item links to."
-msgstr "Die {node}.nid auf die dieses Objekt verweist."
-
-#: modules/search/search.install:144
-msgid "The text used to link to the {node}.nid."
-msgstr "Text, um zu {node}.nid zu verlinken."

@@ -1,4 +1,4 @@
-# $Id: modules-syslog.po,v 1.1.2.8 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-syslog.po,v 1.1.2.10 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-syslog)
 # Copyright (c) 2004-2008 by the German translation team
@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-syslog\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -26,6 +26,7 @@ msgstr ""
 "Das Syslog-Modul ermöglicht es Drupal, Nachrichten an das "
 "betriebssystemeigene Protokollierungswerkzeug zu senden."
 
+# formal
 #: modules/syslog/syslog.module:23
 msgid ""
 "Syslog is an operating system administrative logging tool, and provides "
@@ -41,7 +42,7 @@ msgid ""
 msgstr ""
 "Syslog ist das Protokollierungs-Tool des Betriebssystems und bietet "
 "wertvolle Informationen für die Systemverwaltung und die "
-"Sicherheitsüberwachung. Syslog ist am besten für mittlere und große Sites "
+"Sicherheitsüberwachung. Syslog ist am besten für mittlere und große Websites "
 "geeignet und kann die Meldungen je nach Typ und Schweregrad umleiten. Auf "
 "UNIX/Linux-Systemen werden die Umleitungsinformationen in der Datei /etc/"
 "syslog.conf gespeichert; unter Microsoft Windows werden alle Meldungen in "
@@ -102,15 +103,15 @@ msgstr "LOG_LOCAL2 - Local 2"
 
 #: modules/syslog/syslog.module:61
 msgid "LOG_LOCAL3 - Local 3"
-msgstr "LOG_LOCAL3 - Lokal 3"
+msgstr "LOG_LOCAL3 - Local 3"
 
 #: modules/syslog/syslog.module:62
 msgid "LOG_LOCAL4 - Local 4"
-msgstr "LOG_LOCAL3 - Lokal 4"
+msgstr "LOG_LOCAL3 - Local 4"
 
 #: modules/syslog/syslog.module:63
 msgid "LOG_LOCAL5 - Local 5"
-msgstr "LOG_LOCAL3 - Lokal 5"
+msgstr "LOG_LOCAL3 - Local 5"
 
 #: modules/syslog/syslog.module:64
 msgid "LOG_LOCAL6 - Local 6"
@@ -133,7 +134,3 @@ msgstr ""
 "für mittlere und große Websites geeignet und bietet Möglichkeiten zur "
 "Filterung mit der Nachrichten je nach Typ und Schweregrad umgeleitet werden "
 "können."
-
-#: modules/syslog/syslog.module:0
-msgid "syslog"
-msgstr "Syslog"

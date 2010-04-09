@@ -1,4 +1,4 @@
-# $Id: modules-upload.po,v 1.1.2.10 2008/08/16 18:48:06 timcn Exp $
+# $Id: modules-upload.po,v 1.1.2.12 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-upload)
 # Copyright (c) 2004-2008 by the German translation team
@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-upload\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -195,6 +195,7 @@ msgstr ""
 "Dateianhänge sind deaktiviert. Das Dateiverzeichnis wurde nicht richtig "
 "konfiguriert."
 
+# formal
 #: modules/upload/upload.module:249
 msgid ""
 "Please visit the <a href=\"@admin-file-system\">file system configuration "
@@ -203,6 +204,7 @@ msgstr ""
 "Dazu besuchen Sie bitte die <a href=\"@admin-file-system\"> "
 "Konfigurationsseite für das Dateisystem</a>."
 
+# formal
 #: modules/upload/upload.module:252
 msgid "Please contact the site administrator."
 msgstr "Bitte kontaktieren Sie den Administrator der Website."
@@ -221,7 +223,7 @@ msgstr "Neue Datei anfügen"
 
 #: modules/upload/upload.module:493
 msgid "Images are larger than %resolution will be resized. "
-msgstr "Bilder, welche größer als $resolution sind, werden verkleinert "
+msgstr "Bilder, welche größer als %resolution sind, werden verkleinert "
 
 #: modules/upload/upload.module:493
 msgid ""
@@ -237,7 +239,7 @@ msgstr "Anfügen"
 
 #: modules/upload/upload.module:502
 msgid "Please wait..."
-msgstr "Bitte warten..."
+msgstr "Bitte warten…"
 
 #: modules/upload/upload.module:65;309
 msgid "1 attachment"
@@ -260,38 +262,3 @@ msgstr "Hochgeladene Dateien"
 #: modules/upload/upload.module:87
 msgid "Control how files may be attached to content."
 msgstr "Einstellungen zu Dateianhängen."
-
-#: modules/upload/upload.module:0
-msgid "upload"
-msgstr "Uploads"
-
-#: modules/upload/upload.install:29
-msgid "Stores uploaded file information and table associations."
-msgstr "Speichert hoch geladene Dateiinformationen und Tabellenverknüpfungen."
-
-#: modules/upload/upload.install:36
-msgid "Primary Key: The {files}.fid."
-msgstr "Primärschlüssel: Die {files}.fid."
-
-#: modules/upload/upload.install:43
-msgid "The {node}.nid associated with the uploaded file."
-msgstr "Die mit der hochgeladenen Datei verbundene {node}.nid."
-
-#: modules/upload/upload.install:50
-msgid "Primary Key: The {node}.vid associated with the uploaded file."
-msgstr ""
-"Primärschlüssel: Die mit der hochgeladenen Datei verbundene {node}.vid."
-
-#: modules/upload/upload.install:57
-msgid "Description of the uploaded file."
-msgstr "Beschreibung der hochgeladen Datei."
-
-#: modules/upload/upload.install:65
-msgid "Whether the file should be visibly listed on the node: yes(1) or no(0)."
-msgstr "Soll die Datei sichtbar im Node gelistet werden:ja(1) oder nein(2)."
-
-#: modules/upload/upload.install:72
-msgid "Weight of this upload in relation to other uploads in this node."
-msgstr ""
-"Die Reihenfolge der hochgeladenen Datei im Vergleich zu anderen Dateien "
-"diese Beitrags."

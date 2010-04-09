@@ -1,4 +1,4 @@
-# $Id: modules-comment.po,v 1.1.2.10 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-comment.po,v 1.1.2.12 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-comment)
 # Copyright (c) 2004-2008 by the German translation team
@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-comment\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -31,6 +31,7 @@ msgstr "von"
 msgid "Posted in"
 msgstr "Erstellt in"
 
+# formal
 #: modules/comment/comment.admin.inc:86
 msgid "Please select one or more comments to perform the update on."
 msgstr ""
@@ -90,12 +91,14 @@ msgstr "Ein nicht vorhandener Kommentar kann nicht gelöscht werden."
 
 #: modules/comment/comment.admin.inc:286
 msgid "Comment: deleted %subject."
-msgstr "Kommentare: \"%subject\" gelöscht."
+msgstr "Kommentare: %subject gelöscht."
 
+# formal
 #: modules/comment/comment.pages.inc:65;105
 msgid "You are not authorized to post comments."
 msgstr "Sie sind nicht berechtigt, Kommentare einzutragen."
 
+# formal
 #: modules/comment/comment.pages.inc:78;87
 msgid "The comment you are replying to does not exist."
 msgstr ""
@@ -111,6 +114,7 @@ msgstr ""
 msgid "Reply"
 msgstr "Antworten"
 
+# formal
 #: modules/comment/comment.pages.inc:111
 msgid "You are not authorized to view comments."
 msgstr "Sie sind nicht berechtigt, Kommentare zu lesen."
@@ -158,8 +162,9 @@ msgid ""
 "\">Comment module</a>."
 msgstr ""
 "Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
-"der Handbuch-Seite zum <a href=\\\"@help\\\">Kommentar-Modul</a>."
+"der Handbuch-Seite zum <a href=\"@help\">Kommentar-Modul</a>."
 
+# formal
 #: modules/comment/comment.module:134
 msgid ""
 "Below is a list of the latest comments posted to your site. Click on a "
@@ -172,6 +177,7 @@ msgstr ""
 "zu dessen Benutzerprofil zu gelangen, „Bearbeiten“ um den Text zu ändern und "
 "„Löschen“ um den Kommentar zu entfernen."
 
+# formal
 #: modules/comment/comment.module:136
 msgid ""
 "Below is a list of the comments posted to your site that need approval. To "
@@ -207,6 +213,7 @@ msgstr "Neuen Kommentar schreiben"
 msgid "Add a new comment to this page."
 msgstr "Dieser Seite einen neuen Kommentar hinzufügen."
 
+# formal
 #: modules/comment/comment.module:464
 msgid "Share your thoughts and opinions related to this posting."
 msgstr "Teilen Sie Ihre Gedanken und Meinungen zu diesem Beitrag mit."
@@ -327,7 +334,7 @@ msgid ""
 "This option is enabled when anonymous users have permission to post comments "
 "on the <a href=\"@url\">permissions page</a>."
 msgstr ""
-"iese Option ist aktiviert, falls Gästen das Recht gewährt ist auf <a href="
+"Diese Option ist aktiviert, falls Gästen das Recht gewährt ist auf <a href="
 "\"@url\">Berechtigungsseiten</a> Kommentare zu schreiben."
 
 #: modules/comment/comment.module:551
@@ -338,7 +345,7 @@ msgstr "Eingabefeld für den Betreff des Kommentars"
 msgid "Can users provide a unique subject for their comments?"
 msgstr "Können Benutzer einen eigenen Betreff für ihre Kommentare angeben?"
 
-#: modules/comment/comment.module:558;1426
+#: modules/comment/comment.module:558;1430
 msgid "Preview comment"
 msgstr "Vorschau des Kommentars"
 
@@ -363,7 +370,7 @@ msgstr "Auf eigener Seite anzeigen"
 msgid "Display below post or comments"
 msgstr "Unter Beitrag oder Kommentar anzeigen"
 
-#: modules/comment/comment.module:779
+#: modules/comment/comment.module:781
 msgid ""
 "Your comment has been queued for moderation by site administrators and will "
 "be published after approval."
@@ -371,7 +378,7 @@ msgstr ""
 "Der Kommentar wurde gespeichert, wird aber erst nach der Freigabe durch "
 "einen Administrator angezeigt."
 
-#: modules/comment/comment.module:792;791
+#: modules/comment/comment.module:794;793
 msgid ""
 "Comment: unauthorized comment submitted or comment submitted to a closed "
 "post %subject."
@@ -379,53 +386,54 @@ msgstr ""
 "Kommentar: Kommentar nicht erlaubt oder Kommentar zu einem geschlossenen "
 "Beitrag %subject."
 
-#: modules/comment/comment.module:815
+#: modules/comment/comment.module:817
 msgid "parent"
 msgstr "Übergeordneter Eintrag"
 
-#: modules/comment/comment.module:832;844
+#: modules/comment/comment.module:834;846
 msgid "reply"
 msgstr "Antworten"
 
-#: modules/comment/comment.module:1049
+#: modules/comment/comment.module:1051
 msgid "Post new comment"
 msgstr "Kommentar hinzufügen"
 
-#: modules/comment/comment.module:1070;1082
+#: modules/comment/comment.module:1074;1086
 msgid "Publish the selected comments"
 msgstr "Ausgewählte Kommentare veröffentlichen"
 
-#: modules/comment/comment.module:1071;1077;1084
+#: modules/comment/comment.module:1075;1081;1088
 msgid "Delete the selected comments"
 msgstr "Ausgewählte Kommentare löschen"
 
-#: modules/comment/comment.module:1076;1083
+#: modules/comment/comment.module:1080;1087
 msgid "Unpublish the selected comments"
 msgstr "Veröffentlichung der ausgewählten Kommentare zurücknehmen"
 
-#: modules/comment/comment.module:1193
+#: modules/comment/comment.module:1197
 msgid "You have to specify a valid author."
 msgstr "Es muss ein gültiger Autor angegeben werden."
 
-#: modules/comment/comment.module:1204
+#: modules/comment/comment.module:1208
 msgid "The name you used belongs to a registered user."
 msgstr ""
 "Der angegebene Name wird leider schon von einem registrierten Benutzer "
 "verwendet."
 
-#: modules/comment/comment.module:1209
+#: modules/comment/comment.module:1213
 msgid "You have to leave your name."
 msgstr "Es muss ein Name angegeben werden."
 
-#: modules/comment/comment.module:1214
+#: modules/comment/comment.module:1218
 msgid "The e-mail address you specified is not valid."
 msgstr "Die angegebene E-Mail-Adresse ist ungültig."
 
-#: modules/comment/comment.module:1218
+#: modules/comment/comment.module:1222
 msgid "You have to leave an e-mail address."
 msgstr "Es muss eine gültige E-Mail-Adresse angegeben werden."
 
-#: modules/comment/comment.module:1223
+# formal
+#: modules/comment/comment.module:1227
 msgid ""
 "The URL of your homepage is not valid. Remember that it must be fully "
 "qualified, i.e. of the form <code>http://example.com/directory</code>."
@@ -434,23 +442,24 @@ msgstr ""
 "URL in der Form <code>http://www.example.com/verzeichnis</code> angeben "
 "müssen."
 
-#: modules/comment/comment.module:1279
+#: modules/comment/comment.module:1283
 msgid "Administration"
 msgstr "Verwaltung"
 
-#: modules/comment/comment.module:1322;1347;1354
+#: modules/comment/comment.module:1326;1351;1358
 msgid "Homepage"
 msgstr "Homepage"
 
-#: modules/comment/comment.module:1528
+#: modules/comment/comment.module:1532
 msgid "(No subject)"
 msgstr "(Kein Betreff)"
 
-#: modules/comment/comment.module:1614
+#: modules/comment/comment.module:1620
 msgid "!a comments per page"
 msgstr "!a Kommentare pro Seite"
 
-#: modules/comment/comment.module:1641
+# formal
+#: modules/comment/comment.module:1647
 msgid ""
 "Select your preferred way to display the comments and click \"Save settings"
 "\" to activate your changes."
@@ -458,11 +467,11 @@ msgstr ""
 "Wählen Sie hier Ihre bevorzugte Anzeigeart für Kommentare und klicken Sie "
 "auf „Einstellungen speichern“ um die Änderungen zu übernehmen."
 
-#: modules/comment/comment.module:1642
+#: modules/comment/comment.module:1648
 msgid "Comment viewing options"
 msgstr "Darstellungsoptionen"
 
-#: modules/comment/comment.module:1795
+#: modules/comment/comment.module:1801
 msgid ""
 "<a href=\"@login\">Login</a> or <a href=\"@register\">register</a> to post "
 "comments"
@@ -470,56 +479,56 @@ msgstr ""
 "<a href=\"@login\">Anmelden</a> oder <a href=\"@register\">Registrieren</a> "
 "um Kommentare zu schreiben"
 
-#: modules/comment/comment.module:1799
+#: modules/comment/comment.module:1805
 msgid "<a href=\"@login\">Login</a> to post comments"
 msgstr "<a href=\"@login\">Anmelden</a> um Kommentare zu schreiben"
 
-#: modules/comment/comment.module:1827
+#: modules/comment/comment.module:1833
 msgid "Submitted by !username on @datetime."
 msgstr "Verfasst von !username am @datetime."
 
-#: modules/comment/comment.module:1842
+#: modules/comment/comment.module:1848
 msgid "Flat list - collapsed"
 msgstr "Chronologische Liste - nur Titel"
 
-#: modules/comment/comment.module:1843
+#: modules/comment/comment.module:1849
 msgid "Flat list - expanded"
 msgstr "Chronologische Liste - vollständig"
 
-#: modules/comment/comment.module:1844
+#: modules/comment/comment.module:1850
 msgid "Threaded list - collapsed"
 msgstr "Nach Themen gruppierte Liste - nur Titel"
 
-#: modules/comment/comment.module:1845
+#: modules/comment/comment.module:1851
 msgid "Threaded list - expanded"
 msgstr "Nach Themen gruppierte Liste - vollständig"
 
-#: modules/comment/comment.module:2001
+#: modules/comment/comment.module:2007
 msgid "After saving a new comment"
 msgstr "Nach dem Speichern eines neuen Kommentars"
 
-#: modules/comment/comment.module:2004
+#: modules/comment/comment.module:2010
 msgid "After saving an updated comment"
 msgstr "Nach dem Speichern eines aktualisierten Kommentars"
 
-#: modules/comment/comment.module:2007
+#: modules/comment/comment.module:2013
 msgid "After deleting a comment"
 msgstr "Nach dem Löschen eines Kommentars"
 
-#: modules/comment/comment.module:2010
+#: modules/comment/comment.module:2016
 msgid "When a comment is being viewed by an authenticated user"
 msgstr "Wenn ein Kommentar von einem authentifizierten Benutzer angesehen wird"
 
-#: modules/comment/comment.module:2023
+#: modules/comment/comment.module:2029
 msgid "Unpublish comment"
 msgstr "Kommentar zurücknehmen"
 
-#: modules/comment/comment.module:2031
+#: modules/comment/comment.module:2037
 msgid "Unpublish comment containing keyword(s)"
 msgstr ""
 "Veröffentlichung von Kommentaren mit bestimmten Schlüsselwörtern zurückziehen"
 
-#: modules/comment/comment.module:2071
+#: modules/comment/comment.module:2077
 msgid ""
 "The comment will be unpublished if it contains any of the character "
 "sequences above. Use a comma-separated list of character sequences. Example: "
@@ -532,11 +541,11 @@ msgstr ""
 "GmbH“. In den Zeichenketten wird zwischen Groß- und Kleinschreibung "
 "unterschieden."
 
-#: modules/comment/comment.module:769
+#: modules/comment/comment.module:771
 msgid "Comment: added %subject."
-msgstr "Kommentare: \"%subject\" eingetragen."
+msgstr "Kommentar: %subject eingetragen."
 
-#: modules/comment/comment.module:2059;2099
+#: modules/comment/comment.module:2065;2105
 msgid "Unpublished comment %subject."
 msgstr "Die Veröffentlichung des Kommentars %subject wurde zurückgezogen."
 
@@ -587,139 +596,3 @@ msgstr "Kommentar bearbeiten"
 #: modules/comment/comment.module:235
 msgid "Reply to comment"
 msgstr "Auf Kommentar antworten"
-
-#: modules/comment/comment.module:0
-msgid "comment"
-msgstr "Kommentar"
-
-#: modules/comment/comment.install:76
-msgid "Stores comments and associated data."
-msgstr "Speichert Kommentare und zugeordnete Daten."
-
-#: modules/comment/comment.install:81
-msgid "Primary Key: Unique comment ID."
-msgstr "Primärschlüssel: Eindeutige Kommentar-ID."
-
-#: modules/comment/comment.install:87
-msgid ""
-"The {comments}.cid to which this comment is a reply. If set to 0, this "
-"comment is not a reply to an existing comment."
-msgstr ""
-"Die {comments}.cid des Kommentars, auf den sich diese Antwort bezieht. "
-"Dieser Kommentar ist keine Antwort auf einen vorhandenen Kommentar, wenn der "
-"Wert 0 beträgt."
-
-#: modules/comment/comment.install:93
-msgid "The {node}.nid to which this comment is a reply."
-msgstr "Dieser Kommentar ist eine Antwort auf  {node}.nid."
-
-#: modules/comment/comment.install:99
-msgid ""
-"The {users}.uid who authored the comment. If set to 0, this comment was "
-"created by an anonymous user."
-msgstr ""
-"Die {users}.uid des Autors, der den Kommentar verfasst hat. Der Kommentar "
-"wurde von einem Gast erstellt, wenn der Wert 0 beträgt."
-
-#: modules/comment/comment.install:106
-msgid "The comment title."
-msgstr "Der Titel des Kommentars."
-
-#: modules/comment/comment.install:112
-msgid "The comment body."
-msgstr "Der Textkörper des Kommentars."
-
-#: modules/comment/comment.install:119
-msgid "The author's host name."
-msgstr "Der Hostname des Authors."
-
-#: modules/comment/comment.install:125
-msgid ""
-"The time that the comment was created, or last edited by its author, as a "
-"Unix timestamp."
-msgstr ""
-"Der Zeitpunkt als Unix-Timestamp, zudem der Kommentar erstellt oder zuletzt "
-"von dessen Author bearbeitet wurde."
-
-#: modules/comment/comment.install:133
-msgid "The published status of a comment. (0 = Published, 1 = Not Published)"
-msgstr ""
-"Der Veröffentlichungstatus eines Kommentars. (0 = Veröffentlicht, 1 = Nicht "
-"Veröffentlicht)"
-
-#: modules/comment/comment.install:140
-msgid "The {filter_formats}.format of the comment body."
-msgstr "Das {filter_formats}.format des Kommentartextkörpers."
-
-#: modules/comment/comment.install:146
-msgid "The vancode representation of the comment's place in a thread."
-msgstr "Die Vancode-Darstellung der Stelle eines Kommentars im Thread."
-
-#: modules/comment/comment.install:152
-msgid ""
-"The comment author's name. Uses {users}.name if the user is logged in, "
-"otherwise uses the value typed into the comment form."
-msgstr ""
-"Der Name des Kommentarautors. Es wird {users}.name benutzt falls der "
-"Benutzer eingeloggt ist - anderenfalls wird der Wert genommen, der im "
-"Kommentar-Formular eingegeben wurde."
-
-#: modules/comment/comment.install:158
-msgid ""
-"The comment author's e-mail address from the comment form, if user is "
-"anonymous, and the 'Anonymous users may/must leave their contact "
-"information' setting is turned on."
-msgstr ""
-"Die E-mail-Adresse des Autors aus dem Kommentar-Formular - falls der "
-"Benutzer anonym ist und die Einstellung 'Anonyme Benutzer müssen ihre "
-"Kontaktinformation hinterlassen' ausgewählt wurde."
-
-#: modules/comment/comment.install:164
-msgid ""
-"The comment author's home page address from the comment form, if user is "
-"anonymous, and the 'Anonymous users may/must leave their contact "
-"information' setting is turned on."
-msgstr ""
-"Die Homepage des kommentierenden Autors aus dem Kommentar-Formular - für den "
-"Fall, dass der Benutzer anonym ist und die Einstellung „Ein anonymer "
-"Benutzer muss seine Kontaktinformation hinterlassen“ gesetzt ist."
-
-#: modules/comment/comment.install:176
-msgid ""
-"Maintains statistics of node and comments posts to show \"new\" and \"updated"
-"\" flags."
-msgstr ""
-"Verwaltet Statistiken von Beiträgen und Kommentaren, die als „neu“ oder "
-"„aktualisiert“ markiert angezeigt werden."
-
-#: modules/comment/comment.install:183
-msgid "The {node}.nid for which the statistics are compiled."
-msgstr "Die {node}.nid, für die die Statistiken zusammengestellt werden."
-
-#: modules/comment/comment.install:189
-msgid ""
-"The Unix timestamp of the last comment that was posted within this node, "
-"from {comments}.timestamp."
-msgstr ""
-"Der Unix-Zeitstempel des neuesten Kommentars, der zu diesem Node hinzugefügt "
-"wurde, aus {comments}.timestamp."
-
-#: modules/comment/comment.install:195
-msgid ""
-"The name of the latest author to post a comment on this node, from "
-"{comments}.name."
-msgstr ""
-"Der Name des Autors, der den neuesten Kommentar zu diesem Node hinzugefügt "
-"hat, aus {comments}.name."
-
-#: modules/comment/comment.install:201
-msgid ""
-"The user ID of the latest author to post a comment on this node, from "
-"{comments}.uid."
-msgstr ""
-"Die Benutzer-Kennung des Autors, der den neuesten Kommentar zu diesem Node "
-"hinzugefügt hat, aus {comments}.uid."
-
-#: modules/comment/comment.install:208
-msgid "The total number of comments on this node."
-msgstr "Die Gesamtzahl an Kommentaren zu diesem Beitrag."

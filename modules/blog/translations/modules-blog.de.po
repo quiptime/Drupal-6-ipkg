@@ -1,4 +1,4 @@
-# $Id: modules-blog.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-blog.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-blog)
 # Copyright (c) 2004-2008 by the German translation team
@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-blog\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 
-#: modules/blog/blog.pages.inc:15 modules/blog/blog.module:108
+#: modules/blog/blog.pages.inc:15
 msgid "@name's blog"
 msgstr "Weblog von @name"
 
@@ -28,17 +28,18 @@ msgstr "Weblog von @name"
 msgid "Post new blog entry."
 msgstr "Neuen Blogeintrag erstellen."
 
+# formal
 #: modules/blog/blog.pages.inc:23
 msgid "You are not allowed to post a new blog entry."
 msgstr "Sie dürfen keinen neuen Blogeintrag verfassen."
 
 #: modules/blog/blog.pages.inc:41
 msgid "You have not created any blog entries."
-msgstr "Es wurde kein Blogbeitrag erstellt."
+msgstr "Es wurde kein Blogeintrag erstellt."
 
 #: modules/blog/blog.pages.inc:44
 msgid "!author has not created any blog entries."
-msgstr "!author hat keine Blogbeiträge erstellt."
+msgstr "!author hat keine Blogeinträge erstellt."
 
 #: modules/blog/blog.pages.inc:47
 msgid "RSS - !title"
@@ -46,7 +47,7 @@ msgstr "RSS – !title"
 
 #: modules/blog/blog.pages.inc:62
 msgid "Create new blog entry."
-msgstr "Neuen Blogbeitrag erstellen."
+msgstr "Neuen Blogeintrag erstellen."
 
 #: modules/blog/blog.pages.inc:79
 msgid "No blog entries have been created."
@@ -68,15 +69,15 @@ msgstr ""
 "Ein <em>Blogeintrag</em> ist ein einzelner Beitrag in einem Online-Journal "
 "oder in einem <em>Blog</em>."
 
-#: modules/blog/blog.module:52
+#: modules/blog/blog.module:53
 msgid "View recent blog entries"
 msgstr "Zeige aktuelle Blogeinträge"
 
-#: modules/blog/blog.module:52;124
-msgid "Read @username's latest blog entries."
-msgstr "Neueste Blogeinträge von @username lesen."
+#: modules/blog/blog.module:53;126
+msgid "Read !username's latest blog entries."
+msgstr "Neueste Blogeinträge von !username lesen."
 
-#: modules/blog/blog.module:64
+#: modules/blog/blog.module:65
 msgid ""
 "The blog module allows registered users to maintain an online journal, or "
 "<em>blog</em>. Blogs are made up of individual <em>blog entries</em>, and "
@@ -88,7 +89,7 @@ msgstr ""
 "Einträgen</em>, sie werden dabei zumeist in absteigender Reihenfolge nach "
 "Erstellungsdatum dargestellt."
 
-#: modules/blog/blog.module:65
+#: modules/blog/blog.module:66
 msgid ""
 "There is an (optional) <em>Blogs</em> menu item added to the Navigation "
 "menu, which displays all blogs available on your site, and a <em>My blog</"
@@ -98,11 +99,11 @@ msgid ""
 msgstr ""
 "Es wurde ein (optionaler) <em>Blogs</em> Menüpunkt zum Navigationsmenü "
 "hinzugefügt, welcher alle vorhandenen Blogs auf der Seite zeigt und ein "
-"<em>Mein Blog</em> Menüpunkt, welcher die momentanen Blogeinträge des Users "
-"anzeigt. Der Menüpunkt <em>Blog Eintrag</em> unter <em>Inhalt erstellen</em> "
-"erlaubt, neue Blog Einträge zu erstellen."
+"<em>Mein Blog</em> Menüpunkt, welcher die momentanen Blogeinträge des "
+"Benutzers anzeigt. Der Menüpunkt <em>Blog Eintrag</em> unter <em>Inhalt "
+"erstellen</em> erlaubt, neue Blog Einträge zu erstellen."
 
-#: modules/blog/blog.module:66
+#: modules/blog/blog.module:67
 msgid ""
 "Each blog entry is displayed with an automatic link to other blogs created "
 "by the same user. By default, blog entries have comments enabled and are "
@@ -117,7 +118,7 @@ msgstr ""
 "em>, der in der <a href=\"@blocks\">Block-Administration</a> aktiviert "
 "werden kann."
 
-#: modules/blog/blog.module:67
+#: modules/blog/blog.module:68
 msgid ""
 "When using the aggregator module an automatic <em>blog it</em> icon is "
 "displayed next to the items in a feed's <em>latest items</em> block. "
@@ -141,54 +142,54 @@ msgstr ""
 "einer anderen Internetseite <a href=\"@feeds\">hinzugefügt</a> und die "
 "Region des <a href=\"@blocks\">Newsfeed</a>-Blocks bestimmt werden."
 
-#: modules/blog/blog.module:68
+#: modules/blog/blog.module:69
 msgid ""
 "For more information, see the online handbook entry for <a href=\"@blog"
 "\">Blog module</a>."
 msgstr ""
 "Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
-"der Handbuch-Seite zum <a href=\\\"@help\\\">Blog-Modul</a>."
+"der Handbuch-Seite zum <a href=\"@help\">Blog-Modul</a>."
 
-#: modules/blog/blog.module:108;137;152;161
+#: modules/blog/blog.module:109;139;154;163
 msgid "Blogs"
 msgstr "Weblogs"
 
-#: modules/blog/blog.module:122
-msgid "@username's blog"
-msgstr "Weblog von @username"
+#: modules/blog/blog.module:109
+msgid "!name's blog"
+msgstr "Weblog von !name"
 
-#: modules/blog/blog.module:196;205
+#: modules/blog/blog.module:124
+msgid "!username's blog"
+msgstr "Weblog von !username"
+
+#: modules/blog/blog.module:198;207
 msgid "Recent blog posts"
 msgstr "Neueste Blogeinträge"
 
-#: modules/blog/blog.module:204
+#: modules/blog/blog.module:206
 msgid "Read the latest blog entries."
 msgstr "Neueste Blogeinträge lesen."
 
 #: modules/blog/blog.module:26
 msgid "create blog entries"
-msgstr "Blogbeiträge erstellen"
+msgstr "Blogeinträge erstellen"
 
 #: modules/blog/blog.module:26
 msgid "delete own blog entries"
-msgstr "Eigene Blogbeiträge löschen"
+msgstr "Eigene Blogeinträge löschen"
 
 #: modules/blog/blog.module:26
 msgid "delete any blog entry"
-msgstr "Beliebige Blogbeiträge löschen"
+msgstr "Beliebige Blogeinträge löschen"
 
 #: modules/blog/blog.module:26
 msgid "edit own blog entries"
-msgstr "Eigenen Blogbeiträge bearbeiten"
+msgstr "Eigenen Blogeinträge bearbeiten"
 
 #: modules/blog/blog.module:26
 msgid "edit any blog entry"
-msgstr "Beliebige Blogbeiträge bearbeiten"
+msgstr "Beliebige Blogeinträge bearbeiten"
 
-#: modules/blog/blog.module:144
+#: modules/blog/blog.module:146
 msgid "My blog"
 msgstr "Mein Weblog"
-
-#: modules/blog/blog.module:0
-msgid "blog"
-msgstr "Weblog"

@@ -1,4 +1,4 @@
-# $Id: modules-color.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-color.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-color)
 # Copyright (c) 2004-2008 by the German translation team
@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-color\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -38,6 +38,7 @@ msgstr ""
 "korrekte Funktionsweise des Color-Moduls muss die <a href=\"@url\">Datei-"
 "Download-Methode</a> auf „öffentlich“ eingestellt sein."
 
+# formal
 #: modules/color/color.module:11
 msgid ""
 "It is important to remember that color module saves a modified copy of the "
@@ -62,7 +63,7 @@ msgid ""
 "a>."
 msgstr ""
 "Die Farbeinstellungen für ein kompatibles Theme können über den "
-"\"Konfigurieren\"-Verweis des Themes auf der <a href=\"@themes\">Theme-"
+"„Konfigurieren“-Link des Themes auf der <a href=\"@themes\">Theme-"
 "Verwaltungsseite</a> angepasst werden."
 
 #: modules/color/color.module:13
@@ -122,10 +123,6 @@ msgstr ""
 "PHP steht nicht genug Speicher zur Verfügung um das Farbschema dieses Themes "
 "zu ändern. Es wird mindestens %size mehr benötigt. Nähere Informationen "
 "finden sich in der <a href=\"@url\">PHP-Dokumentation</a>."
-
-#: modules/color/color.module:0
-msgid "color"
-msgstr "Farbe"
 
 #: modules/color/color.install:21
 msgid ""

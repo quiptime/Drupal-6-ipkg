@@ -1,4 +1,4 @@
-# $Id: modules-block.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-block.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-block)
 # Copyright (c) 2004-2008 by the German translation team
@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-block\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -31,63 +31,63 @@ msgstr "Region"
 msgid "No blocks in this region"
 msgstr "Keine Blöcke in dieser Region"
 
-#: modules/block/block.admin.inc:85
+#: modules/block/block.admin.inc:91
 msgid "Save blocks"
 msgstr "Blöcke speichern"
 
-#: modules/block/block.admin.inc:100
+#: modules/block/block.admin.inc:106
 msgid "The block settings have been updated."
 msgstr "Die Blockeinstellungen wurden gespeichert."
 
-#: modules/block/block.admin.inc:150
+#: modules/block/block.admin.inc:156
 msgid "Block specific settings"
 msgstr "Blockspezifische Einstellungen"
 
-#: modules/block/block.admin.inc:155
+#: modules/block/block.admin.inc:161
 msgid "Block title"
 msgstr "Blocktitel"
 
-#: modules/block/block.admin.inc:157
+#: modules/block/block.admin.inc:163
 msgid "The title of the block as shown to the user."
 msgstr "Der Titel des Blocks, so wie er dem Benutzer angezeigt wird."
 
-#: modules/block/block.admin.inc:157
+#: modules/block/block.admin.inc:163
 msgid ""
 "Override the default title for the block. Use <em>&lt;none&gt;</em> to "
 "display no title, or leave blank to use the default block title."
 msgstr ""
-"Den Standardtitel des Blocks ändern. Mit <em>&lt;none&gt;</em> wird kein "
+"Den Standardtitel des Blocks ändern. Mit <em>&lt;keine&gt;</em> wird kein "
 "Titel angezeigt, wenn das Feld leer ist, wird der Standardtitel verwendet."
 
-#: modules/block/block.admin.inc:173
+#: modules/block/block.admin.inc:179
 msgid "'%name' block"
 msgstr "‚%name‘-Block"
 
-#: modules/block/block.admin.inc:179
+#: modules/block/block.admin.inc:185
 msgid "User specific visibility settings"
 msgstr "Benutzerspezifische Sichtbarkeits-Einstellungen"
 
-#: modules/block/block.admin.inc:184
+#: modules/block/block.admin.inc:190
 msgid "Custom visibility settings"
 msgstr "Individuelle Sichtbarkeits-Einstellungen"
 
-#: modules/block/block.admin.inc:186
+#: modules/block/block.admin.inc:192
 msgid "Users cannot control whether or not they see this block."
 msgstr ""
 "Die Benutzer können nicht kontrollieren, ob sie diesen Block ein- oder "
 "ausblenden möchten."
 
-#: modules/block/block.admin.inc:187
+#: modules/block/block.admin.inc:193
 msgid "Show this block by default, but let individual users hide it."
 msgstr ""
 "Diesen Block standardmäßig zeigen, der Benutzer darf ihn aber ausblenden."
 
-#: modules/block/block.admin.inc:188
+#: modules/block/block.admin.inc:194
 msgid "Hide this block by default but let individual users show it."
 msgstr ""
 "Diesen Block standardmäßig ausblenden, der Benutzer darf ihn aber anzeigen."
 
-#: modules/block/block.admin.inc:190
+#: modules/block/block.admin.inc:196
 msgid ""
 "Allow individual users to customize the visibility of this block in their "
 "account settings."
@@ -95,15 +95,15 @@ msgstr ""
 "Individuellen Benutzern erlauben, die Sichtbarkeit dieses Blocks in dessen "
 "Kontoeinstellungen zu ändern."
 
-#: modules/block/block.admin.inc:207
+#: modules/block/block.admin.inc:213
 msgid "Role specific visibility settings"
 msgstr "Rollenspezifische Sichtbarkeits-Einstellungen"
 
-#: modules/block/block.admin.inc:212
+#: modules/block/block.admin.inc:218
 msgid "Show block for specific roles"
 msgstr "Diesen Block nur für bestimmte Rollen anzeigen"
 
-#: modules/block/block.admin.inc:215
+#: modules/block/block.admin.inc:221
 msgid ""
 "Show this block only for the selected role(s). If you select no roles, the "
 "block will be visible to all users."
@@ -111,19 +111,20 @@ msgstr ""
 "Diesen Block nur für die ausgewählten Rollen anzeigen. Wenn keine Rollen "
 "gewählt werden, ist der Block für alle Benutzer sichtbar."
 
-#: modules/block/block.admin.inc:220
+#: modules/block/block.admin.inc:226
 msgid "Page specific visibility settings"
 msgstr "Seitenspezifische Sichtbarkeits-Einstellungen"
 
-#: modules/block/block.admin.inc:231
+#: modules/block/block.admin.inc:237
 msgid "Show on every page except the listed pages."
 msgstr "Auf allen Seiten außer den aufgelisteten Seiten anzeigen."
 
-#: modules/block/block.admin.inc:231
+#: modules/block/block.admin.inc:237
 msgid "Show on only the listed pages."
 msgstr "Nur auf den aufgelisteten Seiten anzeigen."
 
-#: modules/block/block.admin.inc:232
+# formal
+#: modules/block/block.admin.inc:238
 msgid ""
 "Enter one page per line as Drupal paths. The '*' character is a wildcard. "
 "Example paths are %blog for the blog page and %blog-wildcard for every "
@@ -133,7 +134,7 @@ msgstr ""
 "Platzhalter. Beispielpfade sind %blog für die Blog-Seite und %blog-wildcard "
 "für jedes einzelne Blog. %front steht für die Startseite."
 
-#: modules/block/block.admin.inc:235
+#: modules/block/block.admin.inc:241
 msgid ""
 "Show if the following PHP code returns <code>TRUE</code> (PHP-mode, experts "
 "only)."
@@ -141,7 +142,8 @@ msgstr ""
 "Nur anzeigen, wenn der folgende PHP-Code <code>TRUE</code> zurückgibt (PHP-"
 "Modus für Experten)."
 
-#: modules/block/block.admin.inc:236
+# formal
+#: modules/block/block.admin.inc:242
 msgid ""
 "If the PHP-mode is chosen, enter PHP code between %php. Note that executing "
 "incorrect PHP-code can break your Drupal site."
@@ -150,37 +152,38 @@ msgstr ""
 "Beachten Sie, dass das Ausführen eines fehlerhaften PHP-Codes Ihre Drupal-"
 "Website zerstören kann."
 
-#: modules/block/block.admin.inc:240
+#: modules/block/block.admin.inc:246
 msgid "Show block on specific pages"
 msgstr "Diesen Block nur auf den aufgelisteten Seiten anzeigen"
 
-#: modules/block/block.admin.inc:246
+#: modules/block/block.admin.inc:252
 msgid "Pages"
 msgstr "Seiten"
 
-#: modules/block/block.admin.inc:254
+#: modules/block/block.admin.inc:260
 msgid "Save block"
 msgstr "Block speichern"
 
-#: modules/block/block.admin.inc:263;292
+# formal
+#: modules/block/block.admin.inc:269;298
 msgid "Please ensure that each block description is unique."
 msgstr ""
 "Bitte stellen Sie sicher, dass sich die Beschreibung dieses Blocks von den "
 "schon bestehenden unterscheidet."
 
-#: modules/block/block.admin.inc:276
+#: modules/block/block.admin.inc:282
 msgid "The block configuration has been saved."
 msgstr "Die Einstellungen des Blocks wurden gesichert."
 
-#: modules/block/block.admin.inc:313
+#: modules/block/block.admin.inc:319
 msgid "The block has been created."
 msgstr "Der neue Block wurde erstellt."
 
-#: modules/block/block.admin.inc:328
+#: modules/block/block.admin.inc:334
 msgid "Are you sure you want to delete the block %name?"
 msgstr "Soll der Block %name wirklich gelöscht werden?"
 
-#: modules/block/block.admin.inc:337
+#: modules/block/block.admin.inc:343
 msgid "The block %name has been removed."
 msgstr "Der Block %name wurde gelöscht."
 
@@ -196,7 +199,7 @@ msgstr ""
 "Blöcke sind zusätzliche Inhalte, die in bestimmten Regionen der Website, zum "
 "Beispiel in Seitenleisten, angezeigt werden können. Das Standard-Theme "
 "Garland verwendet zum Beispiel die Regionen „linke Seitenleiste“, „rechte "
-"Seitenleiste“, „Inhalt“, „Header“, sowie „Footer“ und ein Block kann "
+"Seitenleiste“, „Inhalt“, „Kopfbereich“, sowie „Fußzeile“ und ein Block kann "
 "beliebig in einem dieser Bereiche angezeigt werden. Die <a href=\"@blocks"
 "\">Verwaltungsseite der Blöcke</a> stellt eine Drag-and-Drop-Funktion zur "
 "Verfügung, um Blöcke einer Region zuzuweisen und die Reihenfolge der Blöcke "
@@ -287,7 +290,7 @@ msgid ""
 "\">Block module</a>."
 msgstr ""
 "Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
-"der Handbuch-Seite zum <a href=\\\"@help\\\">Block-Modul</a>."
+"der Handbuch-Seite zum <a href=\"@help\">Block-Modul</a>."
 
 #: modules/block/block.module:85
 msgid ""
@@ -303,14 +306,13 @@ msgid ""
 msgstr ""
 "Diese Seite stellt eine Drag-and-Drop-Funktion zur Verfügung, um Blöcke "
 "einer Region zuzuweisen und die Reihenfolge der Blöcke innerhalb von "
-"Regionen zu verändern. Zum Verändern der Region oder Reihenfolge eines "
-"Blocks einfach ein Drag-and-Drop-Kreuz in der Blöcke-Spalte anfassen und an "
-"einen neuen Ort in der Liste ziehen. (Ein Drag-and-Drop-Kreuz wird "
-"angefasst, indem das Kreuz-Icon angeklickt und festgehalten wird.) Da nicht "
-"alle Themes die gleichen Regionen verwenden oder Regionen unterschiedlich "
-"darstellen, werden Blöcke pro Theme positioniert. Änderungen werden nicht "
-"gespeichert bis am Ende der Seite der <em>Blöcke speichern</em>-Knopf "
-"gedrückt wird.<em>"
+"Regionen zu verändern. Die Region oder die Reihenfolge eines Blocks kann mit "
+"der Drag-and-Drop-Funktion geändert werden. Einfach mit der linken Maustaste "
+"auf das Kreuz klicken, festhalten und in der gewünschte Position loslassen. "
+"Da nicht alle Themes die gleichen Regionen verwenden oder Regionen "
+"unterschiedlich darstellen, werden Blöcke pro Theme positioniert. Änderungen "
+"werden nicht gespeichert bis die Veränderungen mit dem <em>Konfiguration "
+"speichern</em>-Button übernommen werden."
 
 #: modules/block/block.module:87
 msgid ""
@@ -325,6 +327,7 @@ msgstr ""
 "Lastreduzierung kann auf der <a href=\"@throttleconfig"
 "\">Konfigurationsseite</a> angepasst werden."
 
+# formal
 #: modules/block/block.module:89
 msgid ""
 "Click the <em>configure</em> link next to each block to configure its "
@@ -336,6 +339,7 @@ msgstr ""
 "em> angepasst werden. Verwenden Sie den <a href=\"@add-block\">Block "
 "hinzufügen</a> Button zum Erstellen eines benutzerdefinierten Blocks."
 
+# formal
 #: modules/block/block.module:92
 msgid ""
 "Use this page to create a new custom block. New blocks are disabled by "
@@ -359,6 +363,7 @@ msgstr ""
 msgid "Block description"
 msgstr "Blockbeschreibung"
 
+# formal
 #: modules/block/block.module:318
 msgid ""
 "A brief description of your block. Used on the <a href=\"@overview\">block "
@@ -413,158 +418,6 @@ msgstr "Block löschen"
 #: modules/block/block.module:156
 msgid "Add block"
 msgstr "Block hinzufügen"
-
-#: modules/block/block.module:0
-msgid "block"
-msgstr "Block"
-
-#: modules/block/block.install:9
-msgid "Stores block settings, such as region and visibility settings."
-msgstr ""
-"Speichert Block Einstellungen, z.b. Region und Einstellungen bzgl. "
-"Sichtbarkeit."
-
-#: modules/block/block.install:14
-msgid "Primary Key: Unique block ID."
-msgstr "Primärschlüssel: Eindeutige Block-ID."
-
-#: modules/block/block.install:21
-msgid ""
-"The module from which the block originates; for example, 'user' for the "
-"Who's Online block, and 'block' for any custom blocks."
-msgstr ""
-"Das Modul, von dem der Block stammt; z.b. 'Benutzer' für den 'Wer ist online-"
-"Block' und 'Block' für jeden selbst erstellten Block."
-
-#: modules/block/block.install:28
-msgid "Unique ID for block within a module."
-msgstr "Eindeutige Block-ID innerhalb eines Moduls."
-
-#: modules/block/block.install:35
-msgid "The theme under which the block settings apply."
-msgstr "Das Theme, in dem die Block-Einstellungen wirksam sind."
-
-#: modules/block/block.install:42
-msgid "Block enabled status. (1 = enabled, 0 = disabled)"
-msgstr "Aktivierungsstatus des Blocks. (1 = aktiviert, 0 = deaktiviert)"
-
-#: modules/block/block.install:49
-msgid "Block weight within region."
-msgstr "Reihenfolge des Blocks innerhalb der Region."
-
-#: modules/block/block.install:56
-msgid "Theme region within which the block is set."
-msgstr "Theme-Region, in der der Block liegt."
-
-#: modules/block/block.install:63
-msgid ""
-"Flag to indicate how users may control visibility of the block. (0 = Users "
-"cannot control, 1 = On by default, but can be hidden, 2 = Hidden by default, "
-"but can be shown)"
-msgstr ""
-"Kennzeichen um anzuzeigen, wie Benutzer die Sichtbarkeit des Blocks "
-"kontrollieren können. (0 = Benutzer hat keine Kontrolle, 1 = In der "
-"Voreinstellung aktiviert, kann aber versteckt werden, 2 = In der "
-"Voreinstellung versteckt, kann aber sichtbar gemacht werden)"
-
-#: modules/block/block.install:70
-msgid ""
-"Flag to indicate whether or not to remove block when website traffic is "
-"high. (1 = throttle, 0 = do not throttle)"
-msgstr ""
-"Kennzeichen um anzuzeigen, ob der Block bei hohem Website Verkehr "
-"deaktiviert werden soll oder nicht. (1 = drosseln, 0 = nicht drosseln)"
-
-#: modules/block/block.install:77
-msgid ""
-"Flag to indicate how to show blocks on pages. (0 = Show on all pages except "
-"listed pages, 1 = Show only on listed pages, 2 = Use custom PHP code to "
-"determine visibility)"
-msgstr ""
-"Merkmal das besagt, wie Blöcke auf Seiten angezeigt werden. (0 = Auf allen "
-"Seiten außer den aufgelisteten Seiten anzeigen, 1 = Nur auf den "
-"aufgelisteten Seiten anzeigen, 2 = Benutzerdefinierten PHP-Code zur "
-"Ermittlung der Sichtbarkeit verwenden)"
-
-#: modules/block/block.install:82
-msgid ""
-"Contents of the \"Pages\" block; contains either a list of paths on which to "
-"include/exclude the block or PHP code, depending on \"visibility\" setting."
-msgstr ""
-"Inhalt des <em>Seiten</em>-Blocks. Er enthält, abhängig von der Einstellung "
-"für die <em>Sichtbarkeit</em>, entweder eine Liste von Pfaden, für die der "
-"Block ein- oder ausgeschlossen werden soll, oder PHP-Code."
-
-#: modules/block/block.install:89
-msgid ""
-"Custom title for the block. (Empty string will use block default title, "
-"<none> will remove the title, text will cause block to use specified title.)"
-msgstr ""
-"Angepasster Titel für den Block.(Der Standard Titel wird verwendet, wenn "
-"nichts eintragen wird, <none> entfernt den Standard Titel.)"
-
-#: modules/block/block.install:96
-msgid ""
-"Binary flag to indicate block cache mode. (-1: Do not cache, 1: Cache per "
-"role, 2: Cache per user, 4: Cache per page, 8: Block cache global) See "
-"BLOCK_CACHE_* constants in block.module for more detailed information."
-msgstr ""
-"Boolescher Wert, der den Cache-Modus des Blocks angibt. (-1: Nicht cachen, "
-"1: Pro Rolle cachen, 2: Pro Benutzer cachen, 4: Pro Seite cachen, 8: "
-"Globaler gecacheter Block). Für detaillierte Informationen siehe "
-"<em>BLOCK_CACHE_</em>-Konstanten im Modul <em>block.module</em>."
-
-#: modules/block/block.install:109
-msgid "Sets up access permissions for blocks based on user roles"
-msgstr ""
-"Konfiguriert die Zugriffsberechtigungen für Blöcke basierend auf "
-"Benutzerrollen"
-
-#: modules/block/block.install:115
-msgid "The block's origin module, from {blocks}.module."
-msgstr "Das Modul, das den Block erzeugt von {blocks}.module."
-
-#: modules/block/block.install:121
-msgid "The block's unique delta within module, from {blocks}.delta."
-msgstr ""
-"Der eindeutige Delta-Wert des Blocks in dem Modul (von {blocks}.delta)."
-
-#: modules/block/block.install:127
-msgid "The user's role ID from {users_roles}.rid."
-msgstr "Die Rollen-ID des Benutzers aus {users_roles}.rid."
-
-#: modules/block/block.install:141
-msgid "Stores contents of custom-made blocks."
-msgstr "Speichert Inhalte von benutzerdefinierten Blöcken."
-
-#: modules/block/block.install:147
-msgid "The block's {blocks}.bid."
-msgstr "Die {block}.bid des Blocks."
-
-#: modules/block/block.install:153
-msgid "Block contents."
-msgstr "Inhalte des Blocks."
-
-#: modules/block/block.install:160
-msgid "Block description."
-msgstr "Beschreibung des Blocks."
-
-#: modules/block/block.install:167
-msgid "Block body's {filter_formats}.format; for example, 1 = Filtered HTML."
-msgstr ""
-"Das {filter_formats}.format des Haupttext des Blocks, z.B. 1 = Gefiltertes "
-"HTML."
-
-#: modules/block/block.install:175
-msgid ""
-"Cache table for the Block module to store already built blocks, identified "
-"by module, delta, and various contexts which may change the block, such as "
-"theme, locale, and caching mode defined for the block."
-msgstr ""
-"Cache-Tabelle, in dem das Block-Modul bereits erstellte Blöcke speichert. "
-"Die Blöcke werden durch ihr Modul, den Delta-Wert und verschiedene Umstände "
-"wie das Theme, Spracheinstellung und die für den Block festgelegte Cache-"
-"Einstellung ermittelt."
 
 #: modules/block/block.js:0
 msgid ""

@@ -1,4 +1,4 @@
-# $Id: modules-menu.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-menu.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-menu)
 # Copyright (c) 2004-2008 by the German translation team
@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-menu\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "There are no menu items yet."
 msgstr "Es sind keine Menüeinträge vorhanden."
 
-#: modules/menu/menu.admin.inc:72 modules/menu/menu.module:243
+#: modules/menu/menu.admin.inc:72 modules/menu/menu.module:245
 msgid "disabled"
 msgstr "Deaktiviert"
 
@@ -41,10 +41,11 @@ msgstr "Menüpunkt"
 msgid "Expanded"
 msgstr "Geöffnet"
 
-#: modules/menu/menu.admin.inc:230 modules/menu/menu.module:366
+#: modules/menu/menu.admin.inc:230 modules/menu/menu.module:367
 msgid "Menu settings"
 msgstr "Menüeinstellungen"
 
+# formal
 #: modules/menu/menu.admin.inc:260
 msgid ""
 "The path this menu item links to. This can be an internal Drupal path such "
@@ -55,7 +56,7 @@ msgstr ""
 "add-node, oder eine externe Adresse, wie %drupal, sein. Geben Sie %front "
 "ein, um zur Startseite zu linken."
 
-#: modules/menu/menu.admin.inc:279 modules/menu/menu.module:393
+#: modules/menu/menu.admin.inc:279 modules/menu/menu.module:394
 msgid "Menu link title"
 msgstr "Linktitel des Menüpunkts"
 
@@ -82,7 +83,7 @@ msgstr ""
 "Falls dieser Menüpunkt Unterpunkte hat, wird dieses Menü immer geöffnet "
 "dargestellt."
 
-#: modules/menu/menu.admin.inc:315 modules/menu/menu.module:409
+#: modules/menu/menu.admin.inc:315 modules/menu/menu.module:410
 msgid ""
 "The maximum depth for an item and all its children is fixed at !maxdepth. "
 "Some menu items may not be available as parents if selecting them would "
@@ -92,7 +93,7 @@ msgstr ""
 "Menüpunkte liegt bei !maxdepth. Einige Menüpunkte sind möglicherweise nicht "
 "als Elternelemente auswählbar, da so das Limit überschritten werden würde."
 
-#: modules/menu/menu.admin.inc:323 modules/menu/menu.module:419
+#: modules/menu/menu.admin.inc:323 modules/menu/menu.module:420
 msgid ""
 "Optional. In the menu, the heavier items will sink and the lighter items "
 "will be positioned nearer the top."
@@ -100,7 +101,7 @@ msgstr ""
 "Optional. Je größer die Zahl der Reihenfolge ist, desto weiter unten steht "
 "der Menüpunkt."
 
-#: modules/menu/menu.admin.inc:379 modules/menu/menu.module:310
+#: modules/menu/menu.admin.inc:379 modules/menu/menu.module:311
 msgid "There was an error saving the menu link."
 msgstr "Beim Speichern des Menü-Links trat ein Fehler auf."
 
@@ -116,7 +117,7 @@ msgid ""
 "unique."
 msgstr ""
 "Die maschinenlesbare Bezeichnung für dieses Menü. Der Text wird in der Liste "
-"auf der <em>Menü Verwaltungseite</em> angezeigt. Sie darf nur aus "
+"auf der <em>Menü-Verwaltungseite</em> angezeigt. Sie darf nur aus "
 "Kleinbuchstaben, Zahlen und Unterstrichen bestehen. Die Bezeichnung muss "
 "eindeutig sein."
 
@@ -192,6 +193,7 @@ msgstr "Keine Hauptlinks"
 msgid "Source for the primary links"
 msgstr "Die Quelle der Hauptlinks"
 
+# formal
 #: modules/menu/menu.admin.inc:623
 msgid "Select what should be displayed as the primary links."
 msgstr "Wählen Sie welches Menü in den Hauptlinks angezeigt werden soll."
@@ -204,6 +206,7 @@ msgstr "Keine Sekundärlinks"
 msgid "Source for the secondary links"
 msgstr "Die Quelle der Sekundärlinks"
 
+# formal
 #: modules/menu/menu.admin.inc:633
 msgid ""
 "Select what should be displayed as the secondary links. You can choose the "
@@ -263,12 +266,12 @@ msgstr ""
 "Drupals mächtigem Menüsystem. Menüs sind hierarchisch organisierte Links "
 "(Menüpunkte), dienen zur Navigation der Website und können mit Drupals "
 "flexiblen Block-System angeordnet werden. Standardmäßig gibt es drei Menüs: "
-"<em>Navigation</em>, <em>Primärlinks</em> und <em>Sekundärlinks</em>. Das "
+"<em>Navigation</em>, <em>Hauptlinks</em> und <em>Sekundärlinks</em>. Das "
 "Menü <em>Navigation</em> enthält standardmäßig die Menüpunkte, die zum "
 "Arbeiten mit der Website und zur Navigation notwendig sind und wird meist "
 "auf der linken oder rechten Seite angezeigt. Die Meisten Drupal-Themes "
-"zeigen auch <em>Primärlinks</em> und <em>Sekundärlinks</em> im Kopf- oder "
-"Fußbereich jeder Seite an. Die Menüs <em>Primärlinks</em> und "
+"zeigen auch <em>Hauptlinks</em> und <em>Sekundärlinks</em> im Kopf- oder "
+"Fußbereich jeder Seite an. Die Menüs <em>Hauptlinks</em> und "
 "<em>Sekundärlinks</em> enthalten in der Standardeinstellung keine "
 "Menüpunkte; können aber eigene Menüpunkte, die für diese Website spezifisch "
 "sind, enthalten."
@@ -297,6 +300,7 @@ msgstr ""
 "Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
 "der Handbuch-Seite zum <a href=\"@menu\">Menü-Modul</a>."
 
+# formal
 #: modules/menu/menu.module:26
 msgid ""
 "Menus are a collection of links (menu items) used to navigate a website. The "
@@ -324,21 +328,21 @@ msgid ""
 "over a handle icon.) Remember that your changes will not be saved until you "
 "click the <em>Save configuration</em> button at the bottom of the page."
 msgstr ""
-"Menüpunkte können durch Ziehen des Drag-And-Drop-Symbols auf der linken "
-"Seite an eine andere Stelle des Menübaums verschoben werden. (Dazu muss auf "
-"das Symbol geklickt werden und die Maustaste gedrückt bleiben.) Änderungen "
-"werden erst nach einem Klick auf <em>Konfiguration speichern</em> unten auf "
-"der Seite übernommen."
+"Menüpunkte können mit der Drag-and-Drop-Funktion geändert werden. Einfach "
+"mit der linken Maustaste auf das Kreuz klicken, festhalten und in der "
+"gewünschte Position loslassen. Änderungen werden nicht gespeichert bis die "
+"Veränderungen mit dem <em>Konfiguration speichern</em>-Button übernommen "
+"werden."
 
 #: modules/menu/menu.module:32
 msgid "Enter the title and path for your new menu item."
 msgstr "Den Titel und Pfad für den neuen Menüpunkt eingeben."
 
-#: modules/menu/menu.module:380
+#: modules/menu/menu.module:381
 msgid "Delete this menu item."
 msgstr "Diesen Menüpunkt löschen."
 
-#: modules/menu/menu.module:395
+#: modules/menu/menu.module:396
 msgid ""
 "The link text corresponding to this item that should appear in the menu. "
 "Leave blank if you do not wish to add this post to the menu."
@@ -402,28 +406,6 @@ msgstr "Menüpunkt zurücksetzen"
 msgid "Delete menu item"
 msgstr "Menüpunkt löschen"
 
-#: modules/menu/menu.install:31
-msgid ""
-"Holds definitions for top-level custom menus (for example, Primary Links)."
-msgstr ""
-"Beinhaltet die Definitionen für benutzer-definierte Menüs der obersten Ebene "
-"(z.B. die Hauptverweise)."
-
-#: modules/menu/menu.install:38
-msgid ""
-"Primary Key: Unique key for menu. This is used as a block delta so length is "
-"32."
-msgstr ""
-"Der Primärschlüssel für das Menü ist ein eindeutiger Schlüssel der Länge 32."
-
-#: modules/menu/menu.install:45
-msgid "Menu title; displayed at top of block."
-msgstr "Menütitel; wird im Block ganz oben angezeigt."
-
-#: modules/menu/menu.install:50
-msgid "Menu description."
-msgstr "Menübeschreibung."
-
 #: (duplicate) modules/menu/menu.install:12
 msgid ""
 "The navigation menu is provided by Drupal and is the main interactive menu "
@@ -440,9 +422,9 @@ msgid ""
 "of a site. A typical representation for primary links would be tabs along "
 "the top."
 msgstr ""
-"Primäre Links werden häufig auf Theme-Ebene verwendet, um die grundlegenden "
-"Bereiche der Seite anzuzeigen. Eine typische Darstellung der primären Links "
-"sind Reiter/Register im Kopf der Seite."
+"Hauptlinks werden häufig auf Theme-Ebene verwendet, um die grundlegenden "
+"Bereiche der Seite anzuzeigen. Eine typische Darstellung der Hauptlinks sind "
+"Reiter/Register im Kopf der Seite."
 
 #: (duplicate) modules/menu/menu.install:14
 msgid ""
@@ -450,6 +432,6 @@ msgid ""
 "details, and other secondary navigation items that play a lesser role than "
 "primary links"
 msgstr ""
-"Sekundäre Links (Nebenlinks) werden häufig für Seiten verwendet, die eine "
-"untergeordnete Rolle spielen. Beispiele dafür sind das Impressum oder "
-"Kontaktinformationen."
+"Sekundärlinks werden häufig für Seiten verwendet, die im Vergleich zu den "
+"Hauptlinks eine untergeordnete Rolle spielen. Beispiele dafür sind das "
+"Impressum oder Kontaktinformationen."

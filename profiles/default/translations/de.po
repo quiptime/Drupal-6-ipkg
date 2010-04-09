@@ -1,4 +1,4 @@
-# $Id: installer.po,v 1.2.2.10 2008/08/16 18:48:05 timcn Exp $
+# $Id: installer.po,v 1.2.2.12 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (installer)
 # Copyright (c) 2004-2008 by the German translation team
@@ -22,7 +22,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: installer\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -41,6 +41,7 @@ msgstr "Systemvoraussetzungs-Problem"
 msgid "Database configuration"
 msgstr "Datenbankkonfiguration"
 
+# formal
 #: install.php:222
 msgid ""
 "Your web server does not appear to support any common database types. Check "
@@ -78,6 +79,7 @@ msgstr ""
 "Datenbank muss auf dem Server vorhanden sein, bevor @drupal installiert "
 "werden kann."
 
+# formal
 #: install.php:250
 msgid ""
 "The name of the %db_type database your @drupal data will be stored in. It "
@@ -91,19 +93,20 @@ msgstr ""
 msgid "Database name"
 msgstr "Datenbankname"
 
-#: install.php:268
+#: install.php:267
 msgid "Database username"
 msgstr "Datenbank-Benutzer"
 
-#: install.php:278
+#: install.php:276
 msgid "Database password"
 msgstr "Datenbank-Passwort"
 
-#: install.php:286
+#: install.php:283
 msgid "Advanced options"
 msgstr "Erweiterte Einstellungen"
 
-#: install.php:289
+# formal
+#: install.php:286
 msgid ""
 "These options are only necessary for some sites. If you're not sure what you "
 "should enter here, leave the default settings or check with your hosting "
@@ -113,21 +116,21 @@ msgstr ""
 "was Sie hier eintragen sollen, behalten Sie die Standardeinstellungen oder "
 "wenden sie sich an Ihren Webhosting-Anbieter."
 
-#: install.php:295
+#: install.php:292
 msgid "Database host"
 msgstr "Datenbank-Host"
 
-#: install.php:300
+#: install.php:298
 msgid "If your database is located on a different server, change this."
 msgstr ""
 "Wenn die Datenbank auf einem anderen Server läuft, muss die Serveradresse "
 "hier eingegeben werden."
 
-#: install.php:306
+#: install.php:304
 msgid "Database port"
 msgstr "Datenbank-Port"
 
-#: install.php:310
+#: install.php:309
 msgid ""
 "If your database server is listening to a non-standard port, enter its "
 "number."
@@ -135,11 +138,12 @@ msgstr ""
 "Wenn der Datenbank-Server auf einem Nicht-Standard-Port läuft, muss der "
 "richtige Port hier eingegeben werden."
 
-#: install.php:317
+#: install.php:316
 msgid "Table prefix"
 msgstr "Tabellenpräfix"
 
-#: install.php:321
+# formal
+#: install.php:319
 msgid ""
 "If more than one application will be sharing this database, enter a table "
 "prefix such as %prefix for your @drupal site here."
@@ -147,11 +151,11 @@ msgstr ""
 "Wenn die Datenbank von mehreren Anwendungen genutzt wird, geben Sie hier ein "
 "Tabellenpräfix wie etwa %prefix für ihre @drupal-Website ein."
 
-#: install.php:326;491;1101
+#: install.php:324;489;1101
 msgid "Save and continue"
 msgstr "Speichern und fortfahren"
 
-#: install.php:354
+#: install.php:352
 msgid ""
 "The database table prefix you have entered, %db_prefix, is invalid. The "
 "table prefix can only contain alphanumeric characters, periods, or "
@@ -161,11 +165,11 @@ msgstr ""
 "Tabellenpräfix darf nur alphanumerische Zeichen, Punkte oder Unterstriche "
 "enthalten."
 
-#: install.php:358
+#: install.php:356
 msgid "Database port must be a number."
 msgstr "Der Datenbank-Port muss eine Zahl sein."
 
-#: install.php:368
+#: install.php:366
 msgid ""
 "In your %settings_file file you have configured @drupal to use a %db_type "
 "server, however your PHP installation currently does not support this "
@@ -175,7 +179,8 @@ msgstr ""
 "Server verwenden soll, allerdings unterstützt die momentane PHP-Installation "
 "diesen Datenbank-Typ nicht."
 
-#: install.php:381
+# formal
+#: install.php:379
 msgid ""
 "In order for Drupal to work, and to continue with the installation process, "
 "you must resolve all permission issues reported above. We were able to "
@@ -194,15 +199,17 @@ msgstr ""
 "Aktualisierung</a>. Wenn Sie sich nicht sicher sind, was das hier bedeutet, "
 "dann sollten Sie sich mit Ihrem Webhoster in Verbindung setzen."
 
-#: install.php:443
+# formal
+#: install.php:441
 msgid "Select an installation profile"
 msgstr "Wählen Sie ein Installationsprofil aus"
 
-#: install.php:525;567;951
+#: install.php:523;567;951
 msgid "Choose language"
 msgstr "Sprache auswählen"
 
-#: install.php:527
+# formal
+#: install.php:525
 msgid ""
 "With the addition of an appropriate translation package, this installer is "
 "capable of proceeding in another language of your choice. To install and use "
@@ -212,7 +219,8 @@ msgstr ""
 "Installation in einer anderen Sprache Ihrer Wahl fortgesetzt werden. Um "
 "Drupal in einer anderen Sprache als Englisch zu installieren und zu benutzen:"
 
-#: install.php:528
+# formal
+#: install.php:526
 msgid ""
 "Determine if <a href=\"@translations\" target=\"_blank\">a translation of "
 "this Drupal version</a> is available in your language of choice. A "
@@ -227,7 +235,8 @@ msgstr ""
 "die Anzeige einer bestimmten Drupal-Version in der gewählten Sprache. Nicht "
 "für jede Drupal-Version sind alle Sprachen verfügbar."
 
-#: install.php:529
+# formal
+#: install.php:527
 msgid ""
 "If an alternative translation package of your choice is available, download "
 "and extract its contents to your Drupal root directory."
@@ -235,7 +244,8 @@ msgstr ""
 "Wenn ein alternatives Sprachpaket Ihrer Wahl verfügbar ist, laden Sie dieses "
 "herunter und entpacken Sie den Inhalt in das Drupal-Hauptverzeichnis."
 
-#: install.php:530
+# formal
+#: install.php:528
 msgid ""
 "Return to choose language using the second link below and select your "
 "desired language from the displayed list. Reloading the page allows the list "
@@ -245,7 +255,7 @@ msgstr ""
 "zweiten Link weiter unten. Durch Neuladen der aufgerufenen Seite können die "
 "gelisteten Sprachpakete aktualisiert werden."
 
-#: install.php:531
+#: install.php:529
 msgid ""
 "Alternatively, to install and use Drupal in English, or to defer the "
 "selection of an alternative language until after installation, select the "
@@ -255,23 +265,23 @@ msgstr ""
 "Sprachen erst nach der Installation auszuführen, sollte der erste  Link "
 "unten gewählt werden."
 
-#: install.php:532
+#: install.php:530
 msgid "How should the installation continue?"
 msgstr "Wie soll der Installationsvorgang fortgesetzt werden?"
 
-#: install.php:533
+#: install.php:531
 msgid "Continue installation in English"
 msgstr "Die Installation in Englisch fortsetzen"
 
-#: install.php:533
+#: install.php:531
 msgid "Return to choose a language"
 msgstr "Zurück zur Sprachauswahl"
 
-#: install.php:536
+#: install.php:534
 msgid "Install Drupal in English"
 msgstr "Drupal in Englisch installieren"
 
-#: install.php:536
+#: install.php:534
 msgid "Learn how to install Drupal in other languages"
 msgstr "Drupal in einer anderen Sprache installieren"
 
@@ -306,6 +316,7 @@ msgstr ""
 msgid "Drupal already installed"
 msgstr "Drupal ist bereits installiert"
 
+# formal
 #: install.php:618
 msgid ""
 "<ul><li>To start over, you must empty your existing database.</li><li>To "
@@ -317,9 +328,9 @@ msgstr ""
 "<ul><li>Um neu zu beginnen, muss die existierende Datenbank geleert werden.</"
 "li> <li>Um in eine andere Datenbank zu installieren, passen Sie die "
 "entsprechende Datei <em>settings.php</em> im Ordner <em>sites</em> an.</li> "
-"<li>Um eine bestehende Installation zu upgraden, fahren Sie mit dem <a href="
-"\"@base-url/update.php\">Update Script</a> fort.</li> <li>Überprüfen Sie "
-"Ihre <a href=\"@base-url\"> existierende Site</a>.</li></ul>"
+"<li>Um eine bestehende Installation zu aktualisieren, fahren Sie mit dem <a "
+"href=\"@base-url/update.php\">Update-Skript</a> fort.</li> <li>Überprüfen "
+"Sie Ihre <a href=\"@base-url\"> existierende Website</a>.</li></ul>"
 
 #: install.php:657
 msgid "Installing @drupal"
@@ -381,6 +392,7 @@ msgstr "@drupal-Installation fertiggestellt"
 msgid "Congratulations, @drupal has been successfully installed."
 msgstr "Glückwunsch, @drupal wurde erfolgreich installiert."
 
+# formal
 #: install.php:799
 msgid ""
 "Please review the messages above before continuing on to <a href=\"@url"
@@ -389,10 +401,16 @@ msgstr ""
 "Bitte beachten Sie die obenstehenden Hinweise, bevor sie <a href=\"@url"
 "\">Ihre neue Website</a> besuchen."
 
+# formal
 #: install.php:799
 msgid "You may now visit <a href=\"@url\">your new site</a>."
 msgstr "Sie können jetzt <a href=\"@url\">Ihre neue Website</a> besuchen."
 
+#: install.php:841
+msgid "Installed %module module."
+msgstr "Modul %module installiert."
+
+# formal
 #: install.php:901
 msgid ""
 "The @drupal installer requires that you create a settings file as part of "
@@ -416,6 +434,7 @@ msgstr ""
 "Nähere Informationen zur Installation von Drupal sind in der Datei INSTALL."
 "txt verfügbar."
 
+# formal
 #: install.php:909
 msgid ""
 "The @drupal installer requires write permissions to %file during the "
@@ -466,7 +485,7 @@ msgstr "Abgeschlossen"
 #: install.php:1009
 msgid "To configure your website, please provide the following information."
 msgstr ""
-"Um die Website zu konfiguieren, sollte die folgende Information angegeben "
+"Um die Website zu konfigurieren, sollte die folgende Information angegeben "
 "werden."
 
 #: install.php:1014
@@ -497,6 +516,7 @@ msgstr ""
 msgid "Administrator account"
 msgstr "Administratorkonto"
 
+# formal
 #: install.php:1038
 msgid ""
 "The administrator account has complete access to the site; it will "
@@ -526,6 +546,7 @@ msgstr ""
 msgid "E-mail address"
 msgstr "E-Mail-Adresse"
 
+# formal
 #: install.php:1053
 msgid ""
 "All e-mails from the system will be sent to this address. The e-mail address "
@@ -572,7 +593,7 @@ msgstr ""
 "Mit dieser Option verwendet Drupal „lesbare URLs“ (also ohne <code>?q=</"
 "code> in der Adresse)."
 
-#: (duplicate) install.php:1092 modules/system/system.install:293
+#: (duplicate) install.php:1092 modules/system/system.install:285
 msgid "Update notifications"
 msgstr "Aktualisierungsbenachrichtigung"
 
@@ -590,11 +611,12 @@ msgid ""
 "\">update notification information</a>."
 msgstr ""
 "Wenn diese Option aktiviert ist, informiert Drupal den Administrator über "
-"aktualisierte Module. Dies verbessert deutlich die Sicherheit der Site und "
-"wird <strong>dringend empfohlen</strong>. Hierzu ist erforderlich, dass die "
-"Site regelmäßig anonyme Informationen über die installierten Komponenten an "
-"<a href=\"@drupal\">drupal.org</a> sendet. Weitere Informationen zur <a href="
-"\"@update\">Update-Benachrichtigung</a> sind verfügbar."
+"aktualisierte Module. Dies verbessert deutlich die Sicherheit der Website "
+"und wird <strong>dringend empfohlen</strong>. Hierzu ist erforderlich, dass "
+"die Website regelmäßig anonyme Informationen über die installierten "
+"Komponenten an <a href=\"@drupal\">drupal.org</a> sendet. Weitere "
+"Informationen zur <a href=\"@update\">Update-Benachrichtigung</a> sind "
+"verfügbar."
 
 #: (duplicate) includes/database.mysql.inc:26 includes/database.mysqli.inc:29
 msgid "MySQL database"
@@ -617,7 +639,7 @@ msgstr ""
 "Der PostgreSQL-Server ist zu alt. Drupal benötigt mindestens PostgreSQL %"
 "version."
 
-#: (duplicate) includes/database.pgsql.inc:405
+#: (duplicate) includes/database.pgsql.inc:406
 msgid ""
 "Your PostgreSQL database is set up with the wrong character encoding (%"
 "encoding). It is possible it will not work as expected. It is advised to "
@@ -626,15 +648,15 @@ msgid ""
 msgstr ""
 "Die verwendete PostgreSQL-Datenbank ist mit der falschen Zeichenkodierung (%"
 "encoding) konfiguriert. Eventuell wird die Datenbank nicht erwartungsgemäß "
-"funktionieren. Es wird empfohlen, sie mit der Zeichenkodierung \"UTF-8/"
-"Unicode\" neu aufzusetzen. Weitere Informationen hierzu gibt es in der <a "
+"funktionieren. Es wird empfohlen, sie mit der Zeichenkodierung „UTF-8/"
+"Unicode“ neu aufzusetzen. Weitere Informationen hierzu gibt es in der <a "
 "href=\"@url\">Dokumentation zu PostgreSQL</a>."
 
-#: (duplicate) includes/form.inc:680
+#: (duplicate) includes/form.inc:679
 msgid "!name field is required."
 msgstr "Das Feld !name ist erforderlich."
 
-#: (duplicate) includes/form.inc:685
+#: (duplicate) includes/form.inc:684
 msgid ""
 "!name cannot be longer than %max characters but is currently %length "
 "characters long."
@@ -642,54 +664,58 @@ msgstr ""
 "!name darf nicht länger als %max Zeichen sein, ist aber momentan %length "
 "Zeichen lang."
 
-#: (duplicate) includes/form.inc:699 ;705
+# formal
+#: (duplicate) includes/form.inc:698 ;704
 msgid ""
 "An illegal choice has been detected. Please contact the site administrator."
 msgstr ""
 "Es wurde eine nicht erlaubte Auswahl entdeckt. Wenden Sie sich bitte an den "
 "Administrator der Website."
 
-#: (duplicate) includes/form.inc:2181
+#: (duplicate) includes/form.inc:2200
 msgid "This field is required."
 msgstr "Dieses Feld wird benötigt."
 
-#: (duplicate) includes/form.inc:2186 ;2189
+#: (duplicate) includes/form.inc:2205 ;2208
 msgid "!title: !required"
 msgstr "!title: !required"
 
-#: (duplicate) includes/form.inc:2426
+#: (duplicate) includes/form.inc:2445
 msgid "Processing"
 msgstr "Verarbeitung läuft"
 
-#: (duplicate) includes/form.inc:2427
+#: (duplicate) includes/form.inc:2446
 msgid "Initializing."
 msgstr "Initialisierung."
 
-#: (duplicate) includes/form.inc:2428
+#: (duplicate) includes/form.inc:2447
 msgid "Remaining @remaining of @total."
 msgstr "@remaining von @total verbleiben."
 
-#: (duplicate) includes/form.inc:2429
+#: (duplicate) includes/form.inc:2448
 msgid "An error has occurred."
 msgstr "Es ist ein Fehler aufgetreten."
 
-#: (duplicate) includes/form.inc:2502
+# formal
+#: (duplicate) includes/form.inc:2521
 msgid "Please continue to <a href=\"@error_url\">the error page</a>"
 msgstr "Bitte gehen Sie zur <a href=\"@error_url\">Fehlerseite</a>."
 
-#: includes/install.inc:237
+# formal
+#: includes/install.inc:238
 msgid "Failed to modify %settings, please verify the file permissions."
 msgstr ""
 "%settings konnte nicht verändert werden, bitte überprüfen Sie die "
 "Dateiberechtigungen."
 
-#: includes/install.inc:241
+# formal
+#: includes/install.inc:242
 msgid "Failed to open %settings, please verify the file permissions."
 msgstr ""
 "%settings konnte nicht geöffnet werden, bitte überprüfen Sie die "
 "Dateiberechtigungen"
 
-#: includes/install.inc:295
+#: includes/install.inc:296
 msgid ""
 "The %module module is required but was not found. Please move it into the "
 "<em>modules</em> subdirectory."
@@ -701,6 +727,7 @@ msgstr ""
 msgid "PHP MySQL support not enabled."
 msgstr "Die MySQL-Unterstützung von PHP ist nicht aktiviert."
 
+# formal
 #: includes/install.mysql.inc:44 includes/install.mysqli.inc:39
 msgid ""
 "Failed to connect to your MySQL database server. MySQL reports the following "
@@ -712,13 +739,14 @@ msgid ""
 "terms mean you should probably contact your hosting provider."
 msgstr ""
 "Es kann keine Verbindung zum MySQL-Datenbankserver aufgebaut werden. MySQL "
-"liefert folgende Meldung zurück: %error.<ul><li>Sind der Username und das "
-"Passwort korrekt?</li><li>Ist der Name des Datenbankhosts korrekt?</"
+"liefert folgende Meldung zurück: %error.<ul><li>Sind der Benutzername und "
+"das Passwort korrekt?</li><li>Ist der Name des Datenbankhosts korrekt?</"
 "li><li>Läuft der Datenbankserver aktuell?</li></ul>Zusätzliche Hilfe und "
 "Hinweise sind im <a href=\"http://drupal.org/node/258\">Installations- und "
 "Aktualisierungshandbuch</a> zu finden. Eventuell kann Ihnen auch Ihr "
 "Internet-Provider weiterhelfen."
 
+# formal
 #: includes/install.mysql.inc:50 includes/install.mysqli.inc:45
 msgid ""
 "Failed to select your database on your MySQL database server, which means "
@@ -741,6 +769,7 @@ msgstr ""
 "über Installation und Aktualisierung</a>schauen. Wenn Sie nicht sicher sind, "
 "was diese Begriffe bedeuten, sollten Sie Ihren Webhoster kontaktieren."
 
+# formal
 #: includes/install.mysql.inc:60 includes/install.mysqli.inc:55
 msgid ""
 "Failed to create a test table on your MySQL database server with the command "
@@ -807,6 +836,7 @@ msgstr "Die MySQLi-Unterstützung von PHP ist nicht aktiviert."
 msgid "PHP PostgreSQL support not enabled."
 msgstr "Die PostgreSQL-Unterstützung von PHP ist nicht aktiviert."
 
+# formal
 #: includes/install.pgsql.inc:51
 msgid ""
 "Failed to connect to your PostgreSQL database server. PostgreSQL reports the "
@@ -825,8 +855,9 @@ msgstr ""
 "li><li>Sind Sie sicher, dass der Datenbank-Server läuft?</li></ul>Für "
 "weitere Hilfe bitte in das <a href=\"http://drupal.org/node/258\">Handbuch "
 "über Installation und Aktualisierung</a>schauen. Wenn Sie nicht sicher sind, "
-"was diese Begriffe bedeuten, sollten Sie Ihren Webhoster kontakten."
+"was diese Begriffe bedeuten, sollten Sie Ihren Webhoster kontaktieren."
 
+# formal
 #: includes/install.pgsql.inc:61
 msgid ""
 "Failed to create a test table on your PostgreSQL database server with the "
@@ -907,59 +938,59 @@ msgstr ""
 "fehlgeschlagen. Mit dem Befehl %query wurde versucht eine Tabelle zu löschen "
 "und PostgreSQL meldete den folgenden Fehler: %error."
 
-#: (duplicate) includes/locale.inc:1041
+#: (duplicate) includes/locale.inc:1081
 msgid ""
 "The translation import failed, because the file %filename could not be read."
 msgstr ""
 "Der Import der Übersetzung ist fehlgeschlagen: Datei %filename konnte nicht "
 "gelesen werden."
 
-#: (duplicate) includes/locale.inc:1070
+#: (duplicate) includes/locale.inc:1110
 msgid ""
 "The translation file %filename contains an error: \"msgstr\" was expected "
 "but not found on line %line."
 msgstr ""
-"Die Übersetzungsdatei %filename ist fehlerhaft: \"msgstr\" in Zeile %line "
+"Die Übersetzungsdatei %filename ist fehlerhaft: „msgstr“ in Zeile %line "
 "erwartet, aber nicht gefunden."
 
-#: (duplicate) includes/locale.inc:1076
+#: (duplicate) includes/locale.inc:1116
 msgid ""
 "The translation file %filename contains an error: \"msgid_plural\" was "
 "expected but not found on line %line."
 msgstr ""
-"Die Übersetzungsdatei %filename ist fehlerhaft: \"msgid_plural\" in Zeile %"
+"Die Übersetzungsdatei %filename ist fehlerhaft: „msgid_plural“ in Zeile %"
 "line erwartet, aber nicht gefunden."
 
-#: (duplicate) includes/locale.inc:1082 ;1100 ;1112 ;1120 ;1134 ;1143
+#: (duplicate) includes/locale.inc:1122 ;1140 ;1152 ;1160 ;1174 ;1183
 msgid "The translation file %filename contains a syntax error on line %line."
 msgstr ""
 "Die Übersetzungsdatei %filename ist fehlerhaft: Syntaxfehler in Zeile %line."
 
-#: (duplicate) includes/locale.inc:1094
+#: (duplicate) includes/locale.inc:1134
 msgid ""
 "The translation file %filename contains an error: \"msgid\" is unexpected on "
 "line %line."
 msgstr ""
-"Die Übersetzungsdatei %filename“ ist fehlerhaft: Unerwartetes \"msgid\" in "
+"Die Übersetzungsdatei %filename“ ist fehlerhaft: Unerwartetes „msgid“ in "
 "Zeile %line."
 
-#: (duplicate) includes/locale.inc:1108
+#: (duplicate) includes/locale.inc:1148
 msgid ""
 "The translation file %filename contains an error: \"msgstr[]\" is unexpected "
 "on line %line."
 msgstr ""
-"Die Übersetzungsdatei %filename ist fehlerhaft: Unerwartetes \"msgstr[]\" in "
+"Die Übersetzungsdatei %filename ist fehlerhaft: Unerwartetes „msgstr[]“ in "
 "Zeile %line."
 
-#: (duplicate) includes/locale.inc:1128
+#: (duplicate) includes/locale.inc:1168
 msgid ""
 "The translation file %filename contains an error: \"msgstr\" is unexpected "
 "on line %line."
 msgstr ""
-"Die Übersetzungsdatei %filename ist fehlerhaft: Unerwartetes \"msgstr\" in "
+"Die Übersetzungsdatei %filename ist fehlerhaft: Unerwartetes „msgstr“ in "
 "Zeile %line."
 
-#: (duplicate) includes/locale.inc:1156
+#: (duplicate) includes/locale.inc:1196
 msgid ""
 "The translation file %filename contains an error: there is an unexpected "
 "string on line %line."
@@ -967,19 +998,19 @@ msgstr ""
 "Die Übersetzungsdatei %filename ist fehlerhaft: Unerwartete Zeichenkette in "
 "Zeile %line."
 
-#: (duplicate) includes/locale.inc:1167
+#: (duplicate) includes/locale.inc:1207
 msgid "The translation file %filename ended unexpectedly at line %line."
 msgstr "Die Übersetzungsdatei %filename endete unerwartet in Zeile %line."
 
-#: (duplicate) includes/locale.inc:2534
+#: (duplicate) includes/locale.inc:2581
 msgid "Importing interface translations"
 msgstr "Importieren der Oberflächenübersetzung"
 
-#: (duplicate) includes/locale.inc:2535
+#: (duplicate) includes/locale.inc:2582
 msgid "Starting import"
 msgstr "Import gestartet"
 
-#: (duplicate) includes/locale.inc:2536
+#: (duplicate) includes/locale.inc:2583
 msgid "Error importing interface translations"
 msgstr "Fehler beim Import der Oberflächenübersetzung"
 
@@ -999,6 +1030,7 @@ msgstr ""
 "Der folgende Fehler muss beseitigt werden bevor die Installation fortgesetzt "
 "werden kann."
 
+# formal
 #: includes/theme.maintenance.inc:125
 msgid "Please check the error messages and <a href=\"!url\">try again</a>."
 msgstr ""
@@ -1031,6 +1063,7 @@ msgstr ""
 "Die folgende Installationswarnung sollte mit Sorgfalt überprüft werden, kann "
 "aber in den meisten Fällen problemlos ignoriert werden."
 
+# formal
 #: (duplicate) includes/unicode.inc:48
 msgid ""
 "The PCRE library in your PHP installation is outdated. This will cause "
@@ -1044,6 +1077,7 @@ msgstr ""
 "Sie die <a href=\"@url\">PCRE-Dokumentation von PHP</a> für nähere "
 "Informationen."
 
+# formal
 #: (duplicate) includes/unicode.inc:53
 msgid ""
 "Operations on Unicode strings are emulated on a best-effort basis. Install "
@@ -1053,6 +1087,7 @@ msgstr ""
 "nachgebildet. Installieren Sie die <a href=\"@url\">PHP mbstring-"
 "Erweiterung</a> für bessere Unicode-Unterstützung."
 
+# formal
 #: (duplicate) includes/unicode.inc:58
 msgid ""
 "Multibyte string function overloading in PHP is active and must be disabled. "
@@ -1064,6 +1099,7 @@ msgstr ""
 "em>-Einstellung in der php.ini. Lesen Sie die <a href=\"@url\">mbstring-"
 "Dokumentation von PHP</a> für nähere Informationen."
 
+# formal
 #: (duplicate) includes/unicode.inc:61
 msgid ""
 "Multibyte string input conversion in PHP is active and must be disabled. "
@@ -1076,6 +1112,7 @@ msgstr ""
 "encoding_translation</em>-Einstellung in der php.ini. Lesen Sie die <a href="
 "\"@url\">mbstring-Dokumentation von PHP</a> für nähere Informationen."
 
+# formal
 #: (duplicate) includes/unicode.inc:64
 msgid ""
 "Multibyte string input conversion in PHP is active and must be disabled. "
@@ -1087,6 +1124,7 @@ msgstr ""
 "Einstellung in der php.ini. Lesen Sie die <a href=\"@url\">mbstring-"
 "Dokumentation von PHP</a> für nähere Informationen."
 
+# formal
 #: (duplicate) includes/unicode.inc:67
 msgid ""
 "Multibyte string output conversion in PHP is active and must be disabled. "
@@ -1104,7 +1142,7 @@ msgstr "Standard-PHP"
 
 #: (duplicate) includes/unicode.inc:85
 msgid "PHP Mbstring Extension"
-msgstr "PHP-Erweiterung \"mbstring\""
+msgstr "PHP-Erweiterung „mbstring“"
 
 #: (duplicate) includes/unicode.inc:86
 msgid "Error"
@@ -1138,9 +1176,9 @@ msgid ""
 "of a site. A typical representation for primary links would be tabs along "
 "the top."
 msgstr ""
-"Primäre Links werden häufig auf Theme-Ebene verwendet, um die grundlegenden "
-"Bereiche der Seite anzuzeigen. Eine typische Darstellung der primären Links "
-"sind Reiter/Register im Kopf der Seite."
+"Hauptlinks werden häufig auf Theme-Ebene verwendet, um die grundlegenden "
+"Bereiche der Seite anzuzeigen. Eine typische Darstellung der Hauptlinks sind "
+"Reiter/Register im Kopf der Seite."
 
 #: (duplicate) modules/menu/menu.install:14
 msgid "Secondary links"
@@ -1152,9 +1190,9 @@ msgid ""
 "details, and other secondary navigation items that play a lesser role than "
 "primary links"
 msgstr ""
-"Sekundäre Links (Nebenlinks) werden häufig für Seiten verwendet, die eine "
-"untergeordnete Rolle spielen. Beispiele dafür sind das Impressum oder "
-"Kontaktinformationen."
+"Sekundärlinks werden häufig für Seiten verwendet, die im Vergleich zu den "
+"Hauptlinks eine untergeordnete Rolle spielen. Beispiele dafür sind das "
+"Impressum oder Kontaktinformationen."
 
 #: (duplicate) modules/system/system.install:20
 msgid "Drupal"
@@ -1228,6 +1266,7 @@ msgstr ""
 "memory_minimum_limit PHP-Speicherlimit oder höher empfohlen, vor allem dann, "
 "wenn die Website benutzerdefinierte oder zusätzliche Module verwendet."
 
+# formal
 #: (duplicate) modules/system/system.install:84
 msgid ""
 "Increase the memory limit by editing the memory_limit parameter in the file %"
@@ -1239,6 +1278,7 @@ msgstr ""
 "wenden Sie sich an Ihren Systemadministrator oder Hosting-Anbieter, um "
 "Unterstützung zu erhalten)."
 
+# formal
 #: (duplicate) modules/system/system.install:87
 msgid ""
 "Contact your system administrator or hosting provider for assistance with "
@@ -1272,7 +1312,7 @@ msgid ""
 "risk. You must change the file's permissions to be non-writable."
 msgstr ""
 "Die Datei %file ist nicht vor Veränderungen geschützt und stellt damit ein "
-"Sicherheitsrisiko dar. Die Dateiberechtigung muss auf \"nur lesbar\" gesetzt "
+"Sicherheitsrisiko dar. Die Dateiberechtigung muss auf „nur lesbar“ gesetzt "
 "werden."
 
 #: (duplicate) modules/system/system.install:120 ;261
@@ -1291,6 +1331,7 @@ msgstr ""
 "Nähere Informationen gibt es auf der Handbuch-Seite zur <a href=\"@system"
 "\">Konfiguration von Cron-Jobs</a>."
 
+# formal
 #: (duplicate) modules/system/system.install:157
 msgid ""
 "Cron has not run. Please visit the <a href=\"@status\">status report</a> for "
@@ -1350,6 +1391,7 @@ msgstr ""
 "Berechtigungen des aktuellen Verzeichnisses so geändert werden, dass es "
 "beschreibbar ist."
 
+# formal
 #: (duplicate) modules/system/system.install:210
 msgid ""
 "An automated attempt to create this directory failed, possibly due to a "
@@ -1368,11 +1410,11 @@ msgstr ""
 
 #: (duplicate) modules/system/system.install:220
 msgid "Writable (<em>public</em> download method)"
-msgstr "Beschreibbar (<em>öffentliche</em> Download-Art)"
+msgstr "Beschreibbar (<em>öffentliche</em> Download-Methode)"
 
 #: (duplicate) modules/system/system.install:223
 msgid "Writable (<em>private</em> download method)"
-msgstr "Beschreibbar (<em>private</em> Download-Art)"
+msgstr "Beschreibbar (<em>private</em> Download-Methode)"
 
 #: (duplicate) modules/system/system.install:230
 msgid "Database updates"
@@ -1423,21 +1465,21 @@ msgid ""
 "status handbook page</a>."
 msgstr ""
 "Der Automatismus zur Benachrichtigung bei Neuerungen ist deaktiviert. Es "
-"wird wärmstens <strong>empfohlen</ strong>, das Update-Status-Modul über die "
-"<a href=\"@module\">Modul Verwaltungsseite</ a> zu aktivieren, um bzgl. "
-"neuer Aktualisierungen stets auf dem neuesten Stand zu sein. Weitere "
-"Informationen sind auf der Seite <a href=\"@update\">Update-Status</a> im "
-"Online-Handbuch zu finden."
+"wird <strong>dringend empfohlen</strong>, das Update-Status-Modul über die "
+"<a href=\"@module\">Modul-Verwaltungsseite</a> zu aktivieren, um bzgl. neuer "
+"Aktualisierungen stets auf dem neuesten Stand zu sein. Weitere Informationen "
+"sind auf der Seite <a href=\"@update\">Update-Status</a> im Online-Handbuch "
+"zu finden."
 
-#: (duplicate) modules/system/system.install:286
+#: (duplicate) modules/system/system.install:290
 msgid "HTTP request status"
 msgstr "HTTP-Anfragestatus"
 
-#: (duplicate) modules/system/system.install:287
+#: (duplicate) modules/system/system.install:291
 msgid "Fails"
 msgstr "Fehlgeschlagen"
 
-#: (duplicate) modules/system/system.install:289
+#: (duplicate) modules/system/system.install:293
 msgid ""
 "Your system or network configuration does not allow Drupal to access web "
 "pages, resulting in reduced functionality. This could be due to your "

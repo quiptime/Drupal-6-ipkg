@@ -1,4 +1,4 @@
-# $Id: modules-poll.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-poll.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-poll)
 # Copyright (c) 2004-2008 by the German translation team
@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-poll\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -54,7 +54,7 @@ msgstr ""
 "Abstimmung für Gäste geöffnet, wird zur Identifikation die IP-Adresse des "
 "Rechners herangezogen, auf welchem die Stimmabgabe erfolgt ist."
 
-#: modules/poll/poll.pages.inc:35 modules/poll/poll.module:573
+#: modules/poll/poll.pages.inc:35 modules/poll/poll.module:566
 msgid "Vote"
 msgstr "Stimme"
 
@@ -80,13 +80,6 @@ msgid ""
 "current polls. To vote in or view the results of a specific poll, click on "
 "the poll itself."
 msgstr ""
-"When creating a poll, enter the question being posed, as well as the "
-"potential choices (and beginning vote counts for each choice). The status "
-"and duration (length of time the poll remains active for new votes) can also "
-"be specified. Use the <a href=\"@poll\">poll</a> menu item to view all "
-"current polls. To vote in or view the results of a specific poll, click on "
-"the poll itself.\n"
-"\n"
 "Bei der Erstellung einer Umfrage muss die Frage und die Antwortmöglichkeiten "
 "(und gegebenenfalls der Anfangsstand) eingegeben werden. Der Status und die "
 "Dauer (die Zeit in der die Umfrage Stimmen zählt) kann auch angegeben "
@@ -155,39 +148,41 @@ msgstr "Umfragedauer"
 msgid "After this period, the poll will be closed automatically."
 msgstr "Nach diesem Zeitraum wird die Umfrage automatisch geschlossen."
 
-#: modules/poll/poll.module:306
+#: modules/poll/poll.module:307
 msgid "Choice @n"
 msgstr "Auswahlmöglichkeit @n"
 
-#: modules/poll/poll.module:314
+#: modules/poll/poll.module:315
 msgid "Votes for choice @n"
 msgstr "Stimmen für Auswahlmöglichkeit @n"
 
-#: modules/poll/poll.module:387
+#: modules/poll/poll.module:380
 msgid "Negative values are not allowed."
 msgstr "Negative Werte sind unzulässig."
 
-#: modules/poll/poll.module:392
+# formal
+#: modules/poll/poll.module:385
 msgid "You must fill in at least two choices."
 msgstr "Sie müssen mindestens zwei Wahlmöglichkeiten angeben."
 
-#: modules/poll/poll.module:513
+#: modules/poll/poll.module:506
 msgid "Older polls"
 msgstr "Frühere Umfragen"
 
-#: modules/poll/poll.module:513
+#: modules/poll/poll.module:506
 msgid "View the list of polls on this site."
 msgstr "Umfragen dieser Seite anzeigen."
 
-#: modules/poll/poll.module:515;98
+#: modules/poll/poll.module:508;98
 msgid "Results"
 msgstr "Ergebnisse"
 
-#: modules/poll/poll.module:515
+#: modules/poll/poll.module:508
 msgid "View the current poll results."
 msgstr "Aktuelle Umfrageergebnisse anzeigen."
 
-#: modules/poll/poll.module:595
+# formal
+#: modules/poll/poll.module:588
 msgid ""
 "Your vote could not be recorded because you did not select any of the "
 "choices."
@@ -195,23 +190,24 @@ msgstr ""
 "Ihre Stimme konnte nicht gezählt werden, da Sie keine der Optionen "
 "ausgewählt haben."
 
-#: modules/poll/poll.module:618
+# formal
+#: modules/poll/poll.module:611
 msgid "Your vote was recorded."
 msgstr "Ihre Stimme wurde gespeichert."
 
-#: modules/poll/poll.module:674
+#: modules/poll/poll.module:667
 msgid "Add another choice"
 msgstr "Auswahl hinzufügen"
 
-#: modules/poll/poll.module:678
+#: modules/poll/poll.module:671
 msgid "Choice"
 msgstr "Auswahl"
 
-#: modules/poll/poll.module:679
+#: modules/poll/poll.module:672
 msgid "Vote count"
 msgstr "Anzahl der Stimmen"
 
-#: modules/poll/poll.module:761
+#: modules/poll/poll.module:754
 msgid "Cancel your vote"
 msgstr "Meine Stimme löschen"
 
@@ -258,73 +254,3 @@ msgstr "Stimmen"
 #: modules/poll/poll.module:109
 msgid "Javascript Choice Form"
 msgstr "JavaScript-Auswahlformular"
-
-#: modules/poll/poll.module:0
-msgid "poll"
-msgstr "Umfrage"
-
-#: modules/poll/poll.install:25
-msgid "Stores poll-specific information for poll nodes."
-msgstr "Speichert Umfragen-spezifische Informationen für Umfrage-Beiträge."
-
-#: modules/poll/poll.install:32
-msgid "The poll's {node}.nid."
-msgstr "Die {node}.nid der Umfrage."
-
-#: modules/poll/poll.install:38
-msgid ""
-"The number of seconds past {node}.created during which the poll is open."
-msgstr ""
-"Die Zeitspanne in Sekunden ab {node}.created, in der die Abstimmung für "
-"diese Umfrage möglich ist."
-
-#: modules/poll/poll.install:45
-msgid "Boolean indicating whether or not the poll is open."
-msgstr "Boolescher Wert, der angibt, ob die Umfrage geöffnet ist."
-
-#: modules/poll/poll.install:52
-msgid "Stores information about all choices for all {poll}s."
-msgstr ""
-"Speichert Informationen zu sämtlichen Auswahlmöglichkeiten aller {pool}s."
-
-#: modules/poll/poll.install:58
-msgid "Unique identifier for a poll choice."
-msgstr "Der eindeutige Bezeichner einer Umfrageauswahl."
-
-#: modules/poll/poll.install:65
-msgid "The {node}.nid this choice belongs to."
-msgstr "Die dieser Auswahlmöglichkeit zugeordnete {node}.id."
-
-#: modules/poll/poll.install:72
-msgid "The text for this choice."
-msgstr "Der Text für diese Auswahl."
-
-#: modules/poll/poll.install:78
-msgid "The total number of votes this choice has received by all users."
-msgstr "Die Gesamtzahl der abgegebenen Stimmen aller Benutzer dieser Wahl."
-
-#: modules/poll/poll.install:84
-msgid "The sort order of this choice among all choices for the same node."
-msgstr ""
-"Die Sortierreihenfolge der Auswahl bezieht sich auf alle "
-"Auswahlmöglichkeiten für den gleichen Beitrag."
-
-#: modules/poll/poll.install:94
-msgid "Stores per-{users} votes for each {poll}."
-msgstr "Speichert pro-{users} Stimmen für jede {poll}."
-
-#: modules/poll/poll.install:100
-msgid "The {poll} node this vote is for."
-msgstr "Der {poll}-Node für diese Wahl."
-
-#: modules/poll/poll.install:107
-msgid "The {users}.uid this vote is from unless the voter was anonymous."
-msgstr "Die {user}.uid dieser Umfrage falls der Wähler nicht anonym war."
-
-#: modules/poll/poll.install:113
-msgid "The {users}'s vote for this poll."
-msgstr "Die Auswahl von {users} für diese Umfrage."
-
-#: modules/poll/poll.install:120
-msgid "The IP address this vote is from unless the voter was logged in."
-msgstr "Die IP-Adresse des Wählers falls er nicht angemeldet war."

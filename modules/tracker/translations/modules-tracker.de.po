@@ -1,4 +1,4 @@
-# $Id: modules-tracker.po,v 1.1.2.8 2008/08/16 18:48:06 timcn Exp $
+# $Id: modules-tracker.po,v 1.1.2.10 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-tracker)
 # Copyright (c) 2004-2008 by the German translation team
@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-tracker\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -41,6 +41,7 @@ msgstr ""
 "Das Tracker-Modul zeigt die zuletzt neu erstellten bzw. geänderten Beiträge "
 "an. Zudem lassen sich die Aktivitäten einzelner Benutzer nachverfolgen."
 
+# formal
 #: modules/tracker/tracker.module:16
 msgid ""
 "The <em>Recent posts</em> page is available via a link in the navigation "
@@ -85,7 +86,3 @@ msgstr "Meine neuen Beiträge"
 #: modules/tracker/tracker.module:55
 msgid "Track posts"
 msgstr "Beiträge verfolgen"
-
-#: modules/tracker/tracker.module:0
-msgid "tracker"
-msgstr "Tracker"

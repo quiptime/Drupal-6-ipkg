@@ -1,4 +1,4 @@
-# $Id: modules-path.po,v 1.1.2.8 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-path.po,v 1.1.2.10 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-path)
 # Copyright (c) 2004-2008 by the German translation team
@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-path\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -48,6 +48,7 @@ msgstr ""
 msgid "Path alias"
 msgstr "Pfadalias"
 
+# formal
 #: modules/path/path.admin.inc:107
 msgid ""
 "Specify an alternative path by which this data can be accessed. For example, "
@@ -83,6 +84,7 @@ msgstr "Soll der Pfad-Alias %title wirklich gelöscht werden?"
 msgid "Filter aliases"
 msgstr "Aliase filtern"
 
+# formal
 #: modules/path/path.module:15
 msgid ""
 "The path module allows you to specify aliases for Drupal URLs. Such aliases "
@@ -127,6 +129,7 @@ msgstr ""
 "Verfügung. Die zwei entsprechenden Berechtigungen sind <em>URL-Aliase "
 "verwalten</em> und <em>URL-Aliase erstellen</em>. "
 
+# formal
 #: modules/path/path.module:25
 msgid ""
 "This module also provides user-defined mass URL aliasing capabilities, which "
@@ -148,7 +151,7 @@ msgid ""
 "\">Path module</a>."
 msgstr ""
 "Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
-"der Handbuch-Seite zum <a href=\\\"@help\\\">Pfad-Modul</a>."
+"der Handbuch-Seite zum <a href=\"@help\">Pfad-Modul</a>."
 
 #: modules/path/path.module:29
 msgid ""
@@ -159,10 +162,11 @@ msgid ""
 msgstr ""
 "Drupal ermöglicht die vollständige Kontrolle über URLs durch Aliasing, "
 "welches oft verwendet wird, um URLs lesbarer oder leicht merkbar zu machen. "
-"Beispielsweise könnte der Alias 'about' auf den Systempfad 'node/1' gesetzt "
+"Beispielsweise könnte der Alias ‚about‘ auf den Systempfad ‚node/1‘ gesetzt "
 "werden und damit eine sprechendere URL erstellt. Jeder Systempfad kann "
 "mehrere Aliase haben."
 
+# formal
 #: modules/path/path.module:31
 msgid ""
 "Enter the path you wish to create the alias for, followed by the name of the "
@@ -183,6 +187,7 @@ msgstr "Der Pfad wird bereits verwendet."
 msgid "URL path settings"
 msgstr "URL-Alias-Einstellungen"
 
+# formal
 #: modules/path/path.module:198
 msgid ""
 "Optionally specify an alternative URL by which this node can be accessed. "
@@ -222,7 +227,3 @@ msgstr "Alias löschen"
 #: modules/path/path.module:67
 msgid "Add alias"
 msgstr "Alias hinzufügen"
-
-#: modules/path/path.module:0
-msgid "path"
-msgstr "Pfad"

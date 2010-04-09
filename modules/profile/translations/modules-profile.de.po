@@ -1,4 +1,4 @@
-# $Id: modules-profile.po,v 1.1.2.8 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-profile.po,v 1.1.2.10 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-profile)
 # Copyright (c) 2004-2008 by the German translation team
@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-profile\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -185,19 +185,27 @@ msgstr ""
 msgid "Form will auto-complete while user is typing."
 msgstr "Formular wird während der Texteingabe automatisch vervollständigt."
 
-#: modules/profile/profile.admin.inc:274
+#: modules/profile/profile.admin.inc:272
+msgid ""
+"For security, auto-complete will be disabled if the user does not have "
+"access to user profiles."
+msgstr ""
+"Aus Sicherheitsgründen wird die Autovervollständigung für Benutzer, die "
+"keinen Zugriff auf Benutzerprofile haben, deaktiviert."
+
+#: modules/profile/profile.admin.inc:275
 msgid "The user must enter a value."
 msgstr "Der Benutzer muss einen Wert eingeben."
 
-#: modules/profile/profile.admin.inc:278
+#: modules/profile/profile.admin.inc:279
 msgid "Visible in user registration form."
 msgstr "Während der Benutzeranmeldung sichtbar."
 
-#: modules/profile/profile.admin.inc:282
+#: modules/profile/profile.admin.inc:283
 msgid "Save field"
 msgstr "Feld speichern"
 
-#: modules/profile/profile.admin.inc:293
+#: modules/profile/profile.admin.inc:294
 msgid ""
 "The specified form name contains one or more illegal characters. Spaces or "
 "any other special characters except dash (-) and underscore (_) are not "
@@ -207,45 +215,46 @@ msgstr ""
 "Leerzeichen sowie andere Sonderzeichen außer Bindestrich (-) und Unterstrich "
 "(_) sind nicht erlaubt."
 
-#: modules/profile/profile.admin.inc:297
+#: modules/profile/profile.admin.inc:298
 msgid "The specified form name is reserved for use by Drupal."
 msgstr "Der angegebene Formularname ist für Drupal reserviert."
 
-#: modules/profile/profile.admin.inc:304
+#: modules/profile/profile.admin.inc:305
 msgid "The specified category name is reserved for use by Drupal."
 msgstr "Der angegebene Kategoriename ist für Drupal reserviert."
 
-#: modules/profile/profile.admin.inc:316
+#: modules/profile/profile.admin.inc:317
 msgid "The specified title is already in use."
 msgstr "Der angegebene Titel wird schon benutzt."
 
-#: modules/profile/profile.admin.inc:319
+#: modules/profile/profile.admin.inc:320
 msgid "The specified name is already in use."
 msgstr "Der angegebene Name wird schon benutzt."
 
-#: modules/profile/profile.admin.inc:323
+#: modules/profile/profile.admin.inc:324
 msgid "A hidden field cannot be required."
 msgstr "Ein verstecktes Feld kann kein Pflichtfeld sein."
 
-#: modules/profile/profile.admin.inc:326
+#: modules/profile/profile.admin.inc:327
 msgid "A hidden field cannot be set to visible on the user registration form."
 msgstr ""
 "Ein verstecktes Feld kann im Registrierungsformular nicht sichtbar gemacht "
 "werden."
 
-#: modules/profile/profile.admin.inc:344
+#: modules/profile/profile.admin.inc:345
 msgid "The field has been created."
 msgstr "Das Feld wurde angelegt."
 
-#: modules/profile/profile.admin.inc:350
+#: modules/profile/profile.admin.inc:351
 msgid "The field has been updated."
 msgstr "Das Feld wurde aktualisiert."
 
-#: modules/profile/profile.admin.inc:372
+#: modules/profile/profile.admin.inc:373
 msgid "Are you sure you want to delete the field %field?"
 msgstr "Soll das Feld %field wirklich gelöscht werden?"
 
-#: modules/profile/profile.admin.inc:373
+# formal
+#: modules/profile/profile.admin.inc:374
 msgid ""
 "This action cannot be undone. If users have entered values into this field "
 "in their profile, these entries will also be deleted. If you want to keep "
@@ -260,19 +269,19 @@ msgstr ""
 "bearbeiten</a> und es zu einem versteckten Profilfeld ändern, das nur "
 "Administratoren die Daten sehen können."
 
-#: modules/profile/profile.admin.inc:386
+#: modules/profile/profile.admin.inc:387
 msgid "The field %field has been deleted."
 msgstr "Das Feld %field wurde gelöscht."
 
-#: modules/profile/profile.admin.inc:345;387 modules/profile/profile.module:0
+#: modules/profile/profile.admin.inc:346;388
 msgid "profile"
 msgstr "Profil"
 
-#: modules/profile/profile.admin.inc:345
+#: modules/profile/profile.admin.inc:346
 msgid "Profile field %field added under category %category."
 msgstr "Profilfeld %field zur Kategorie %category hinzugefügt."
 
-#: modules/profile/profile.admin.inc:387
+#: modules/profile/profile.admin.inc:388
 msgid "Profile field %field deleted."
 msgstr "Das Profilfeld %field wurde gelöscht."
 
@@ -350,8 +359,8 @@ msgstr ""
 "werden, indem man ein vorhandenes Profilfeld bearbeitet oder ein neues "
 "Profilfeld anlegt und die Kategorie im dafür vorgesehenen Feld eingibt. Die "
 "Zuordnung zu einer Kategorie oder die Reihenfolge der Felder in einer "
-"Kategorie kann mittels der Drag-and-Drop Funktion geändert werden. Einfach "
-"beim Kreuz mit der linken Maus klicken, festhalten und in der gewünschte "
+"Kategorie kann mit der Drag-and-Drop-Funktion geändert werden. Einfach mit "
+"der linken Maustaste auf das Kreuz klicken, festhalten und in der gewünschte "
 "Position loslassen. Änderungen werden nicht gespeichert bis die "
 "Veränderungen mit dem <em>Konfiguration speichern</em>-Button übernommen "
 "werden."
@@ -368,6 +377,7 @@ msgstr "Link zum vollständigen Benutzerprofil"
 msgid "Profile fields to display"
 msgstr "Profilfelder, die angezeigt werden sollen"
 
+# formal
 #: modules/profile/profile.module:157
 msgid ""
 "Select which profile fields you wish to display in the block. Only fields "
@@ -405,6 +415,7 @@ msgstr "Das Feld %field muss ausgefüllt werden."
 msgid "Profiles"
 msgstr "Profile"
 
+# formal
 #: modules/profile/profile.module:88
 msgid "Create customizable fields for your users."
 msgstr "Erstellen Sie Profilfelder für Ihre Benutzer."
@@ -428,87 +439,3 @@ msgstr "Feld löschen"
 #: modules/profile/profile.module:126
 msgid "Profile autocomplete"
 msgstr "Autovervollständigung für Profilkategorien"
-
-#: modules/profile/profile.install:27
-msgid "Stores profile field information."
-msgstr "Speichert Profilfeldinformationen."
-
-#: modules/profile/profile.install:32
-msgid "Primary Key: Unique profile field ID."
-msgstr "Primärer Schlüssel: Eindeutige Profilfeld-ID."
-
-#: modules/profile/profile.install:38
-msgid "Title of the field shown to the end user."
-msgstr "Feldbezeichnung, die dem Benutzer angezeigt wird."
-
-#: modules/profile/profile.install:45
-msgid "Internal name of the field used in the form HTML and URLs."
-msgstr ""
-"Der interne Name dieses Feldes, der im HTML-Formular und URLs verwendet wird."
-
-#: modules/profile/profile.install:50
-msgid "Explanation of the field to end users."
-msgstr "Eine Beschreibung dieses Feldes für Endbenutzer."
-
-#: modules/profile/profile.install:56
-msgid "Profile category that the field will be grouped under."
-msgstr "Kategorie des Profils, welchem das Feld unterzuordnen ist."
-
-#: modules/profile/profile.install:62
-msgid "Title of page used for browsing by the field's value"
-msgstr ""
-"Seitentitel der beim Browsen nach dem Eintrag dieses Feldes verwendet wird."
-
-#: modules/profile/profile.install:68
-msgid "Type of form field."
-msgstr "Typ des Formularfeldes."
-
-#: modules/profile/profile.install:75
-msgid "Weight of field in relation to other profile fields."
-msgstr "Die Reihenfolge des Feldes bezogen auf andere Profilfelder."
-
-#: modules/profile/profile.install:82
-msgid "Whether the user is required to enter a value. (0 = no, 1 = yes)"
-msgstr "Gibt an ob der Benutzer einen Wert eingeben muss (0 = nein, 1 = ja)"
-
-#: modules/profile/profile.install:89
-msgid ""
-"Whether the field is visible in the user registration form. (1 = yes, 0 = no)"
-msgstr ""
-"Gibt an, ob dieses Feld im Registrierungsformular für Benutzer sichtbar ist. "
-"(1 = ja, 0 = nein)"
-
-#: modules/profile/profile.install:96
-msgid ""
-"The level of visibility for the field. (0 = hidden, 1 = private, 2 = public "
-"on profile but not member list pages, 3 = public on profile and list pages)"
-msgstr ""
-"Sichtbarkeitsstufe dieses Feldes. (0 = versteckt, 1 = privat, 2 = öffentlich "
-"auf dem Profil aber nicht auf Mitgliederlisten, 3 = öffentlich auf dem "
-"Profil und Mitgliederlisten)"
-
-#: modules/profile/profile.install:103
-msgid "Whether form auto-completion is enabled. (0 = disabled, 1 = enabled)"
-msgstr ""
-"Gibt an ob die Auto-Vervollständigung aktiviert ist. (0 = deaktiviert, 1 = "
-"aktiviert)"
-
-#: modules/profile/profile.install:108
-msgid "List of options to be used in a list selection field."
-msgstr "Liste der in einer Auswahlliste Optionen"
-
-#: modules/profile/profile.install:117
-msgid "Stores values for profile fields."
-msgstr "Speichert die Werte der Profilfelder."
-
-#: modules/profile/profile.install:124
-msgid "The {profile_fields}.fid of the field."
-msgstr "Die {profile_fields}.fid von diesem Feld."
-
-#: modules/profile/profile.install:131
-msgid "The {users}.uid of the profile user."
-msgstr "Die {user}.uid von diesem Benutzerprofil."
-
-#: modules/profile/profile.install:136
-msgid "The value for the field."
-msgstr "Der Wert für das Feld."

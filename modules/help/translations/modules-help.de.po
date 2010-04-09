@@ -1,4 +1,4 @@
-# $Id: modules-help.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-help.po,v 1.1.2.10 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-help)
 # Copyright (c) 2004-2008 by the German translation team
@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-help\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -75,7 +75,3 @@ msgid ""
 msgstr ""
 "Nähere Informationen bezüglich der Konfiguration und Anpassung gibt es auf "
 "der Handbuch-Seite zum <a href=\"@help\">Hilfe-Modul</a>."
-
-#: modules/help/help.module:0
-msgid "help"
-msgstr "Hilfe"

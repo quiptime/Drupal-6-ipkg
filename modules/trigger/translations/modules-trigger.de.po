@@ -1,4 +1,4 @@
-# $Id: modules-trigger.po,v 1.1.2.10 2008/08/16 18:48:06 timcn Exp $
+# $Id: modules-trigger.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-trigger)
 # Copyright (c) 2004-2008 by the German translation team
@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-trigger\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -187,35 +187,3 @@ msgstr "Cron"
 #: modules/trigger/trigger.module:115
 msgid "Unassign an action from a trigger."
 msgstr "Die Zuweisung einer Aktion zu einem Trigger aufheben."
-
-#: modules/trigger/trigger.module:0
-msgid "trigger"
-msgstr "Trigger"
-
-#: modules/trigger/trigger.install:28
-msgid "Maps trigger to hook and operation assignments from trigger.module."
-msgstr "Zuordnung von Triggern zu Hooks und Operationen des Trigger-Moduls."
-
-#: modules/trigger/trigger.install:35
-msgid ""
-"Primary Key: The name of the internal Drupal hook upon which an action is "
-"firing; for example, nodeapi."
-msgstr ""
-"Primärschlüssel: Der Name des internen Drupal-Hook, bei der eine Aktion "
-"ausgelöst wird; Beispielsweise: nodeapi."
-
-#: modules/trigger/trigger.install:42
-msgid ""
-"Primary Key: The specific operation of the hook upon which an action is "
-"firing: for example, presave."
-msgstr ""
-"Primärschlüssel: Die bestimmte Operation eines Hooks, bei der eine Aktion "
-"ausgelöst wird: Beispielsweise vor dem Speichern."
-
-#: modules/trigger/trigger.install:49
-msgid "Primary Key: Action's {actions}.aid."
-msgstr "Primärschlüssel: Aktions {actions}.aid."
-
-#: modules/trigger/trigger.install:55
-msgid "The weight of the trigger assignment in relation to other triggers."
-msgstr "Die Reihenfolge der Trigger-Zuordnung bezogen auf andere Trigger."

@@ -1,4 +1,4 @@
-# $Id: modules-book.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-book.po,v 1.1.2.11 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-book)
 # Copyright (c) 2004-2008 by the German translation team
@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-book\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -47,6 +47,7 @@ msgstr "Reihenfolge und Titel bearbeiten"
 msgid "Allowed book outline types"
 msgstr "Zulässige Inhaltsverzeichnistypen"
 
+# formal
 #: modules/book/book.admin.inc:36
 msgid ""
 "Select content types which users with the %add-perm permission will be "
@@ -74,8 +75,8 @@ msgid ""
 "The content type for the %add-child link must be one of those selected as an "
 "allowed book outline type."
 msgstr ""
-"Der Inhaltstyp für den Link \"%add-child\" muss einer der zulässigen Typen "
-"für Inhaltsverzeichnisse sein."
+"Der Inhaltstyp für den Link %add-child muss einer der zulässigen Typen für "
+"Inhaltsverzeichnisse sein."
 
 #: modules/book/book.admin.inc:44;60 modules/book/book.module:57
 msgid "Add child page"
@@ -98,7 +99,7 @@ msgstr "Der Titel wurde von %original nach %current geändert."
 
 #: modules/book/book.admin.inc:135
 msgid "Updated book %title."
-msgstr "Buch \"%title\" aktualisiert."
+msgstr "Buch %title aktualisiert."
 
 #: modules/book/book.admin.inc:130
 msgid "book: updated %title."
@@ -206,7 +207,7 @@ msgid ""
 "addition to selectively display this block."
 msgstr ""
 "Wenn <em>Block auf allen Seiten anzeigen</em> ausgewählt ist, enthält der "
-"Block die automatisch generierten Menüs für alle Bücher der Site. Wenn "
+"Block die automatisch generierten Menüs für alle Bücher der Website. Wenn "
 "<em>Block nur auf Buchseiten anzeigen</em> ausgewählt ist, enthält der Block "
 "nur ein Menü, das dem Buch der aktuellen Seite entspricht oder, wenn die "
 "aktuelle Seite nicht in einem Buch ist, kein Block angezeigt. Die "
@@ -277,7 +278,7 @@ msgid ""
 "contents menu."
 msgstr ""
 "Das Book-Modul ist dafür geeignet, strukturierte, mehrseitige Dokumente wie "
-"Inhaltsverzeichnisse, Handbücher oder „Frequently Asked Questions“ (FAQs) zu "
+"Inhaltsverzeichnisse, Handbücher oder „Häufig gestellte Fragen“ (FAQs) zu "
 "erstellen. Ein Dokument kann Kapitel, Abschnitte, Unterabschnitte etc. "
 "haben. Autoren mit entsprechender Berechtigung können Seiten zu einem "
 "zusammen zu bearbeitenden Buch einfügen, indem die Seiten dem "
@@ -305,7 +306,7 @@ msgid ""
 "bottom of a book page to generate a printer-friendly display of the page and "
 "all of its subsections. "
 msgstr ""
-"Benutzer können mit Hilfe des Verweises <em>Druckversion</em> am Ende einer "
+"Benutzer können mit Hilfe des <em>Druckversion</em>-Links am Ende einer "
 "Seite eine druckerfreundliche Ansicht der Seite und aller Unterpunkte "
 "erzeugen. "
 
@@ -389,10 +390,6 @@ msgstr "Gliederung"
 msgid "Remove from outline"
 msgstr "Aus der Gliederung entfernen"
 
-#: modules/book/book.module:0
-msgid "book"
-msgstr "Buch"
-
 #: modules/book/book.install:29
 msgid "Book page"
 msgstr "Buchseite"
@@ -409,23 +406,3 @@ msgstr ""
 "<em>Buchseite</em> zeigt automatisch Links zu angrenzenden Seiten an. Dies "
 "bietet eine einfache Navigation für das Erstellen und Bearbeiten von "
 "strukturiertem Inhalt."
-
-#: modules/book/book.install:254
-msgid ""
-"Stores book outline information. Uniquely connects each node in the outline "
-"to a link in {menu_links}"
-msgstr ""
-"Speichert Gliederungsinformationen für Bücher. Verbindet jeden Eintrag in "
-"der Gliederung mit einer Verküpfung in {menu_links}."
-
-#: modules/book/book.install:261
-msgid "The book page's {menu_links}.mlid."
-msgstr "Die {menu_links}.mlid der Buchseite."
-
-#: modules/book/book.install:268
-msgid "The book page's {node}.nid."
-msgstr "Die {node}.nid der Buchseite."
-
-#: modules/book/book.install:275
-msgid "The book ID is the {book}.nid of the top-level page."
-msgstr "Die Buch-ID ist die {book}.nid der Seite mit der höchsten Position."

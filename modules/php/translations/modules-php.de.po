@@ -1,4 +1,4 @@
-# $Id: modules-php.po,v 1.1.2.8 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-php.po,v 1.1.2.9 2008/08/23 10:32:17 timcn Exp $
 #
 # German translation of Drupal (modules-php)
 # Copyright (c) 2004-2008 by the German translation team
@@ -27,7 +27,7 @@ msgid ""
 "content management system used by this website has been developed using PHP."
 msgstr ""
 "Der PHP-Filter erlaubt das Einbinden von PHP-Code in Beiträgen. PHP ist eine "
-"universell einsetzbare Scriptsprache, die vor allem im Web-Umfeld verwendet "
+"universell einsetzbare Skriptsprache, die vor allem im Web-Umfeld verwendet "
 "wird. Drupal, das auf dieser Website verwendete Content-Management-System, "
 "basiert auf PHP."
 
@@ -190,6 +190,7 @@ msgstr ""
 "Ein einfaches Beispiel: <em>Ein „Willkommen“-Block, der die Besucher mit "
 "einer einfachen Nachricht begrüßt.</em>"
 
+# formal
 #: modules/php/php.module:47
 msgid ""
 "<p>Add a custom block to your site, named \"Welcome\". With its input format "

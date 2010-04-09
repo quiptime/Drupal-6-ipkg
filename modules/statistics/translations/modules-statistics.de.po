@@ -1,4 +1,4 @@
-# $Id: modules-statistics.po,v 1.1.2.9 2008/08/16 18:48:05 timcn Exp $
+# $Id: modules-statistics.po,v 1.1.2.10 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (modules-statistics)
 # Copyright (c) 2004-2008 by the German translation team
@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: modules-statistics\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -402,50 +402,3 @@ msgstr "Einstellungen für die Protokollierung der Seiten."
 #: modules/statistics/statistics.module:146
 msgid "Track page visits"
 msgstr "Seitenbesuche protokollieren"
-
-#: modules/statistics/statistics.module:0
-msgid "statistics"
-msgstr "Statistiken"
-
-#: modules/statistics/statistics.install:52
-msgid "Stores site access information for statistics."
-msgstr ""
-"Speichert Informationen über die Zugriffe auf die Website zu statistischen "
-"Zwecken."
-
-#: modules/statistics/statistics.install:57
-msgid "Primary Key: Unique accesslog ID."
-msgstr "Primärschlüssel: Eindeutige Zugriffsprotokoll-ID."
-
-#: modules/statistics/statistics.install:64
-msgid "Browser session ID of user that visited page."
-msgstr "Session-ID des Benutzers, der die Seite aufgerufen hat."
-
-#: modules/statistics/statistics.install:70
-msgid "Title of page visited."
-msgstr "Titel der besuchten Seite."
-
-#: modules/statistics/statistics.install:76
-msgid "Internal path to page visited (relative to Drupal root.)"
-msgstr ""
-"Interner Pfad zur besuchten Seite (relativ zum Drupal-Hauptverzeichnis)."
-
-#: modules/statistics/statistics.install:82
-msgid "Referrer URI."
-msgstr "Referrer-URI."
-
-#: modules/statistics/statistics.install:88
-msgid "Hostname of user that visited the page."
-msgstr "Hostname des Besuchers der Seite."
-
-#: modules/statistics/statistics.install:95
-msgid "User {users}.uid that visited the page."
-msgstr "Benutzer {users}.uid der diese Seite besucht hat."
-
-#: modules/statistics/statistics.install:102
-msgid "Time in milliseconds that the page took to load."
-msgstr "Ladezeit der Seite in Millisekunden."
-
-#: modules/statistics/statistics.install:109
-msgid "Timestamp of when the page was visited."
-msgstr "Zeitpunkt des Seitenaufrufs."

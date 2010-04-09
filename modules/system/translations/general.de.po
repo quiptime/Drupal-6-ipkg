@@ -1,4 +1,4 @@
-# $Id: general.po,v 1.29.2.10 2008/08/16 18:48:05 timcn Exp $
+# $Id: general.po,v 1.29.2.12 2009/09/14 09:07:26 timcn Exp $
 #
 # German translation of Drupal (general)
 # Copyright (c) 2004-2008 by the German translation team
@@ -138,7 +138,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: general\n"
-"POT-Creation-Date: 2008-08-16 14:35+0200\n"
+"POT-Creation-Date: 2009-07-19 18:21+0200\n"
 "PO-Revision-Date: 2008-08-16 20:40+0200\n"
 "Last-Translator: Konstantin Käfer <kkaefer@gmail.com>\n"
 "Language-Team: German Drupal translation team\n"
@@ -149,12 +149,13 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 
-#: includes/actions.inc:46;275;297;329;337
+#: includes/actions.inc:47;277;299;331;339
 #: modules/trigger/trigger.admin.inc:87
 msgid "actions"
 msgstr "Aktionen"
 
-#: includes/common.inc:335 modules/system/system.admin.inc:1645
+# formal
+#: includes/common.inc:344 modules/system/system.admin.inc:1645
 msgid ""
 "@site is currently under maintenance. We should be back shortly. Thank you "
 "for your patience."
@@ -162,40 +163,48 @@ msgstr ""
 "Wir führen auf @site momentan Wartungsarbeiten durch und sollten bald wieder "
 "erreichbar sein. Vielen Dank für Ihre Geduld."
 
-#: includes/common.inc:1100 modules/blogapi/blogapi.module:643;653
+#: includes/common.inc:1211 modules/blogapi/blogapi.module:739;749
 #: modules/upload/upload.admin.inc:98;107;136;145
 msgid "MB"
 msgstr "MB"
 
-#: includes/common.inc:3473 modules/dblog/dblog.admin.inc:36;36
-#: modules/system/system.module:1675;1709
-#: modules/update/update.report.inc:57;57
+#: includes/common.inc:3588 modules/dblog/dblog.admin.inc:41;41
+msgid "emergency"
+msgstr "Notfall"
+
+#: includes/common.inc:3589 modules/dblog/dblog.admin.inc:40;40
+msgid "alert"
+msgstr "Alarm"
+
+#: includes/common.inc:3590 modules/dblog/dblog.admin.inc:39;39
+msgid "critical"
+msgstr "Kritisch"
+
+#: includes/common.inc:3591 modules/dblog/dblog.admin.inc:38;38
+#: modules/system/system.module:1666;1700
+#: modules/update/update.report.inc:59;59
 msgid "error"
 msgstr "Fehler"
 
-#: includes/common.inc:3474 modules/dblog/dblog.admin.inc:35;35
-#: modules/update/update.report.inc:63;63
+#: includes/common.inc:3592 modules/dblog/dblog.admin.inc:37;37
+#: modules/update/update.report.inc:53;53;65;65
 msgid "warning"
 msgstr "Warnung"
-
-#: includes/common.inc:619 includes/image.inc:95 includes/menu.inc:2270
-#: includes/unicode.inc:151;184 modules/php/php.module:0
-msgid "php"
-msgstr "PHP"
 
 #: (duplicate) includes/file.inc:109 modules/system/system.install:198
 msgid "The directory %directory does not exist."
 msgstr "Das Verzeichnis %directory ist nicht vorhanden."
 
-#: includes/file.inc:122;226 modules/system/system.module:1241
+#: includes/file.inc:122;226 modules/system/system.module:1232
 msgid "file system"
 msgstr "Dateisystem"
 
-#: includes/file.inc:136 modules/user/user.pages.inc:261;330
-#: modules/user/user.module:1779;2288
+#: includes/file.inc:136 modules/user/user.pages.inc:274;343
+#: modules/user/user.module:1798;2307
 msgid "security"
 msgstr "Sicherheit"
 
+# formal
 #: includes/form.inc:575 modules/upload/upload.module:571
 msgid ""
 "Validation error, please try again. If this error persists, please contact "
@@ -205,60 +214,61 @@ msgstr ""
 "Fehler bestehen bleibt, wenden Sie sich bitte an den Administrator der "
 "Website."
 
-#: includes/form.inc:1587 modules/user/user.module:657;1255
+#: includes/form.inc:1598 modules/user/user.module:659;1256
 msgid "Password"
 msgstr "Passwort"
 
-#: (duplicate) includes/form.inc:699 ;705 modules/filter/filter.module:530
+# formal
+#: (duplicate) includes/form.inc:698 ;704 modules/filter/filter.module:537
 msgid ""
 "An illegal choice has been detected. Please contact the site administrator."
 msgstr ""
 "Es wurde eine nicht erlaubte Auswahl entdeckt. Wenden Sie sich bitte an den "
 "Administrator der Website."
 
-#: (duplicate) includes/form.inc:2426 modules/node/node.admin.inc:366
+#: (duplicate) includes/form.inc:2445 modules/node/node.admin.inc:357
 msgid "Processing"
 msgstr "Verarbeitung läuft"
 
-#: includes/form.inc:700;706 modules/filter/filter.module:531
+#: includes/form.inc:699;705 modules/filter/filter.module:538
 msgid "form"
 msgstr "Formular"
 
-#: includes/form.inc:706 modules/filter/filter.module:531
+#: includes/form.inc:705 modules/filter/filter.module:538
 msgid "Illegal choice %choice in %name element."
 msgstr "Unzulässige Auswahl %choice im Element %name."
 
 #: includes/locale.inc:58 modules/filter/filter.admin.inc:155;351
 #: modules/menu/menu.admin.inc:50 modules/profile/profile.admin.inc:44
 #: modules/system/system.admin.inc:253;276;768
-#: modules/system/system.module:1033
+#: modules/system/system.module:1024
 msgid "Save configuration"
 msgstr "Konfiguration speichern"
 
-#: includes/locale.inc:86;2004 modules/aggregator/aggregator.admin.inc:30;41
+#: includes/locale.inc:86;2051 modules/aggregator/aggregator.admin.inc:30;41
 #: modules/book/book.admin.inc:237 modules/comment/comment.admin.inc:71
-#: modules/comment/comment.module:828;839 modules/contact/contact.admin.inc:16
+#: modules/comment/comment.module:830;841 modules/contact/contact.admin.inc:16
 #: modules/menu/menu.admin.inc:97 modules/node/content_types.inc:28
-#: modules/node/node.admin.inc:505 modules/path/path.admin.inc:44
+#: modules/node/node.admin.inc:496 modules/path/path.admin.inc:44
 #: modules/profile/profile.admin.inc:30
 #: modules/taxonomy/taxonomy.admin.inc:203;207;401;769;773
 #: modules/translation/translation.pages.inc:38
-#: modules/user/user.admin.inc:185;890 modules/user/user.module:1411;2310
+#: modules/user/user.admin.inc:185;890 modules/user/user.module:1420;2329
 msgid "edit"
 msgstr "Bearbeiten"
 
-#: includes/locale.inc:86;2005 modules/block/block.admin.inc:79
-#: modules/book/book.admin.inc:238 modules/comment/comment.module:824
+#: includes/locale.inc:86;2052 modules/block/block.admin.inc:85
+#: modules/book/book.admin.inc:238 modules/comment/comment.module:826
 #: modules/contact/contact.admin.inc:16 modules/filter/filter.admin.inc:35
 #: modules/menu/menu.admin.inc:100 modules/node/content_types.inc:32
-#: modules/node/node.pages.inc:556 modules/path/path.admin.inc:44
-#: modules/profile/profile.admin.inc:31 modules/system/system.module:1343
+#: modules/node/node.pages.inc:560 modules/path/path.admin.inc:44
+#: modules/profile/profile.admin.inc:31 modules/system/system.module:1334
 #: modules/user/user.admin.inc:890
 msgid "delete"
 msgstr "Löschen"
 
 #: (duplicate) includes/locale.inc:90 modules/comment/comment.module:553
-#: modules/locale/locale.module:275 modules/menu/menu.admin.inc:176;293
+#: modules/locale/locale.module:264 modules/menu/menu.admin.inc:176;293
 #: modules/statistics/statistics.admin.inc:185
 #: modules/system/system.admin.inc:1293;1325;1333;1509;1663;2018;2207
 #: modules/system/system.install:282 modules/upload/upload.module:215
@@ -275,102 +285,102 @@ msgstr "Standard"
 #: modules/book/book.admin.inc:218 modules/book/book.module:387
 #: modules/contact/contact.admin.inc:58 modules/filter/filter.admin.inc:362
 #: modules/forum/forum.admin.inc:52;134 modules/menu/menu.admin.inc:178;320
-#: modules/menu/menu.module:416 modules/node/node.module:1323
+#: modules/menu/menu.module:417 modules/node/node.module:1322
 #: modules/profile/profile.admin.inc:150;265
 #: modules/taxonomy/taxonomy.admin.inc:90;171;705
 #: modules/upload/upload.module:517
 msgid "Weight"
 msgstr "Reihenfolge"
 
-#: includes/locale.inc:90;1990 modules/aggregator/aggregator.admin.inc:27;38
+#: includes/locale.inc:90;2037 modules/aggregator/aggregator.admin.inc:27;38
 #: modules/block/block-admin-display-form.tpl.php:47
 #: modules/book/book.admin.inc:17;218 modules/comment/comment.admin.inc:58
-#: modules/contact/contact.admin.inc:18 modules/dblog/dblog.admin.inc:52;160
+#: modules/contact/contact.admin.inc:18 modules/dblog/dblog.admin.inc:62;170
 #: modules/filter/filter.admin.inc:69 modules/menu/menu.admin.inc:179
-#: modules/node/content_types.inc:15 modules/node/node.admin.inc:570
-#: modules/node/node.pages.inc:526 modules/openid/openid.pages.inc:42
+#: modules/node/content_types.inc:15 modules/node/node.admin.inc:561
+#: modules/node/node.pages.inc:530 modules/openid/openid.pages.inc:42
 #: modules/path/path.admin.inc:32 modules/profile/profile.admin.inc:152
 #: modules/statistics/statistics.admin.inc:17;82
 #: modules/statistics/statistics.pages.inc:16;48
-#: modules/system/system.admin.inc:2207 modules/system/system.module:1334
+#: modules/system/system.admin.inc:2207 modules/system/system.module:1325
 #: modules/taxonomy/taxonomy.admin.inc:93;612
 #: modules/translation/translation.pages.inc:27
 #: modules/user/user.admin.inc:139;885;912;949
 msgid "Operations"
 msgstr "Operationen"
 
-#: includes/locale.inc:166 modules/locale/locale.module:99
+#: includes/locale.inc:166 modules/locale/locale.module:88
 msgid "Add language"
 msgstr "Sprache hinzufügen"
 
-#: includes/locale.inc:403;887
+#: includes/locale.inc:403;922
 #: modules/aggregator/aggregator.admin.inc:102;142;275;306
-#: modules/block/block.admin.inc:328 modules/comment/comment.admin.inc:248
+#: modules/block/block.admin.inc:334 modules/comment/comment.admin.inc:248
 #: modules/contact/contact.admin.inc:138 modules/filter/filter.admin.inc:252
 #: modules/forum/forum.admin.inc:10;60;148;168
 #: modules/menu/menu.admin.inc:265;393;460 modules/node/content_types.inc:393
-#: modules/node/node.admin.inc:129 modules/node/node.pages.inc:246;504;590
-#: modules/node/node.module:1507;1537 modules/openid/openid.pages.inc:47
-#: modules/profile/profile.admin.inc:374 modules/system/system.module:1534
+#: modules/node/node.admin.inc:120 modules/node/node.pages.inc:250;508;594
+#: modules/node/node.module:1506;1536 modules/openid/openid.pages.inc:47
+#: modules/profile/profile.admin.inc:375 modules/system/system.module:1525
 #: modules/taxonomy/taxonomy.admin.inc:187;220;720;749;842;877
 #: modules/upload/upload.module:517 modules/user/user.admin.inc:869
-#: modules/user/user.pages.inc:244;311 modules/user/user.module:1068
+#: modules/user/user.pages.inc:257;324 modules/user/user.module:1070
 msgid "Delete"
 msgstr "Löschen"
 
-#: includes/locale.inc:403;887 modules/aggregator/aggregator.admin.inc:191
-#: modules/block/block.admin.inc:328 modules/comment/comment.admin.inc:190;249
+#: includes/locale.inc:403;922 modules/aggregator/aggregator.admin.inc:191
+#: modules/block/block.admin.inc:334 modules/comment/comment.admin.inc:190;249
 #: modules/contact/contact.admin.inc:138 modules/filter/filter.admin.inc:252
-#: modules/forum/forum.admin.inc:168 modules/node/node.admin.inc:81;622
-#: modules/node/node.pages.inc:505;570;590
-#: modules/profile/profile.admin.inc:374 modules/search/search.admin.inc:14
+#: modules/forum/forum.admin.inc:168 modules/node/node.admin.inc:73;613
+#: modules/node/node.pages.inc:509;574;594
+#: modules/profile/profile.admin.inc:375 modules/search/search.admin.inc:14
 #: modules/system/system.admin.inc:845;1082
-#: modules/system/system.module:1152;1534
+#: modules/system/system.module:1143;1525
 #: modules/taxonomy/taxonomy.admin.inc:843;878;913
 #: modules/trigger/trigger.admin.inc:77 modules/user/user.admin.inc:870
-#: modules/user/user.pages.inc:311 modules/user/user.module:1860
+#: modules/user/user.pages.inc:324 modules/user/user.module:1879
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: includes/locale.inc:458 modules/comment/comment.module:1623
+#: includes/locale.inc:458 modules/comment/comment.module:1629
 msgid "Save settings"
 msgstr "Einstellungen speichern"
 
-#: includes/locale.inc:489;557;1990 modules/locale/locale.module:241;260;287
-#: modules/node/node.admin.inc:568 modules/path/path.admin.inc:36
+#: includes/locale.inc:489;557;2037 modules/locale/locale.module:230;249;276
+#: modules/node/node.admin.inc:559 modules/path/path.admin.inc:36
 #: modules/translation/translation.pages.inc:27
 msgid "Language"
 msgstr "Sprache"
 
-#: includes/locale.inc:503 modules/blogapi/blogapi.module:254
-#: modules/filter/filter.module:459 modules/forum/forum-submitted.tpl.php:27
+#: includes/locale.inc:503 modules/blogapi/blogapi.module:259
+#: modules/filter/filter.module:466 modules/forum/forum-submitted.tpl.php:27
 #: modules/translation/translation.pages.inc:48
 msgid "n/a"
 msgstr "n/v"
 
-#: includes/locale.inc:546;573 modules/locale/locale.module:143
-#: modules/search/search.module:159;1049;1069;169 modules/search/search.info:0
+#: includes/locale.inc:546;573 modules/locale/locale.module:132
+#: modules/search/search.module:159;1053;1073;169 modules/search/search.info:0
 msgid "Search"
 msgstr "Suchen"
 
-#: includes/locale.inc:559 modules/locale/locale.module:261
+#: includes/locale.inc:559 modules/locale/locale.module:250
 msgid "All languages"
 msgstr "Alle Sprachen"
 
-#: includes/locale.inc:636 modules/locale/locale.module:151
+#: includes/locale.inc:636 modules/locale/locale.module:140
 msgid "Import"
 msgstr "Importieren"
 
-#: includes/locale.inc:719;738 modules/locale/locale.module:159
+#: includes/locale.inc:720;739 modules/locale/locale.module:148
 msgid "Export"
 msgstr "Exportieren"
 
-#: includes/locale.inc:1990 modules/locale/locale.module:593;87
+#: includes/locale.inc:2037 modules/locale/locale.module:583;76
 msgid "Languages"
 msgstr "Sprachen"
 
-#: includes/locale.inc:423;662;962;1019;1836;1840;2181;2184;2187;2190
-#: modules/locale/locale.module:519;0
+#: includes/locale.inc:423;662;855;997;1054;1883;1887;2228;2231;2234;2237
+#: modules/locale/locale.module:508
 msgid "locale"
 msgstr "Lokalisierung"
 
@@ -379,9 +389,9 @@ msgstr "Lokalisierung"
 msgid "mail"
 msgstr "E-Mail"
 
-#: includes/menu.inc:1496 modules/blog/blog.module:108
+#: includes/menu.inc:1516 modules/blog/blog.module:109
 #: modules/book/book.module:625 modules/comment/comment.pages.inc:53
-#: modules/forum/forum.module:198;655
+#: modules/forum/forum.module:198;647
 #: modules/system/maintenance-page.tpl.php:34;35;42
 #: modules/system/page.tpl.php:95;96;103
 #: modules/taxonomy/taxonomy.pages.inc:40
@@ -399,24 +409,24 @@ msgstr "vorherige Seite"
 msgid "Go to next page"
 msgstr "nächste Seite"
 
-#: includes/theme.inc:1385 modules/comment/comment.module:1684;1709
+#: includes/theme.inc:1436 modules/comment/comment.module:1690;1715
 msgid "new"
 msgstr "neu"
 
-#: includes/theme.inc:1563 modules/user/user.module:819
+#: includes/theme.inc:1614 modules/user/user.module:821
 msgid "View user profile."
 msgstr "Benutzerprofil anzeigen."
 
-#: includes/theme.inc:1584 modules/comment/comment.module:1341;1350;1452
-#: modules/node/node.pages.inc:183 modules/system/system.admin.inc:1162
-#: modules/system/system.module:1777 modules/user/user.module:816
+#: includes/theme.inc:1635 modules/comment/comment.module:1345;1354;1456
+#: modules/node/node.pages.inc:186 modules/system/system.admin.inc:1162
+#: modules/system/system.module:1768 modules/user/user.module:818
 msgid "Anonymous"
 msgstr "Gast"
 
 #: modules/aggregator/aggregator.admin.inc:27;38;63;263
 #: modules/book/book.admin.inc:218 modules/filter/filter.module:220
 #: modules/menu/menu.admin.inc:413 modules/node/content_types.inc:58
-#: modules/node/node.admin.inc:566 modules/node/node.module:584
+#: modules/node/node.admin.inc:557 modules/node/node.module:584
 #: modules/profile/profile.admin.inc:147;221
 #: modules/statistics/statistics.admin.inc:150
 #: modules/translation/translation.pages.inc:27
@@ -424,51 +434,51 @@ msgid "Title"
 msgstr "Titel"
 
 #: modules/aggregator/aggregator.admin.inc:30
-#: modules/aggregator/aggregator.pages.inc:483
+#: modules/aggregator/aggregator.pages.inc:482
 #: modules/comment/comment.module:396
 #: modules/statistics/statistics.admin.inc:125 modules/user/user.admin.inc:184
 msgid "@time ago"
 msgstr "vor @time"
 
 #: modules/aggregator/aggregator.admin.inc:30;30
-#: modules/aggregator/aggregator.pages.inc:486 modules/user/user.admin.inc:184
+#: modules/aggregator/aggregator.pages.inc:485 modules/user/user.admin.inc:184
 msgid "never"
 msgstr "nie"
 
 #: modules/aggregator/aggregator.admin.inc:70
 #: modules/profile/profile.module:42;550
 #: modules/statistics/statistics.admin.inc:144
-#: modules/system/system.module:1833
+#: modules/system/system.module:1824
 msgid "URL"
 msgstr "URL"
 
 #: modules/aggregator/aggregator.admin.inc:99;113;272;286
-#: modules/comment/comment.module:1388;1389
+#: modules/comment/comment.module:1392;1393
 #: modules/contact/contact.admin.inc:72 modules/forum/forum.admin.inc:58;145
-#: modules/menu/menu.admin.inc:325;424 modules/node/node.pages.inc:233
-#: modules/system/system.module:1483
+#: modules/menu/menu.admin.inc:325;424 modules/node/node.pages.inc:237
+#: modules/system/system.module:1474
 #: modules/taxonomy/taxonomy.admin.inc:37;185;414;715;760
-#: modules/user/user.pages.inc:240
+#: modules/user/user.pages.inc:253
 msgid "Save"
 msgstr "Speichern"
 
 #: modules/aggregator/aggregator.admin.inc:174;338
-#: modules/blogapi/blogapi.module:233;289 modules/book/book.admin.inc:130;236
+#: modules/blogapi/blogapi.module:238;300 modules/book/book.admin.inc:130;236
 #: modules/comment/comment.admin.inc:111
-#: modules/comment/comment.module:708;769
+#: modules/comment/comment.module:708;771
 #: modules/contact/contact.admin.inc:115;121
-#: modules/node/content_types.inc:335 modules/node/node.pages.inc:453
-#: modules/profile/profile.admin.inc:345;387
-#: modules/update/update.fetch.inc:57;61
+#: modules/node/content_types.inc:335 modules/node/node.pages.inc:457
+#: modules/profile/profile.admin.inc:346;388
+#: modules/update/update.fetch.inc:82;85
 msgid "view"
 msgstr "Anzeigen"
 
 #: modules/aggregator/aggregator.admin.inc:189
 #: modules/comment/comment.admin.inc:189 modules/contact/contact.admin.inc:138
 #: modules/menu/menu.admin.inc:459 modules/node/content_types.inc:391
-#: modules/node/node.admin.inc:621 modules/node/node.pages.inc:503;590
-#: modules/system/system.module:1143 modules/user/user.admin.inc:868
-#: modules/user/user.module:1859
+#: modules/node/node.admin.inc:612 modules/node/node.pages.inc:507;594
+#: modules/system/system.module:1134 modules/user/user.admin.inc:868
+#: modules/user/user.module:1878
 msgid "This action cannot be undone."
 msgstr "Dieser Vorgang kann nicht rückgängig gemacht werden."
 
@@ -480,7 +490,7 @@ msgid "none"
 msgstr "Keine"
 
 #: modules/aggregator/aggregator.admin.inc:228
-#: modules/filter/filter.module:671
+#: modules/filter/filter.module:678
 msgid "Allowed HTML tags"
 msgstr "Erlaubte HTML-Tags"
 
@@ -488,13 +498,13 @@ msgstr "Erlaubte HTML-Tags"
 #: modules/forum/forum.admin.inc:45;126 modules/menu/menu.admin.inc:286;419
 #: modules/node/content_types.inc:15;103
 #: modules/system/system.admin.inc:1751;2024;2108
-#: modules/system/system.module:1333;1454
+#: modules/system/system.module:1324;1445
 #: modules/taxonomy/taxonomy.admin.inc:129;670
 #: modules/upload/upload.module:517
 msgid "Description"
 msgstr "Beschreibung"
 
-#: modules/aggregator/aggregator.pages.inc:364 modules/node/node.module:1701
+#: modules/aggregator/aggregator.pages.inc:363 modules/node/node.module:1715
 msgid "read more"
 msgstr "Weiterlesen"
 
@@ -505,31 +515,31 @@ msgstr "Kategorie hinzufügen"
 #: modules/aggregator/aggregator.module:124 modules/block/block.module:128
 #: modules/book/book.module:86 modules/contact/contact.module:53
 #: modules/filter/filter.module:79 modules/forum/forum.module:101
-#: modules/locale/locale.module:94 modules/node/node.module:1420;1451
+#: modules/locale/locale.module:83 modules/node/node.module:1419;1450
 #: modules/path/path.module:62 modules/system/system.module:283;321;325
-#: modules/taxonomy/taxonomy.module:122;180 modules/update/update.module:128
-#: modules/upload/upload.module:517 modules/user/user.module:955;1007
+#: modules/taxonomy/taxonomy.module:121;179 modules/update/update.module:137
+#: modules/upload/upload.module:517 modules/user/user.module:957;1009
 msgid "List"
 msgstr "Alle anzeigen"
 
 #: modules/aggregator/aggregator.module:129 modules/book/book.module:90
 #: modules/contact/contact.module:84 modules/forum/forum.module:124
 #: modules/menu/menu.module:71 modules/taxonomy/taxonomy.admin.inc:152
-#: modules/update/update.module:135
+#: modules/update/update.module:144
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: modules/aggregator/aggregator.module:157 modules/node/node.module:1477
+#: modules/aggregator/aggregator.module:157 modules/node/node.module:1476
 msgid "RSS feed"
 msgstr "RSS-Feed"
 
-#: modules/aggregator/aggregator.module:180;209 modules/node/node.module:1523
-#: modules/user/user.module:1062
+#: modules/aggregator/aggregator.module:180;209 modules/node/node.module:1522
+#: modules/user/user.module:1064
 msgid "View"
 msgstr "Anzeigen"
 
 #: modules/aggregator/aggregator.module:193;222
-#: modules/filter/filter.module:122 modules/locale/locale.module:107
+#: modules/filter/filter.module:122 modules/locale/locale.module:96
 #: modules/system/system.module:289
 msgid "Configure"
 msgstr "Konfigurieren"
@@ -570,13 +580,13 @@ msgstr "Block"
 msgid "Throttle"
 msgstr "Lastreduzierung"
 
-#: modules/block/block.admin.inc:77 modules/filter/filter.admin.inc:34
-#: modules/system/system.admin.inc:219 modules/system/system.module:1342
+#: modules/block/block.admin.inc:83 modules/filter/filter.admin.inc:34
+#: modules/system/system.admin.inc:219 modules/system/system.module:1333
 msgid "configure"
 msgstr "Konfigurieren"
 
-#: (duplicate) modules/block/block.admin.inc:357
-#: modules/comment/comment.module:501;553;585 modules/locale/locale.module:275
+#: (duplicate) modules/block/block.admin.inc:363
+#: modules/comment/comment.module:501;553;585 modules/locale/locale.module:264
 #: modules/statistics/statistics.admin.inc:185
 #: modules/statistics/statistics.module:255
 #: modules/system/system.admin.inc:1276;1293;1307;1325;1333;1509;1663
@@ -605,11 +615,11 @@ msgstr ""
 "Ermöglicht es, eine regelmäßig aktualisierte Website oder ein Blog zu "
 "betreiben."
 
-#: modules/blogapi/blogapi.module:630 modules/upload/upload.admin.inc:86
+#: modules/blogapi/blogapi.module:726 modules/upload/upload.admin.inc:86
 msgid "Default permitted file extensions"
 msgstr "Standardmäßig erlaubte Dateitypen"
 
-#: modules/blogapi/blogapi.module:633 modules/upload/upload.admin.inc:89
+#: modules/blogapi/blogapi.module:729 modules/upload/upload.admin.inc:89
 msgid ""
 "Default extensions that users can upload. Separate extensions with a space "
 "and do not include the leading dot."
@@ -618,34 +628,34 @@ msgstr ""
 "Dateinamenserweiterungen müssen durch ein Leerzeichen getrennt und ohne "
 "führenden Punkt eingeben werden."
 
-#: modules/blogapi/blogapi.module:638 modules/upload/upload.admin.inc:93
+#: modules/blogapi/blogapi.module:734 modules/upload/upload.admin.inc:93
 msgid "Default maximum file size per upload"
 msgstr "Standardmäßige maximale Dateigröße pro Datei"
 
-#: modules/blogapi/blogapi.module:648 modules/upload/upload.admin.inc:102
+#: modules/blogapi/blogapi.module:744 modules/upload/upload.admin.inc:102
 msgid "Default total file size per user"
 msgstr "Standardmäßige gesamte Dateigröße pro Benutzer"
 
-#: modules/blogapi/blogapi.module:652 modules/upload/upload.admin.inc:106
+#: modules/blogapi/blogapi.module:748 modules/upload/upload.admin.inc:106
 msgid "The default maximum size of all files a user can have on the site."
 msgstr ""
 "Die standardmäßige maximale Größe aller Dateien, die ein Benutzer haben darf."
 
-#: modules/blogapi/blogapi.module:656 modules/upload/upload.admin.inc:17;110
+#: modules/blogapi/blogapi.module:752 modules/upload/upload.admin.inc:17;110
 msgid "Your PHP settings limit the maximum file size per upload to %size."
 msgstr ""
-"Die PHP-Einstellungen beschränken die maximale Dateigröße pro Upload auf %"
+"Die PHP-Einstellungen beschränken die maximale Dateigröße pro Datei auf %"
 "size."
 
-#: modules/blogapi/blogapi.module:664 modules/upload/upload.admin.inc:118
+#: modules/blogapi/blogapi.module:760 modules/upload/upload.admin.inc:118
 msgid "Settings for @role"
 msgstr "Einstellungen für @role"
 
-#: modules/blogapi/blogapi.module:670 modules/upload/upload.admin.inc:124
+#: modules/blogapi/blogapi.module:766 modules/upload/upload.admin.inc:124
 msgid "Permitted file extensions"
 msgstr "Erlaubte Dateitypen"
 
-#: modules/blogapi/blogapi.module:673 modules/upload/upload.admin.inc:127
+#: modules/blogapi/blogapi.module:769 modules/upload/upload.admin.inc:127
 msgid ""
 "Extensions that users in this role can upload. Separate extensions with a "
 "space and do not include the leading dot."
@@ -654,37 +664,25 @@ msgstr ""
 "Dateinamenserweiterungen müssen durch ein Leerzeichen getrennt und ohne "
 "führenden Punkt eingeben werden."
 
-#: modules/blogapi/blogapi.module:677 modules/upload/upload.admin.inc:131
+#: modules/blogapi/blogapi.module:773 modules/upload/upload.admin.inc:131
 msgid "Maximum file size per upload"
 msgstr "Maximale Dateigröße pro Datei"
 
-#: modules/blogapi/blogapi.module:685 modules/upload/upload.admin.inc:140
+#: modules/blogapi/blogapi.module:781 modules/upload/upload.admin.inc:140
 msgid "Total file size per user"
 msgstr "Gesamte Dateigröße pro Benutzer"
 
-#: modules/blogapi/blogapi.module:233;289 modules/book/book.admin.inc:130
+#: modules/blogapi/blogapi.module:238;300 modules/book/book.admin.inc:130
 #: modules/comment/comment.admin.inc:111;280;286
-#: modules/comment/comment.module:708;769;791
+#: modules/comment/comment.module:708;771;793
 #: modules/forum/forum.admin.inc:177
-#: modules/node/node.pages.inc:458;462;583;597 modules/node/node.module:979
+#: modules/node/node.pages.inc:462;466;587;601 modules/node/node.module:978
 msgid "content"
 msgstr "Inhalt"
 
-#: modules/blogapi/blogapi.module:704 modules/blogapi/blogapi.info:0
+#: modules/blogapi/blogapi.module:800 modules/blogapi/blogapi.info:0
 msgid "Blog API"
 msgstr "Blog-API"
-
-#: modules/blogapi/blogapi.install:34;89 modules/system/system.install:564
-msgid "The {users}.uid of the user who is associated with the file."
-msgstr "Die {users}.uid des Benutzers, der mit dieser Datei verbunden ist."
-
-#: modules/blogapi/blogapi.install:40;95 modules/system/system.install:576
-msgid "Path of the file relative to Drupal root."
-msgstr "Pfad der Datei relativ zum Drupal-Hauptverzeichnis."
-
-#: modules/blogapi/blogapi.install:46;101 modules/system/system.install:588
-msgid "The size of the file in bytes."
-msgstr "Die Dateigröße in Bytes."
 
 #: modules/blogapi/blogapi.info:0
 msgid ""
@@ -704,7 +702,7 @@ msgid "Parent"
 msgstr "Übergeordneter Eintrag"
 
 #: modules/book/book.module:349 modules/menu/menu.admin.inc:312
-#: modules/menu/menu.module:406
+#: modules/menu/menu.module:407
 msgid "Parent item"
 msgstr "Übergeordneter Menüpunkt"
 
@@ -715,15 +713,15 @@ msgstr ""
 "Gliederung zu strukturieren."
 
 #: modules/color/color.module:230 modules/comment/comment.pages.inc:60
-#: modules/comment/comment.module:1388;1392;1395
-#: modules/node/node.pages.inc:239;401
+#: modules/comment/comment.module:1392;1396;1399
+#: modules/node/node.pages.inc:243;405
 msgid "Preview"
 msgstr "Vorschau"
 
 #: modules/color/color.module:286
 #: modules/node/content_types.inc:208;279;306;325
 #: modules/system/system.admin.inc:257;547
-#: modules/system/system.module:1034;1057;1067
+#: modules/system/system.module:1025;1048;1058
 #: modules/update/update.settings.inc:94
 msgid "Reset to defaults"
 msgstr "Zurücksetzen"
@@ -736,24 +734,24 @@ msgstr "Farbe"
 msgid "Allows the user to change the color scheme of certain themes."
 msgstr "Ermöglicht es, das Farbschema von bestimmten Themes zu verändern."
 
-#: modules/comment/comment.admin.inc:40 modules/node/node.admin.inc:473
+#: modules/comment/comment.admin.inc:40 modules/node/node.admin.inc:464
 #: modules/user/user.admin.inc:149
 msgid "Update options"
-msgstr "Aktualisierungseinstellungen"
+msgstr "Aktualisierungs-Einstellungen"
 
-#: modules/comment/comment.admin.inc:48 modules/node/node.admin.inc:488
+#: modules/comment/comment.admin.inc:48 modules/node/node.admin.inc:479
 #: modules/user/user.admin.inc:114;164
 msgid "Update"
 msgstr "Aktualisieren"
 
-#: modules/comment/comment.admin.inc:54 modules/comment/comment.module:1358
+#: modules/comment/comment.admin.inc:54 modules/comment/comment.module:1362
 #: modules/contact/contact.pages.inc:55;187 modules/forum/forum.module:305
-#: modules/system/system.module:1604
+#: modules/system/system.module:1595
 #: modules/user/user.admin.inc:257;277;297;317;342;367;392
 msgid "Subject"
 msgstr "Betreff"
 
-#: modules/comment/comment.admin.inc:55 modules/node/node.admin.inc:566
+#: modules/comment/comment.admin.inc:55 modules/node/node.admin.inc:557
 #: modules/tracker/tracker.pages.inc:65
 msgid "Author"
 msgstr "Autor"
@@ -763,89 +761,90 @@ msgstr "Autor"
 msgid "Time"
 msgstr "Zeit"
 
-#: modules/comment/comment.admin.inc:115 modules/node/node.admin.inc:381;433
+#: modules/comment/comment.admin.inc:115 modules/node/node.admin.inc:372;424
 #: modules/user/user.admin.inc:214
 msgid "The update has been performed."
 msgstr "Die Aktualisierung wurde durchgeführt."
 
-#: modules/comment/comment.module:560 modules/node/node.admin.inc:58
+#: modules/comment/comment.module:560 modules/node/node.admin.inc:54
 msgid "Optional"
 msgstr "Optional"
 
-#: modules/comment/comment.module:560 modules/node/node.admin.inc:58
+#: modules/comment/comment.module:560 modules/node/node.admin.inc:54
 #: modules/taxonomy/taxonomy.admin.inc:166
 msgid "Required"
 msgstr "Erforderlich"
 
-#: modules/comment/comment.module:1189 modules/node/node.module:803
+#: modules/comment/comment.module:1193 modules/node/node.module:803
 msgid "You have to specify a valid date."
 msgstr "Ein gültiges Datum muss angegeben werden."
 
-#: modules/comment/comment.module:1289;1305 modules/node/node.pages.inc:178
+#: modules/comment/comment.module:1293;1309 modules/node/node.pages.inc:181
 msgid "Authored by"
 msgstr "geschrieben von"
 
-#: modules/comment/comment.module:1313;1344;1352
+#: modules/comment/comment.module:1317;1348;1356
 #: modules/user/user.admin.inc:745;801
 msgid "E-mail"
 msgstr "E-Mail-Adresse"
 
-#: modules/comment/comment.module:1317;1344;1352
+#: modules/comment/comment.module:1321;1348;1356
 #: modules/profile/profile.module:341
 msgid ""
 "The content of this field is kept private and will not be shown publicly."
 msgstr "Der Inhalt dieses Feldes wird nicht öffentlich zugänglich angezeigt."
 
-#: modules/comment/comment.module:1329 modules/node/node.pages.inc:187
+#: modules/comment/comment.module:1333 modules/node/node.pages.inc:190
 msgid "Authored on"
 msgstr "geschrieben am"
 
-#: modules/comment/comment.module:1331 modules/node/node.admin.inc:566
+#: modules/comment/comment.module:1335 modules/node/node.admin.inc:557
 #: modules/translation/translation.pages.inc:27
-#: modules/user/user.admin.inc:135;908 modules/user/user.module:1466
+#: modules/user/user.admin.inc:135;908 modules/user/user.module:1476
 msgid "Status"
 msgstr "Status"
 
-#: modules/comment/comment.module:1331 modules/node/content_types.inc:157
-#: modules/node/node.pages.inc:207
+#: modules/comment/comment.module:1335 modules/node/content_types.inc:157
+#: modules/node/node.pages.inc:210
 #: modules/translation/translation.pages.inc:40
 msgid "Published"
 msgstr "Veröffentlicht"
 
-#: modules/comment/comment.module:1331
+#: modules/comment/comment.module:1335
 #: modules/translation/translation.pages.inc:40
 msgid "Not published"
 msgstr "Nicht veröffentlicht"
 
-#: modules/comment/comment.module:1335;1341;1350
+# formal
+#: modules/comment/comment.module:1339;1345;1354
 #: modules/contact/contact.pages.inc:43
 msgid "Your name"
 msgstr "Ihr Name"
 
-#: modules/comment/comment.module:1370 modules/comment/comment.info:0
+#: modules/comment/comment.module:1374 modules/comment/comment.info:0
 msgid "Comment"
 msgstr "Kommentar"
 
-#: modules/comment/comment.module:1659 modules/openid/openid.module:427
-#: modules/user/user.module:1407;2304
+#: modules/comment/comment.module:1665 modules/openid/openid.module:421
+#: modules/user/user.module:1416;2323
 msgid "Error saving user account."
 msgstr "Fehler beim Speichern des Benutzerkontos."
 
-#: modules/comment/comment.module:1857 modules/forum/forum.admin.inc:204
+#: modules/comment/comment.module:1863 modules/forum/forum.admin.inc:204
 msgid "Date - newest first"
 msgstr "Datum - Neueste zuerst"
 
-#: modules/comment/comment.module:1858 modules/forum/forum.admin.inc:204
+#: modules/comment/comment.module:1864 modules/forum/forum.admin.inc:204
 msgid "Date - oldest first"
 msgstr "Datum - Älteste zuerst"
 
-#: modules/comment/comment.module:2069 modules/node/node.module:2718
+#: modules/comment/comment.module:2075 modules/node/node.module:2734
 msgid "Keywords"
 msgstr "Schlüsselwörter"
 
-#: modules/comment/comment.module:2059;2099
-#: modules/node/node.module:2599;2608;2617;2626;2635;2644;2653;2663;2743
-#: modules/system/system.module:1706 modules/user/user.module:2246;2256
+#: modules/comment/comment.module:2065;2105
+#: modules/node/node.module:2615;2624;2633;2642;2651;2660;2669;2679;2759
+#: modules/system/system.module:1697 modules/user/user.module:2265;2275
 msgid "action"
 msgstr "Aktion"
 
@@ -865,12 +864,12 @@ msgid "Allows users to comment on and discuss published content."
 msgstr "Ermöglicht Besuchern das Kommentieren von Inhalten."
 
 #: modules/contact/contact.admin.inc:16;64 modules/upload/upload.admin.inc:80
-#: modules/user/user.module:2170
+#: modules/user/user.module:2189
 msgid "Yes"
 msgstr "Ja"
 
 #: modules/contact/contact.admin.inc:16;64 modules/upload/upload.admin.inc:80
-#: modules/user/user.module:2171
+#: modules/user/user.module:2190
 msgid "No"
 msgstr "Nein"
 
@@ -885,22 +884,22 @@ msgstr "Kategorie"
 msgid "Selected"
 msgstr "Ausgewählt"
 
-#: modules/contact/contact.admin.inc:83 modules/profile/profile.admin.inc:301
+#: modules/contact/contact.admin.inc:83 modules/profile/profile.admin.inc:302
 msgid "You must enter a category."
 msgstr "Eine Kategorie muss eingegeben werden."
 
 #: modules/contact/contact.pages.inc:63 modules/forum/forum.module:387
-#: modules/taxonomy/taxonomy.module:422
+#: modules/taxonomy/taxonomy.module:421
 msgid "- Please choose -"
 msgstr "- Bitte auswählen -"
 
 #: modules/contact/contact.pages.inc:81;192
-#: modules/dblog/dblog.admin.inc:50;98;148
-#: modules/system/system.module:1611;1757
+#: modules/dblog/dblog.admin.inc:60;108;158
+#: modules/system/system.module:1602;1748
 msgid "Message"
 msgstr "Nachricht"
 
-#: modules/contact/contact.pages.inc:95;200 modules/system/system.module:1286
+#: modules/contact/contact.pages.inc:95;200 modules/system/system.module:1277
 msgid "Send e-mail"
 msgstr "E-Mail senden"
 
@@ -914,43 +913,43 @@ msgstr ""
 "Ermöglicht die Benutzung von benutzerspezifischen und allgemeinen "
 "Kontaktformularen."
 
-#: modules/dblog/dblog.admin.inc:48;128;213
-#: modules/node/content_types.inc:15;81;95 modules/node/node.admin.inc:566
+#: modules/dblog/dblog.admin.inc:58;138;223
+#: modules/node/content_types.inc:15;81;95 modules/node/node.admin.inc:557
 #: modules/profile/profile.admin.inc:147
 #: modules/taxonomy/taxonomy.admin.inc:88 modules/tracker/tracker.pages.inc:65
 msgid "Type"
 msgstr "Typ"
 
-#: modules/dblog/dblog.admin.inc:49;132
+#: modules/dblog/dblog.admin.inc:59;142
 #: modules/statistics/statistics.admin.inc:158
 msgid "Date"
 msgstr "Datum"
 
-#: modules/dblog/dblog.admin.inc:51;136
+#: modules/dblog/dblog.admin.inc:61;146
 #: modules/statistics/statistics.admin.inc:16;162
 #: modules/statistics/statistics.pages.inc:15 modules/user/user.info:0
 msgid "User"
 msgstr "Benutzer"
 
-#: modules/dblog/dblog.admin.inc:144
+#: modules/dblog/dblog.admin.inc:154
 #: modules/statistics/statistics.admin.inc:154
 #: modules/statistics/statistics.pages.inc:14
 msgid "Referrer"
 msgstr "Referrer"
 
-#: modules/dblog/dblog.admin.inc:156
+#: modules/dblog/dblog.admin.inc:166
 #: modules/statistics/statistics.admin.inc:166 modules/user/user.admin.inc:812
 msgid "Hostname"
-msgstr "Hostadresse"
+msgstr "Hostname"
 
-#: modules/dblog/dblog.admin.inc:280;296;308 modules/filter/filter.info:0
-#: modules/node/node.admin.inc:256;321 modules/path/path.admin.inc:206
+#: modules/dblog/dblog.admin.inc:290;306;318 modules/filter/filter.info:0
+#: modules/node/node.admin.inc:247;312 modules/path/path.admin.inc:206
 #: modules/user/user.admin.inc:73;98
 msgid "Filter"
 msgstr "Filter"
 
-#: modules/dblog/dblog.admin.inc:285;315 modules/menu/menu.admin.inc:584
-#: modules/node/node.admin.inc:259;337 modules/path/path.admin.inc:212
+#: modules/dblog/dblog.admin.inc:295;325 modules/menu/menu.admin.inc:584
+#: modules/node/node.admin.inc:250;328 modules/path/path.admin.inc:212
 #: modules/user/user.admin.inc:82;111
 msgid "Reset"
 msgstr "Zurücksetzen"
@@ -976,7 +975,7 @@ msgid "Name"
 msgstr "Name"
 
 #: modules/filter/filter.admin.inc:69;110 modules/user/user.admin.inc:136;909
-#: modules/user/user.module:1491;985
+#: modules/user/user.module:1501;987
 msgid "Roles"
 msgstr "Rollen"
 
@@ -985,8 +984,8 @@ msgstr "Rollen"
 msgid "Header"
 msgstr "Kopfbereich"
 
-#: modules/filter/filter.module:116 modules/node/node.module:1503;1527
-#: modules/user/user.module:1078
+#: modules/filter/filter.module:116 modules/node/node.module:1502;1526
+#: modules/user/user.module:1080
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -998,23 +997,19 @@ msgstr "Erlaubt es, Inhalte vor dem Anzeigen zu filtern."
 msgid "Forum"
 msgstr "Forum"
 
-#: modules/forum/forum.admin.inc:277 modules/taxonomy/taxonomy.admin.inc:695
+#: modules/forum/forum.admin.inc:276 modules/taxonomy/taxonomy.admin.inc:695
 msgid "root"
 msgstr "Hauptebene"
 
-#: modules/forum/forum.module:568 modules/tracker/tracker.pages.inc:65
+#: modules/forum/forum.module:560 modules/tracker/tracker.pages.inc:65
 msgid "Replies"
 msgstr "Antworten"
 
-#: modules/forum/forum.module:769;831 modules/tracker/tracker.pages.inc:48
+#: modules/forum/forum.module:761;823 modules/tracker/tracker.pages.inc:48
 msgid "1 new"
 msgid_plural "@count new"
 msgstr[0] "1 neu"
 msgstr[1] "@count neu"
-
-#: modules/forum/forum.install:82 modules/taxonomy/taxonomy.install:91
-msgid "Primary Key: The {node}.vid of the node."
-msgstr "Primärschlüssel: Die {node}.vid des Beitrags."
 
 #: modules/forum/forum.info:0
 msgid "Enables threaded discussions about general topics."
@@ -1028,11 +1023,11 @@ msgstr "Hilfe"
 msgid "Manages the display of online help."
 msgstr "Verwaltet die Anzeige der Online-Hilfe."
 
-#: modules/locale/locale.module:289 modules/node/node.admin.inc:168;233;503
+#: modules/locale/locale.module:278 modules/node/node.admin.inc:159;224;494
 msgid "Language neutral"
 msgstr "Sprachneutral"
 
-#: modules/locale/locale.module:122 modules/system/system.module:1164
+#: modules/locale/locale.module:111 modules/system/system.module:1155
 msgid "Confirm"
 msgstr "Bestätigen"
 
@@ -1073,7 +1068,7 @@ msgid ""
 "Adds language handling functionality and enables the translation of the user "
 "interface to languages other than English."
 msgstr ""
-"Fügt Sprachbehandlungsfunktionen hinzu und aktiviert die Übersetzung der "
+"Fügt Sprachfunktionen hinzu und aktiviert die Übersetzung der "
 "Benutzeroberfläche in andere Sprachen als Englisch."
 
 #: modules/menu/menu.admin.inc:258;274 modules/path/path.info:0
@@ -1095,12 +1090,11 @@ msgstr ""
 "Der Pfad ‚@link_path‘ ist entweder ungültig oder der Zugriff wurde "
 "verweigert."
 
-#: modules/menu/menu.admin.inc:493;575 modules/menu/menu.module:0
-#: modules/node/content_types.inc:404
+#: modules/menu/menu.admin.inc:493;575 modules/node/content_types.inc:404
 msgid "menu"
 msgstr "Menü"
 
-#: (duplicate) modules/menu/menu.install:12 modules/user/user.module:685;735
+#: (duplicate) modules/menu/menu.install:12 modules/user/user.module:687;737
 msgid "Navigation"
 msgstr "Navigation"
 
@@ -1132,54 +1126,54 @@ msgstr "Textkörper"
 msgid "Identification"
 msgstr "Identifikation"
 
-#: modules/node/node.admin.inc:39 modules/poll/poll.module:250
+#: modules/node/node.admin.inc:35 modules/poll/poll.module:250
 msgid "Unlimited"
 msgstr "Unbegrenzt"
 
-#: modules/node/node.admin.inc:142 modules/user/user.module:1965
+#: modules/node/node.admin.inc:133 modules/user/user.module:1984
 msgid "status"
 msgstr "Status"
 
-#: modules/node/node.admin.inc:256;322 modules/user/user.admin.inc:73;98
+#: modules/node/node.admin.inc:247;313 modules/user/user.admin.inc:73;98
 msgid "Refine"
 msgstr "Einschränken"
 
-#: modules/node/node.admin.inc:258;334 modules/user/user.admin.inc:78;108
+#: modules/node/node.admin.inc:249;325 modules/user/user.admin.inc:78;108
 msgid "Undo"
 msgstr "Rückgängig"
 
-#: modules/node/node.admin.inc:295 modules/user/user.admin.inc:993
+#: modules/node/node.admin.inc:286 modules/user/user.admin.inc:993
 msgid "and"
 msgstr "und"
 
-#: modules/node/node.admin.inc:295 modules/user/user.admin.inc:993
+#: modules/node/node.admin.inc:286 modules/user/user.admin.inc:993
 msgid "where"
 msgstr "wobei"
 
-#: modules/node/node.admin.inc:301 modules/user/user.admin.inc:999
+#: modules/node/node.admin.inc:292 modules/user/user.admin.inc:999
 msgid "is"
 msgstr "ist"
 
-#: modules/node/node.admin.inc:591 modules/tracker/tracker.pages.inc:62
+#: modules/node/node.admin.inc:582 modules/tracker/tracker.pages.inc:62
 msgid "No posts available."
 msgstr "Keine Beiträge verfügbar."
 
-#: modules/node/node.admin.inc:622 modules/user/user.module:1860
+#: modules/node/node.admin.inc:613 modules/user/user.module:1879
 msgid "Delete all"
 msgstr "Alle löschen"
 
-#: modules/node/node.module:1144;1411;1464 modules/system/system.module:0
+#: modules/node/node.module:1143;1410;1463 modules/system/system.module:0
 #: modules/trigger/trigger.module:49
 msgid "Content"
 msgstr "Inhalt"
 
-#: modules/node/node.module:2683;2692
+#: modules/node/node.module:2699;2708
 #: modules/user/user.admin.inc:134;745;790;907
-#: modules/user/user.module:651;1246;1435
+#: modules/user/user.module:653;1248;1445
 msgid "Username"
 msgstr "Benutzername"
 
-#: modules/node/node.module:1444 modules/taxonomy/taxonomy.admin.inc:141;145
+#: modules/node/node.module:1443 modules/taxonomy/taxonomy.admin.inc:141;145
 msgid "Content types"
 msgstr "Inhaltstypen"
 
@@ -1196,7 +1190,7 @@ msgstr ""
 msgid "OpenID"
 msgstr "OpenID"
 
-#: modules/openid/openid.module:435 modules/user/user.admin.inc:234
+#: modules/openid/openid.module:429 modules/user/user.admin.inc:234
 msgid "Only site administrators can create new user accounts."
 msgstr "Nur Administratoren können neue Benutzerkonten erstellen."
 
@@ -1236,7 +1230,7 @@ msgstr "Besucher"
 msgid "Poll"
 msgstr "Umfrage"
 
-#: modules/poll/poll.module:251 modules/user/user.module:1468
+#: modules/poll/poll.module:251 modules/user/user.module:1478
 msgid "Active"
 msgstr "Aktiv"
 
@@ -1270,7 +1264,7 @@ msgstr "Statistiken"
 
 #: modules/statistics/statistics.info:0
 msgid "Logs access statistics for your site."
-msgstr "Protokolliert Zugriffsstatistiken für die Site."
+msgstr "Protokolliert Zugriffsstatistiken für die Website."
 
 #: modules/syslog/syslog.module:31 modules/syslog/syslog.info:0
 msgid "Syslog"
@@ -1280,24 +1274,24 @@ msgstr "Syslog"
 msgid "Logs and records system events to syslog."
 msgstr "Protokolliert Systemereignisse ins Systemprotokoll."
 
-#: modules/system/system.admin.inc:1136 modules/user/user.module:1443
+#: modules/system/system.admin.inc:1136 modules/user/user.module:1453
 msgid "E-mail address"
 msgstr "E-Mail-Adresse"
 
-#: modules/system/system.module:611 modules/user/user.module:2162
+#: modules/system/system.module:602 modules/user/user.module:2181
 msgid "Medium"
 msgstr "Mittel"
 
-#: modules/system/system.module:1548 modules/user/user.pages.inc:66;98;134
-#: modules/user/user.module:1320;1357;1411;1588;2310;0
+#: modules/system/system.module:1539 modules/user/user.pages.inc:73;111;147
+#: modules/user/user.module:1320;1366;1420;1607;2329
 msgid "user"
 msgstr "Benutzer"
 
-#: modules/system/system.module:275 modules/update/update.report.inc:198
+#: modules/system/system.module:275 modules/update/update.report.inc:200
 msgid "Themes"
 msgstr "Themes"
 
-#: modules/system/system.module:313 modules/update/update.report.inc:197
+#: modules/system/system.module:313 modules/update/update.report.inc:199
 msgid "Modules"
 msgstr "Module"
 
@@ -1312,12 +1306,12 @@ msgid "Right sidebar"
 msgstr "Rechte Seitenleiste"
 
 #: (duplicate) modules/system/system.install:232
-#: modules/update/update.report.inc:82 modules/update/update.module:274
+#: modules/update/update.report.inc:84 modules/update/update.module:284
 msgid "Up to date"
 msgstr "Aktuell"
 
 #: (duplicate) modules/system/system.install:242
-#: modules/update/update.module:265
+#: modules/update/update.module:274
 msgid "Out of date"
 msgstr "Veraltet"
 
@@ -1327,7 +1321,7 @@ msgstr ""
 "Stellt die allgemeine Website-Konfiguration für Administratoren zur "
 "Verfügung."
 
-#: modules/taxonomy/taxonomy.module:113 modules/taxonomy/taxonomy.info:0
+#: modules/taxonomy/taxonomy.module:112 modules/taxonomy/taxonomy.info:0
 #: modules/trigger/trigger.module:76
 msgid "Taxonomy"
 msgstr "Taxonomie"
@@ -1336,7 +1330,7 @@ msgstr "Taxonomie"
 msgid "Enables the categorization of content."
 msgstr "Ermöglicht die Kategorisierung von Inhalten."
 
-#: modules/throttle/throttle.module:104 modules/user/user.module:776;779
+#: modules/throttle/throttle.module:104 modules/user/user.module:778;781
 msgid "1 user"
 msgid_plural "@count users"
 msgstr[0] "1 Benutzer"
@@ -1362,7 +1356,7 @@ msgstr "Inhaltsübersetzung"
 msgid "Allows content to be translated into different languages."
 msgstr "Ermöglicht die Übersetzung von Inhalt in unterschiedliche Sprachen."
 
-#: modules/trigger/trigger.module:58 modules/user/user.module:566;947
+#: modules/trigger/trigger.module:58 modules/user/user.module:568;949
 msgid "Users"
 msgstr "Benutzer"
 
@@ -1406,7 +1400,7 @@ msgstr "Steuert die Benutzerregistrierung und das Anmeldesystem."
 #: themes/bluemarine/bluemarine.info:0 themes/garland/color/color.inc:12
 #: themes/garland/minnelli/color/color.inc:12
 msgid "Bluemarine"
-msgstr "Marinblau"
+msgstr "Marineblau"
 
 #: themes/bluemarine/bluemarine.info:0
 msgid "Table-based multi-column theme with a marine and ash color scheme."
