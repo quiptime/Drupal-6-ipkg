@@ -1,5 +1,5 @@
 <?php
-// $Id: file.inc,v 1.121.2.7 2009/06/09 10:37:38 goba Exp $
+// $Id: file.inc,v 1.121.2.11 2010/03/01 09:51:16 goba Exp $
 
 /**
  * @file
@@ -342,15 +342,24 @@ function file_move(&$source, $dest = 0, $replace = FILE_EXISTS_RENAME) {
 }
 
 /**
- * Munge the filename as needed for security purposes. For instance the file
- * name "exploit.php.pps" would become "exploit.php_.pps".
+ * Modify a filename as needed for security purposes.
  *
- * @param $filename The name of a file to modify.
- * @param $extensions A space separated list of extensions that should not
- *   be altered.
- * @param $alerts Whether alerts (watchdog, drupal_set_message()) should be
- *   displayed.
- * @return $filename The potentially modified $filename.
+ * Dangerous file names will be altered; for instance, the file name
+ * "exploit.php.pps" will become "exploit.php_.pps". All extensions that are
+ * between 2 and 5 characters in length, internal to the file name, and not
+ * included in $extensions will be altered by adding an underscore. If variable
+ * 'allow_insecure_uploads' evaluates to TRUE, no alterations will be made.
+ *
+ * @param $filename
+ *   File name to modify.
+ * @param $extensions
+ *   A space-separated list of extensions that should not be altered.
+ * @param $alerts
+ *   If TRUE, drupal_set_message() will be called to display a message if the
+ *   file name was changed.
+ *
+ * @return
+ *   The potentially modified $filename.
  */
 function file_munge_filename($filename, $extensions, $alerts = TRUE) {
   $original = $filename;
@@ -529,13 +538,6 @@ function file_save_upload($source, $validators = array(), $dest = FALSE, $replac
     $file->filepath = $_FILES['files']['tmp_name'][$source];
     $file->filemime = file_get_mimetype($file->filename);
 
-    // Rename potentially executable files, to help prevent exploits.
-    if (preg_match('/\.(php|pl|py|cgi|asp|js)$/i', $file->filename) && (substr($file->filename, -4) != '.txt')) {
-      $file->filemime = 'text/plain';
-      $file->filepath .= '.txt';
-      $file->filename .= '.txt';
-    }
-
     // If the destination is not provided, or is not writable, then use the
     // temporary directory.
     if (empty($dest) || file_check_path($dest) === FALSE) {
@@ -550,8 +552,22 @@ function file_save_upload($source, $validators = array(), $dest = FALSE, $replac
     $errors = array();
     foreach ($validators as $function => $args) {
       array_unshift($args, $file);
+      // Make sure $file is passed around by reference.
+      $args[0] = &$file;
       $errors = array_merge($errors, call_user_func_array($function, $args));
     }
+
+    // Rename potentially executable files, to help prevent exploits.
+    if (preg_match('/\.(php|pl|py|cgi|asp|js)$/i', $file->filename) && (substr($file->filename, -4) != '.txt')) {      
+      $file->filemime = 'text/plain';
+      $file->filepath .= '.txt';
+      $file->filename .= '.txt';
+      // As the file may be named example.php.txt, we need to munge again to
+      // convert to example.php_.txt, then create the correct destination.
+      $file->filename = file_munge_filename($file->filename, $extensions);
+      $file->destination = file_destination(file_create_path($dest .'/'. $file->filename), $replace);
+    }
+
 
     // Check for validation errors.
     if (!empty($errors)) {
@@ -1187,6 +1203,7 @@ function file_get_mimetype($filename, $mapping = NULL) {
       'au|snd' => 'audio/basic',
       'mid|midi|kar' => 'audio/midi',
       'mpga|mpega|mp2|mp3|m4a' => 'audio/mpeg',
+      'f4a|f4b' => 'audio/mp4',
       'm3u' => 'audio/x-mpegurl',
       'oga|spx' => 'audio/ogg',
       'sid' => 'audio/prs.sid',
@@ -1325,7 +1342,8 @@ function file_get_mimetype($filename, $mapping = NULL) {
       'fli' => 'video/fli',
       'gl' => 'video/gl',
       'mpeg|mpg|mpe' => 'video/mpeg',
-      'mp4' => 'video/mp4',
+      'mp4|f4v|f4p' => 'video/mp4',
+      'flv' => 'video/x-flv',
       'ogv' => 'video/ogg',
       'qt|mov' => 'video/quicktime',
       'mxu' => 'video/vnd.mpegurl',

@@ -1,5 +1,5 @@
 <?php
-// $Id: bootstrap.inc,v 1.206.2.12 2009/04/30 00:13:30 goba Exp $
+// $Id: bootstrap.inc,v 1.206.2.14 2010/02/01 16:49:14 goba Exp $
 
 /**
  * @file
@@ -496,6 +496,8 @@ function variable_init($conf = array()) {
  *   The default value to use if this variable has never been set.
  * @return
  *   The value of the variable.
+ *
+ * @see variable_del(), variable_set()
  */
 function variable_get($name, $default) {
   global $conf;
@@ -511,6 +513,8 @@ function variable_get($name, $default) {
  * @param $value
  *   The value to set. This can be any PHP data type; these functions take care
  *   of serialization as necessary.
+ *
+ * @see variable_del(), variable_get()
  */
 function variable_set($name, $value) {
   global $conf;
@@ -531,6 +535,8 @@ function variable_set($name, $value) {
  *
  * @param $name
  *   The name of the variable to undefine.
+ *
+ * @see variable_get(), variable_set()
  */
 function variable_del($name) {
   global $conf;
@@ -1054,6 +1060,8 @@ function _drupal_bootstrap($phase) {
         exit;
       }
       // Prepare for non-cached page workflow.
+      require_once variable_get('lock_inc', './includes/lock.inc');
+      lock_init();
       drupal_page_header();
       break;
 

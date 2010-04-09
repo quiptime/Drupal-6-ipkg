@@ -1,6 +1,0 @@
-; $Id: explorer8_modus.info, v 1.2 2009/07/20 21:31:36 quiptime $
-name = Explorer 8 modus
-description = Setting the document compatibility mode of the Internet Explorer 8.
-package = "Content"
-version = "6.x-1.2"
-core = 6.x
