@@ -1,1 +1,0 @@
-<?php require('page.tpl.php');
