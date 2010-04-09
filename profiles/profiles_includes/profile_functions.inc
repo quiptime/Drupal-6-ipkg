@@ -144,6 +144,7 @@ function _profile_optional_themes($profile) {
   $themes = array(
     'a3_atlantis' => l('A3 Atlantis', 'http://drupal.org/project/a3_atlantis', _profile_get_link_attr()),
     'acquia_marina' => l('Acquia Marina', 'http://drupal.org/project/acquia_marina', _profile_get_link_attr()),
+    
     'acquia_prosper' => l('Acquia Prosper', 'http://drupal.org/project/acquia_prosper', _profile_get_link_attr()),
     'fusion' => l('Fusion', 'http://drupal.org/project/fusion', _profile_get_link_attr()) .' '. st('Needed by') .' "Acquia Prosper"!',
 
